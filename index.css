@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "montserat";
+  src: url(/Montserrat/Montserrat-Black.ttf);
+  src: url(/Montserrat/Montserrat-BlackItalic.ttf);
+  src: url(/Montserrat/Montserrat-Bold.ttf);
+  src: url(/Montserrat/Montserrat-BoldItalic.ttf);
+  src: url(/Montserrat/Montserrat-ExtraBold.ttf);
+  src: url(/Montserrat/Montserrat-ExtraBoldItalic.ttf);
+  src: url(/Montserrat/Montserrat-ExtraLight.ttf);
+  src: url(/Montserrat/Montserrat-ExtraLightItalic.ttf);
+  src: url(/Montserrat/Montserrat-Italic.ttf);
+  src: url(/Montserrat/Montserrat-Light.ttf);
+  src: url(/Montserrat/Montserrat-LightItalic.ttf);
+  src: url(/Montserrat/Montserrat-Medium.ttf);
+  src: url(/Montserrat/Montserrat-MediumItalic.ttf);
+  src: url(/Montserrat/Montserrat-Regular.ttf);
+  src: url(/Montserrat/Montserrat-SemiBold.ttf);
+  src: url(/Montserrat/Montserrat-SemiBoldItalic.ttf);
+  src: url(/Montserrat/Montserrat-Thin.ttf);
+  src: url(/Montserrat/Montserrat-ThinItalic.ttf);
+}
+
+:root {
+  --ease-9: all 0.9s ease;
+  --ease-6: all 0.6s ease;
+  --ease-3: all 0.3s ease;
+  --main-color: black;
+  --hover-color: purple;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* -----------LANDING PAGE---------- */
+#landing_page {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), white),
+    url(/olga-thelavart-HZm2XR0whdw-unsplash.jpg);
+  background-size: cover;
+}
+
+/* ------TOPBAR STYLING------ */
+#topbar {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 1em 0;
+}
+
+/* PAGE LOGO */
+#business_logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: fit-content;
+}
+#business_logo img {
+  width: 80px;
+  margin-right: 10px;
+}
+#business_logo span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* NAVBAR */
+#navbar {
+  flex: 2;
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+  transition: var(--ease-3);
+}
+#navbar ul li a:hover {
+  color: var(--hover-color);
+  transition: var(--ease-3);
+}
+
+/* VIEW ART BTN */
+#landing_btn {
+  flex: 1;
+  max-width: fit-content;
+}
+
+/* ------LANDING PAGE HOOK------ */
+#landing_hook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4em 0;
+  font-family: montserat, sans-serif;
+}
+#landing_hook h2 {
+  font-weight: bold;
+  margin: 0;
+  text-decoration: underline;
+}
+#landing_hook h1 {
+  font-weight: normal;
+  margin: 0;
+  font-family: serif;
+}
+#landing_hook p {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ------LANDING IMGS------ */
+#landing_imgs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* ------COLLECTIVE STYLING------ */
+.light-btn {
+  cursor: pointer;
+  width: 110px;
+  height: 38px;
+  background: transparent;
+  outline: none;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  font-weight: bold;
+  transition: var(--ease-6);
+}
+.light-btn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  transition: var(--ease-6);
+}
+
+/* ------MEDIA QUERYs------ */
+
+@media only screen and (min-width: 1400px) {
+  /* TOP BAR STYLE */
+  #topbar {
+    max-width: 1300px;
+    margin: auto;
+  }
+  /* LANDING PAGE HOOK STYLE */
+  #landing_hook h2 {
+    font-weight: bold;
+    font-size: 45px;
+  }
+  #landing_hook h1 {
+    font-weight: normal;
+    font-size: 350px;
+    margin: 0;
+
+    text-shadow: 7px 10px 10px rgba(0, 0, 0, 0.397);
+  }
+  #landing_hook p {
+    font-size: 60px;
+  }
+  /* LANDING PAGE IMG CARDS */
+  #landing_imgs {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5em 0;
+  }
+  .landing_img_card img {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .landing_img_card {
+    transform: translateX(-2000px);
+    transition: var(--ease-9);
+  }
+  .landing_img_card.show {
+    transform: translateX(0);
+  }
+}
