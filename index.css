@@ -30,6 +30,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -37,9 +38,10 @@ body {
 }
 /* -----------LANDING PAGE---------- */
 #landing_page {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), white),
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), white),
     url(/olga-thelavart-HZm2XR0whdw-unsplash.jpg);
   background-size: cover;
+  overflow-x: hidden;
 }
 
 /* ------TOPBAR STYLING------ */
@@ -58,12 +60,13 @@ body {
   max-width: fit-content;
 }
 #business_logo img {
-  width: 80px;
-  margin-right: 10px;
+  width: 150px;
+  margin-right: 50px;
 }
 #business_logo span {
   font-size: 25px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* NAVBAR */
@@ -115,10 +118,43 @@ body {
   text-align: center;
 }
 
-/* ------LANDING IMGS------ */
-#landing_imgs {
+/* ------LANDING IMGS CAROUSEL------ */
+#landing_img_carousel {
+  padding: 0 0 5em 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ------------SECOND PAGE------------ */
+/* ------BUSINESS HOURS------ */
+#business_hours_container {
+  background-color: rgba(231, 156, 69, 0.466);
+  padding: 2em 1em;
+}
+#businessHours {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  flex-wrap: nowrap;
+}
+
+.dateCard {
+  border-radius: 0.7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+  background-color: rgb(255, 255, 255);
+  transition: var(--ease-3);
+}
+.dateCard span {
+  font-weight: bold;
+}
+#closed_interval {
+  text-align: center;
+  margin: 0;
+  font-size: x-large;
 }
 
 /* ------COLLECTIVE STYLING------ */
@@ -141,6 +177,8 @@ body {
 
 /* ------MEDIA QUERYs------ */
 
+/* ------LANDING PAGE------ */
+/* 14000 AND UP */
 @media only screen and (min-width: 1400px) {
   /* TOP BAR STYLE */
   #topbar {
@@ -150,34 +188,256 @@ body {
   /* LANDING PAGE HOOK STYLE */
   #landing_hook h2 {
     font-weight: bold;
-    font-size: 45px;
+    font-size: 35px;
   }
   #landing_hook h1 {
     font-weight: normal;
-    font-size: 350px;
+    font-size: 260px;
     margin: 0;
 
     text-shadow: 7px 10px 10px rgba(0, 0, 0, 0.397);
   }
   #landing_hook p {
-    font-size: 60px;
+    font-size: 50px;
   }
   /* LANDING PAGE IMG CARDS */
-  #landing_imgs {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 5em 0;
+  #landing_img_carousel img {
+    width: 800px;
+    height: 500px;
   }
-  .landing_img_card img {
-    width: 450px;
-    height: 300px;
-    border-radius: 10px;
+  /* ------BUSSINESS HOURS PAGE------ */
+  #businessHours {
+    height: 35vh;
+    max-width: 1350px;
+    margin: auto;
+    padding: 3em 0;
   }
-  .landing_img_card {
-    transform: translateX(-2000px);
-    transition: var(--ease-9);
+  #businessHours h3 {
+    font-size: 35px;
+    max-width: 150px;
+    font-weight: bold;
   }
-  .landing_img_card.show {
-    transform: translateX(0);
+  .dateCard {
+    width: 150px;
+    height: 200px;
+  }
+  .dateCard span {
+    font-size: 28px;
+  }
+  /* BUSINESS HOURS */
+}
+
+/* 900 TO 1400 */
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
+  /* TOP BAR */
+  #topbar {
+    margin: auto;
+    max-width: 1000px;
+  }
+  /* LANDING PAGE HOOK */
+  #landing_hook h1 {
+    font-size: 100px;
+  }
+  #landing_hook p {
+    font-size: x-large;
+  }
+  /* landing page img carousel */
+  #landing_img_carousel img {
+    width: 800px;
+    height: 500px;
+  }
+  /* BUSINESS HOURS */
+  #businessHours {
+    height: 25vh;
+    max-width: 950px;
+    margin: auto;
+  }
+  #businessHours h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .dateCard {
+    width: 150px;
+    height: 180px;
+    font-size: small;
+    padding: 0 10px;
+  }
+  .dateCard span {
+    font-size: 28px;
+  }
+}
+
+/* 600 TO 900 */
+@media only screen and (min-width: 650px) and (max-width: 900px) {
+  /* TOP BAR */
+  #topbar {
+    margin: auto;
+    max-width: 750px;
+  }
+  #landing_btn {
+    display: none;
+  }
+  /* LANDING PAGE HOOK */
+  #landing_hook {
+    margin: 0;
+  }
+  #landing_hook h1 {
+    font-size: 100px;
+  }
+  #landing_hook p {
+    font-size: x-large;
+  }
+  /* LANDING PAGE CAROUSEL */
+  #landing_img_carousel {
+    margin: auto;
+    max-width: 600px;
+  }
+  /* BUSINESS HOURS */
+  #businessHours {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    width: fit-content;
+    margin: auto;
+    column-gap: 1em;
+    row-gap: 2em;
+    text-align: center;
+  }
+  #businessHours h3 {
+    font-size: 30px;
+    font-weight: bold;
+    grid-column: 1/5;
+  }
+  .dateCard {
+    width: 120px;
+    height: 180px;
+    font-size: small;
+    padding: 0 10px;
+  }
+  .dateCard span {
+    font-size: 28px;
+  }
+  #closed_interval {
+    padding: 2em 0;
+  }
+}
+
+/* 300 TO 650 */
+@media only screen and (min-width: 300px) and (max-width: 650px) {
+  /* TOP BAR */
+  #navbar ul li a {
+    font-size: small;
+  }
+  #topbar {
+    margin: auto;
+    max-width: 300px;
+  }
+  #topbar ul li:nth-child(odd) {
+    display: none;
+  }
+  #landing_btn {
+    display: none;
+  }
+  #business_logo img {
+    width: 70px;
+    margin-right: 10px;
+  }
+  #business_logo span {
+    font-size: small;
+  }
+  /* LANDING PAGE HOOK */
+  #landing_hook {
+    margin: 2em 0;
+  }
+  #landing_hook h1 {
+    font-size: 80px;
+  }
+  /* LANDING PAGE CAROUSEL */
+  #landing_img_carousel {
+    margin: auto;
+    max-width: 280px;
+  }
+  /* BUSINESS HOURS */
+  #businessHours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    margin: auto;
+    column-gap: 0.1em;
+    row-gap: 1em;
+    text-align: center;
+  }
+  #businessHours h3 {
+    font-size: 20px;
+    font-weight: bold;
+    grid-column: 1/3;
+  }
+  .dateCard {
+    width: 100px;
+    height: 140px;
+    font-size: small;
+  }
+  #businessHours .dateCard h5 {
+    font-size: small;
+  }
+  .dateCard span {
+    font-size: 20px;
+  }
+  #closed_interval {
+    padding: 2em 0;
+    font-size: small;
+  }
+}
+
+/* UNDER 300 */
+@media only screen and (max-width: 300px) {
+  #topbar {
+    max-width: 250px;
+    margin: auto;
+  }
+  #navbar ul li:nth-child(odd) {
+    display: none;
+  }
+  #business_logo img {
+    width: 50px;
+    margin: 0;
+  }
+  #business_logo span {
+    font-size: x-small;
+  }
+  #landing_btn {
+    display: none;
+  }
+  #navbar ul li a {
+    font-size: x-small;
+  }
+  /* BUSINESS HOURS */
+  #businessHours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    margin: auto;
+    column-gap: 0.1em;
+    row-gap: 1em;
+    text-align: center;
+  }
+  #businessHours h3 {
+    font-size: 20px;
+    font-weight: bold;
+    grid-column: 1/3;
+  }
+  .dateCard {
+    width: 100px;
+    height: 140px;
+    font-size: small;
+  }
+  #businessHours .dateCard h5 {
+    font-size: small;
+  }
+  .dateCard span {
+    font-size: 20px;
+  }
+  #closed_interval {
+    padding: 2em 0;
+    font-size: small;
   }
 }
