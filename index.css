@@ -51,6 +51,17 @@ body {
   font-family: sans-serif;
   padding: 1em 0;
 }
+#contact_info {
+  margin: auto;
+}
+#contact_info i {
+  color: black;
+  transition: var(--ease-3);
+}
+#contact_info i:hover {
+  color: var(--hover-color);
+  transition: var(--ease-3);
+}
 
 /* PAGE LOGO */
 #business_logo {
@@ -181,6 +192,13 @@ body {
 /* 14000 AND UP */
 @media only screen and (min-width: 1400px) {
   /* TOP BAR STYLE */
+  #contact_info {
+    max-width: fit-content;
+  }
+  #contact_info i {
+    font-size: xx-large;
+    margin-right: 30px;
+  }
   #topbar {
     max-width: 1300px;
     margin: auto;
@@ -230,6 +248,13 @@ body {
 /* 900 TO 1400 */
 @media only screen and (min-width: 900px) and (max-width: 1400px) {
   /* TOP BAR */
+  #contact_info {
+    max-width: fit-content;
+  }
+  #contact_info i {
+    font-size: xx-large;
+    margin-right: 30px;
+  }
   #topbar {
     margin: auto;
     max-width: 1000px;
@@ -270,6 +295,14 @@ body {
 /* 600 TO 900 */
 @media only screen and (min-width: 650px) and (max-width: 900px) {
   /* TOP BAR */
+  #contact_info {
+    max-width: fit-content;
+  }
+  #contact_info i {
+    font-size: x-large;
+    margin-right: 30px;
+    padding: 1em 0;
+  }
   #topbar {
     margin: auto;
     max-width: 750px;
@@ -324,6 +357,13 @@ body {
 /* 300 TO 650 */
 @media only screen and (min-width: 300px) and (max-width: 650px) {
   /* TOP BAR */
+  #contact_info {
+    max-width: fit-content;
+  }
+  #contact_info i {
+    font-size: large;
+    margin-right: 15px;
+  }
   #navbar ul li a {
     font-size: small;
   }
@@ -390,6 +430,13 @@ body {
 
 /* UNDER 300 */
 @media only screen and (max-width: 300px) {
+  #contact_info {
+    max-width: fit-content;
+  }
+  #contact_info i {
+    font-size: small;
+    margin-right: 7px;
+  }
   #topbar {
     max-width: 250px;
     margin: auto;
