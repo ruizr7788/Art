@@ -451,6 +451,12 @@ body {
   justify-content: center;
   align-items: center;
   line-height: 150%;
+  position: relative;
+}
+#aboutAuthor small a {
+  color: rgb(156, 125, 45);
+  position: absolute;
+  bottom: 2em;
 }
 #aboutAuthor p {
   color: rgb(216, 214, 214);
