@@ -343,6 +343,7 @@ body {
   transition: var(--ease-3);
 }
 
+/* ---------------SECOND IMPORTANCE--------------- */
 /*----------- GRAPHIC DESIGN PAGE----------- */
 #graphic_design_container {
   min-height: 60vh;
@@ -350,14 +351,19 @@ body {
   padding: 5em 0;
 }
 #graphic_design_container h1 {
+  font-weight: bold;
   margin: auto;
   width: 650px;
+  text-shadow: 3px 3px 3px var(--dim-black);
+}
+#label-graphic-design {
+  color: #333;
 }
 #graphic_design {
   display: grid;
   margin: auto;
   column-gap: 1em;
-  padding: 5em 0;
+  padding: 5em 0 2em 0;
   max-width: 1200px;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -368,6 +374,7 @@ body {
   width: 380px;
   height: 250px;
   padding-top: 3em;
+  box-shadow: 5px 5px 3px var(--dim-black);
 }
 .graphic-design-img h1 {
   max-width: fit-content;
@@ -395,8 +402,13 @@ body {
   padding-bottom: 5em;
 }
 #makeupANDjewelry_container h1 {
+  font-weight: bold;
   max-width: 650px;
   margin: auto;
+  text-shadow: 3px 3px 3px var(--dim-black);
+}
+#label-mj {
+  color: #333;
 }
 #makeupANDjewelry {
   display: grid;
@@ -413,6 +425,7 @@ body {
   width: 380px;
   height: 250px;
   padding-top: 3em;
+  box-shadow: 5px 5px 3px var(--dim-black);
 }
 .mj1 {
   background-image: linear-gradient(var(--dim-black), var(--dim-black)),
@@ -429,10 +442,6 @@ body {
 /* ------LANDING PAGE------ */
 /* 1400 AND UP */
 @media only screen and (min-width: 1400px) {
-  #makeupANDjewelry_container {
-    border-top: 2px solid black;
-    padding-top: 7em;
-  }
   /* ------PHOTOGRAPHY PAGE------ */
   #photography_top_bar ul li {
     font-size: large;
@@ -491,7 +500,7 @@ body {
   }
   #services {
     max-width: 1400px;
-    row-gap: 1.5em;
+    row-gap: 5em;
     margin: auto;
   }
   #services .introduction {
@@ -658,7 +667,7 @@ body {
   }
   #services {
     max-width: 900px;
-    row-gap: 1.5em;
+    row-gap: 4em;
     column-gap: 2em;
     margin: auto;
   }
@@ -815,7 +824,7 @@ body {
   #services {
     grid-template-columns: 1fr;
     max-width: 600px;
-    row-gap: 1em;
+    row-gap: 3em;
     column-gap: 1em;
     margin: auto;
   }
