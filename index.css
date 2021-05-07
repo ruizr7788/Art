@@ -104,18 +104,11 @@ body {
   transition: var(--ease-3);
 }
 
-/* VIEW ART BTN */
-#landing_btn {
-  flex: 1;
-  max-width: fit-content;
-}
-
 /* ------LANDING PAGE HOOK------ */
 #landing_hook {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4em 0;
   font-family: montserat, sans-serif;
 }
 #landing_hook h2 {
@@ -143,7 +136,7 @@ body {
 /* ------------SECOND PAGE------------ */
 /* ------BUSINESS HOURS------ */
 #business_hours_container {
-  background-color: rgba(231, 156, 69, 0.466);
+  background-color: blanchedalmond;
   padding: 2em 1em;
 }
 #businessHours {
@@ -247,6 +240,7 @@ body {
 
 /* fixing the painting grid assignments */
 #paintings_container {
+  min-height: 110vh;
   background-image: linear-gradient(
       to top,
       rgba(255, 255, 255, 0.01),
@@ -306,11 +300,12 @@ body {
 
 /* ------------PHOTOGRAPHY SECTION------------ */
 #photography_container {
-  min-height: 100vh;
-  background-color: rgb(231, 231, 231);
+  min-height: 110vh;
+  background-color: rgb(246, 246, 246);
   opacity: 0;
   transition: var(--ease-9);
   padding-bottom: 3em;
+  text-align: center;
 }
 
 #photography {
@@ -345,6 +340,51 @@ body {
 #photography_top_bar ul li:hover {
   color: var(--hover-color);
   transition: var(--ease-3);
+}
+
+/*----------- GRAPHIC DESIGN PAGE----------- */
+#graphic_design_container {
+  min-height: 60vh;
+  font-family: sans-serif;
+  padding: 5em 0;
+}
+#graphic_design_container h1 {
+  margin: auto;
+  width: 650px;
+}
+#graphic_design {
+  display: grid;
+  margin: auto;
+  column-gap: 1em;
+  padding: 5em 0;
+  max-width: 1200px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.graphic-design-img {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 380px;
+  height: 250px;
+  padding-top: 3em;
+}
+.graphic-design-img h1 {
+  max-width: fit-content;
+}
+.gd1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/graphicDesigns/agenda.jpg);
+  background-size: cover;
+}
+.gd2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/graphicDesigns/handbook.jpg);
+  background-size: cover;
+}
+.gd3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/graphicDesigns/photoAlbum.jpg);
+  background-size: cover;
 }
 
 /* ------MEDIA QUERYs------ */
@@ -425,10 +465,15 @@ body {
   /* TOP BAR STYLE */
   #contact_info {
     max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2em;
+    top: 20em;
   }
   #contact_info i {
     font-size: xx-large;
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
   #topbar {
     max-width: 1300px;
@@ -479,6 +524,21 @@ body {
 
 /* 900 TO 1400 */
 @media only screen and (min-width: 900px) and (max-width: 1400px) {
+  /* ------GRAPHIC DESIGN SECTION------ */
+  #graphic_design_container h1 {
+    margin: auto;
+    width: 580px;
+  }
+  #graphic_design {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    row-gap: 1em;
+    border-bottom: 3px solid black;
+  }
+  .graphic-design-img {
+    width: 500px;
+    height: 350px;
+  }
   /* ------PHOTOGRAPHY PAGE------ */
   #photography_top_bar ul li {
     font-size: large;
@@ -606,6 +666,21 @@ body {
 
 /* 600 TO 900 */
 @media only screen and (min-width: 650px) and (max-width: 900px) {
+  /* ------GRAPHIC DESIGN SECTION------ */
+  #graphic_design_container h1 {
+    margin: auto;
+    width: 520px;
+  }
+  #graphic_design {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    row-gap: 1em;
+    border-bottom: 3px solid black;
+  }
+  .graphic-design-img {
+    width: 500px;
+    height: 350px;
+  }
   /* ------PHOTOGRAPHY PAGE------ */
   #photography_top_bar ul li {
     font-size: 17px;
@@ -704,9 +779,6 @@ body {
     margin: auto;
     max-width: 750px;
   }
-  #landing_btn {
-    display: none;
-  }
   /* LANDING PAGE HOOK */
   #landing_hook {
     margin: 0;
@@ -756,6 +828,22 @@ body {
 
 /* 300 TO 650 */
 @media only screen and (min-width: 300px) and (max-width: 650px) {
+  /* ------GRAPHIC DESIGN SECTION------ */
+  #graphic_design_container h1 {
+    margin: auto;
+    width: 300px;
+    font-size: 25px;
+  }
+  #graphic_design {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    row-gap: 1em;
+    border-bottom: 3px solid black;
+  }
+  .graphic-design-img {
+    width: 300px;
+    /* height: 350px; */
+  }
   /* ------PHOTOGRAPHY PAGE------ */
   #photography_top_bar ul li {
     font-size: 17px;
@@ -865,9 +953,6 @@ body {
   #topbar ul li:nth-child(odd) {
     display: none;
   }
-  #landing_btn {
-    display: none;
-  }
   #business_logo img {
     width: 70px;
     margin-right: 10px;
@@ -925,6 +1010,22 @@ body {
 
 /* UNDER 300 */
 @media only screen and (max-width: 300px) {
+  /* ------GRAPHIC DESIGN SECTION------ */
+  #graphic_design_container h1 {
+    margin: auto;
+    width: 250px;
+    font-size: 22px;
+  }
+  #graphic_design {
+    grid-template-columns: 1fr;
+    max-width: 250px;
+    row-gap: 1em;
+    border-bottom: 3px solid black;
+  }
+  .graphic-design-img {
+    width: 250px;
+    /* height: 350px; */
+  }
   /* ------PHOTOGRAPHY PAGE------ */
   #photography_top_bar ul li {
     font-size: 15px;
@@ -1043,9 +1144,6 @@ body {
   #business_logo span {
     font-size: x-small;
   }
-  #landing_btn {
-    display: none;
-  }
   #navbar ul li a {
     font-size: x-small;
   }
@@ -1085,6 +1183,9 @@ body {
 }
 
 /* ------COLLECTIVE STYLING------ */
+.purple {
+  color: purple;
+}
 /* buttons */
 
 .light-btn {
