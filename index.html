@@ -109,39 +109,39 @@
         <!-- highlight current weekday card with js -->
         <!-- add an info icon and periods of closing during day -->
         <div class="dateCard">
-          <h5>Monday</h5>
+          <h5 class="weekday">Monday</h5>
           <span class="days" id="monday">5</span>
-          <p id="mon_hours">10:30am - 8:00pm</p>
+          <!-- <p id="mon_hours">10:30am - 8:00pm</p> -->
         </div>
         <div class="dateCard">
-          <h5>Tuesday</h5>
+          <h5 class="weekday">Tuesday</h5>
           <span class="days" id="tuesday">6</span>
-          <p id="tue_hours">10:30am - 8:00pm</p>
+          <!-- <p id="tue_hours">10:30am - 8:00pm</p> -->
         </div>
         <div class="dateCard">
-          <h5>Wednesday</h5>
+          <h5 class="weekday">Wednesday</h5>
           <span class="days" id="wednesday">7</span>
-          <p id="wed_hours">10:30am - 8:00pm</p>
+          <!-- <p id="wed_hours">10:30am - 8:00pm</p> -->
         </div>
         <div class="dateCard">
-          <h5>Thursday</h5>
+          <h5 class="weekday">Thursday</h5>
           <span class="days" id="thursday">8</span>
-          <p id="thu_hours">10:30am - 8:00pm</p>
+          <!-- <p id="thu_hours">10:30am - 8:00pm</p> -->
         </div>
         <div class="dateCard">
-          <h5>Friday</h5>
+          <h5 class="weekday">Friday</h5>
           <span class="days" id="friday">9</span>
-          <p id="fri_hours">10:30am - 8:00pm</p>
+          <!-- <p id="fri_hours">10:30am - 8:00pm</p> -->
         </div>
         <div class="dateCard">
-          <h5>Saturday</h5>
+          <h5 class="weekday">Saturday</h5>
           <span class="days" id="saturday">10</span>
-          <p id="sat_hours">10:30am - 8:00pm</p>
+          <!-- <p id="sat_hours">10:30am - 8:00pm</p> -->
         </div>
         <div class="dateCard">
-          <h5>Sunday</h5>
+          <h5 class="weekday">Sunday</h5>
           <span class="days" id="sunday">11</span>
-          <p id="sun_hours">Closed</p>
+          <!-- <p id="sun_hours">Closed</p> -->
         </div>
       </div>
       <p id="business_hours_address">
@@ -178,7 +178,9 @@
           <span><i class="fas fa-check"></i></span>
           <h3>Photography</h3>
           <p>Lorem ipsum dolor</p>
-          <button class="light-btn">See Photos</button>
+          <button class="light-btn">
+            <a href="#photography_container">See Photos</a>
+          </button>
         </div>
         <div class="service-option">
           <span><i class="fas fa-check"></i></span>
@@ -274,6 +276,22 @@
           </a>
         </div>
       </div>
+    </div>
+
+    <div id="photography_container">
+      <div id="photography_top_bar">
+        <div id="label-photo">
+          <h1>Photography</h1>
+        </div>
+        <div id="photo-navbar">
+          <ul>
+            <li class="photoOption">Studio</li>
+            <li class="photoOption">Outdoors</li>
+            <li class="photoOption">Creative</li>
+          </ul>
+        </div>
+      </div>
+      <div id="photography"></div>
     </div>
 
     <script src="/index.js"></script>
