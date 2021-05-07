@@ -133,7 +133,6 @@ body {
   max-width: 800px;
   margin: auto;
 }
-
 /* ------------SECOND PAGE------------ */
 /* ------BUSINESS HOURS------ */
 #business_hours_container {
@@ -1055,6 +1054,10 @@ body {
     font-size: 80px;
   }
   /* LANDING PAGE CAROUSEL */
+  /* LANDING PAGE CAROUSEL */
+  .carousel-inner {
+    max-height: 350px;
+  }
   #landing_img_carousel {
     margin: auto;
     max-width: 280px;
@@ -1223,6 +1226,10 @@ body {
   }
   #services .introduction h1 {
     font-size: 25px;
+  }
+  /* LANDING PAGE CAROUSEL */
+  .carousel-inner {
+    max-height: 400px;
   }
   /* TOPBAR */
   #contact_info {
