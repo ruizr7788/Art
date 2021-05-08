@@ -1,0 +1,130 @@
+/* ------------ABOUT AUTHOR----------- */
+#aboutAuthor_container {
+  background-color: black;
+}
+#aboutAuthor {
+  background-image: linear-gradient(var(--dimmer-black), var(--dimmer-black)),
+    url(/pageBGs/authorIMG.jpeg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 150%;
+  position: relative;
+}
+#aboutAuthor small a {
+  color: rgb(156, 125, 45);
+  position: absolute;
+  bottom: 2em;
+}
+#aboutAuthor p {
+  color: rgb(216, 214, 214);
+  text-align: center;
+  font-family: serif;
+  line-height: 150%;
+  max-width: 700px;
+}
+#aboutAuthor h1 {
+  font-family: montserat, sans-serif;
+  font-weight: normal;
+  color: #fff;
+  font-size: 80px;
+}
+#aboutAuthor h3 {
+  color: rgb(156, 125, 45);
+}
+#aboutAuthor_contact i {
+  font-size: x-large;
+  color: rgb(156, 125, 45);
+  transition: var(--ease-3);
+  margin-right: 5px;
+}
+#aboutAuthor_contact i:hover {
+  color: var(--hover-color);
+  transition: var(--ease-3);
+}
+
+/* MEDIA QUERYS */
+
+/* 900 TO 1400 */
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
+  /* ------------ABOUT AUTHOR------------ */
+  #aboutAuthor_container {
+    overflow-x: hidden;
+    max-width: 1400px;
+  }
+  #aboutAuthor {
+    line-height: 150%;
+    max-width: 900px;
+  }
+  #aboutAuthor p {
+    line-height: 150%;
+    max-width: 700px;
+  }
+  #aboutAuthor_contact i {
+    font-size: x-large;
+    margin-right: 5px;
+  }
+}
+
+/* 600 TO 900 */
+@media only screen and (min-width: 650px) and (max-width: 900px) {
+  /* ------------ABOUT AUTHOR------------ */
+  #aboutAuthor {
+    line-height: 150%;
+    width: 100%;
+  }
+  #aboutAuthor p {
+    line-height: 150%;
+    max-width: 700px;
+  }
+  #aboutAuthor h1 {
+    font-size: 70px;
+  }
+}
+
+/* 300 TO 650 */
+@media only screen and (min-width: 300px) and (max-width: 650px) {
+  /* ------------ABOUT AUTHOR------------ */
+  #aboutAuthor {
+    line-height: 150%;
+    width: 100%;
+    background-image: none;
+    overflow-x: hidden;
+  }
+  #aboutAuthor p {
+    line-height: 150%;
+    padding: 0 1em;
+  }
+  #aboutAuthor h1 {
+    font-size: 50px;
+    padding: 0 2em;
+  }
+  #aboutAuthor h3 {
+    font-size: 15px;
+  }
+}
+
+/* UNDER 300 */
+@media only screen and (max-width: 300px) {
+  /* ------------ABOUT AUTHOR------------ */
+  #aboutAuthor {
+    line-height: 150%;
+    width: 100%;
+    background-image: none;
+    overflow-x: hidden;
+  }
+  #aboutAuthor p {
+    line-height: 150%;
+    padding: 0 1em;
+  }
+  #aboutAuthor h1 {
+    font-size: 35px;
+    padding: 0 2em;
+  }
+  #aboutAuthor h3 {
+    font-size: 15px;
+  }
+}

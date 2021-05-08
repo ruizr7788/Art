@@ -1,0 +1,259 @@
+/* ------------SERVICES PAGE------------ */
+#services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  padding: 5em 0;
+  height: fit-content;
+  text-align: center;
+}
+#service_img {
+  grid-column: 1/2;
+  grid-row: 2/7;
+  width: 600px;
+  margin: auto;
+}
+#service_contact a {
+  color: #fff;
+  text-decoration: none;
+}
+#service_contact a:hover {
+  color: black;
+}
+#services .introduction {
+  grid-column: 1/2;
+  line-height: 150%;
+  grid-row: 1/2;
+  margin: auto;
+}
+#services .introduction h1 {
+  font-family: serif;
+}
+#label_service {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-decoration: underline;
+  font-size: 45px;
+}
+.service-option {
+  grid-column: 2/3;
+  position: relative;
+  text-align: left;
+  padding-left: 2em;
+}
+.service-option i {
+  background-color: var(--hover-color);
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 6%;
+  transform: translateY(-6%);
+}
+
+/* MEDIA QUERYS */
+/* 1400 AND UP */
+@media only screen and (min-width: 1400px) {
+  /* ------SERVICES------ */
+  #label_service {
+    opacity: 0;
+  }
+  .service-option i {
+    padding: 0.2em;
+  }
+  #service_img {
+    padding: 0 0 3em 0;
+  }
+  #services {
+    max-width: 1400px;
+    row-gap: 5em;
+    margin: auto;
+  }
+  #services .introduction {
+    max-width: 500px;
+  }
+  #services .introduction h1 {
+    font-size: 45px;
+  }
+  .service-option button {
+    width: 150px;
+  }
+}
+
+/* 900 TO 1400 */
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
+  /* ------SERVICES------ */
+  #service_img {
+    width: 500px;
+
+    padding: 0 0 3em 2em;
+  }
+  #label_service {
+    opacity: 0;
+  }
+  .service-option i {
+    padding: 0.2em;
+  }
+  .service-option h3 {
+    font-size: large;
+  }
+  #services {
+    max-width: 900px;
+    row-gap: 4em;
+    column-gap: 2em;
+    margin: auto;
+  }
+  #services .introduction {
+    max-width: 450px;
+  }
+  #services .introduction h1 {
+    font-size: 45px;
+  }
+  .service-option button {
+    width: 150px;
+  }
+}
+
+/* 600 TO 900 */
+@media only screen and (min-width: 650px) and (max-width: 900px) {
+  /* ------SERVICES------ */
+  #service_img {
+    width: 400px;
+    padding: 0 0 2em 1em;
+  }
+  #label_service {
+    opacity: 0;
+  }
+  .service-option i {
+    padding: 0.5em;
+    font-size: x-small;
+  }
+  .service-option p {
+    display: none;
+  }
+  .service-option button {
+    font-size: small;
+  }
+  .service-option h3 {
+    font-size: large;
+  }
+  #services {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    row-gap: 3em;
+    column-gap: 1em;
+    margin: auto;
+  }
+  #services .introduction {
+    max-width: 450px;
+    grid-column: 1/2;
+  }
+  #services .introduction h1 {
+    font-size: 45px;
+  }
+  .service-option button {
+    width: 150px;
+  }
+}
+
+/* 300 TO 650 */
+@media only screen and (min-width: 300px) and (max-width: 650px) {
+  /* ------SERVICES------ */
+  #service_img {
+    width: 0;
+    padding: 0;
+    display: none;
+  }
+  #label_service {
+    opacity: 100;
+    font-size: x-large;
+    padding: 2em 0;
+  }
+  .service-option {
+    margin-bottom: 2em;
+  }
+  .service-option i {
+    padding: 0.5em;
+    font-size: x-small;
+  }
+  .service-option p {
+    font-size: small;
+  }
+  .service-option button {
+    font-size: small;
+  }
+  .service-option h3 {
+    font-size: 18px;
+  }
+  #service_contact {
+    font-size: small;
+  }
+  #services {
+    max-width: 300px;
+    margin: auto;
+    display: block;
+  }
+  #services .introduction {
+    max-width: 250px;
+    grid-column: 1/3;
+    margin-bottom: 3em;
+  }
+  #services .introduction h1 {
+    font-size: 25px;
+  }
+}
+
+/* UNDER 300 */
+@media only screen and (max-width: 300px) {
+  /* ------SERVICES------ */
+  #service_img {
+    width: 0;
+    padding: 0;
+    display: none;
+  }
+  #label_service {
+    opacity: 100;
+    font-size: large;
+    padding: 2em 0;
+  }
+  .service-option {
+    margin-bottom: 2em;
+  }
+  .service-option i {
+    padding: 0.4em;
+    font-size: Xx-small;
+  }
+  .service-option p {
+    font-size: small;
+  }
+  .service-option button {
+    font-size: x-small;
+    width: 100px;
+    height: 30px;
+  }
+  .service-option h3 {
+    font-size: 22px;
+  }
+  #service_contact {
+    font-size: x-small;
+    width: 75px;
+    height: 30px;
+  }
+  #services {
+    max-width: 250px;
+    margin: auto;
+    display: block;
+  }
+  #services .introduction {
+    max-width: 250px;
+    grid-column: 1/3;
+    margin-bottom: 3em;
+    font-size: x-small;
+  }
+  #services .introduction h1 {
+    font-size: 25px;
+  }
+}

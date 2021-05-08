@@ -1,0 +1,275 @@
+/* -----------LANDING PAGE---------- */
+#landing_page {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), white),
+    url(/pageBGs/landingPageBG.jpg);
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/* ------TOPBAR STYLING------ */
+#topbar {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 1em 0;
+}
+#contact_info {
+  margin: auto;
+}
+#contact_info i {
+  color: #2d3436;
+  transition: var(--ease-3);
+}
+#contact_info i:hover {
+  color: var(--hover-color);
+  transition: var(--ease-3);
+}
+
+/* PAGE LOGO */
+#business_logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: fit-content;
+}
+#business_logo img {
+  width: 150px;
+  margin-right: 50px;
+}
+#business_logo span {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* NAVBAR */
+#navbar {
+  flex: 2;
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+  transition: var(--ease-3);
+}
+#navbar ul li a:hover {
+  color: var(--hover-color);
+  transition: var(--ease-3);
+}
+
+/* ------LANDING PAGE HOOK------ */
+#landing_hook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: montserat, sans-serif;
+}
+#landing_hook h2 {
+  font-weight: bold;
+  margin: 0;
+  text-decoration: underline;
+}
+#landing_hook h1 {
+  font-weight: normal;
+  margin: 0;
+  font-family: serif;
+}
+#landing_hook p {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ------LANDING IMGS CAROUSEL------ */
+#landing_img_carousel {
+  padding: 0 0 5em 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+/*  MEDIA QUERIES */
+/* -------1400px and up------ */
+@media only screen and (min-width: 1400px) {
+  /* TOP BAR STYLE */
+  #contact_info {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2em;
+    top: 20em;
+  }
+  #contact_info i {
+    font-size: xx-large;
+    margin-bottom: 30px;
+  }
+  #topbar {
+    max-width: 1300px;
+    margin: auto;
+  }
+  /* LANDING PAGE HOOK STYLE */
+  #landing_hook h2 {
+    font-weight: bold;
+    font-size: 35px;
+  }
+  #landing_hook h1 {
+    font-weight: normal;
+    font-size: 260px;
+    margin: 0;
+
+    text-shadow: 7px 10px 10px rgba(0, 0, 0, 0.397);
+  }
+  #landing_hook p {
+    font-size: 50px;
+  }
+  /* LANDING PAGE IMG CARDS */
+  #landing_img_carousel img {
+    width: 800px;
+    height: 500px;
+  }
+}
+
+/* ------900 to 1400------ */
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
+  /* TOP BAR */
+  #contact_info {
+    max-width: fit-content;
+  }
+  #contact_info i {
+    font-size: xx-large;
+    margin-right: 30px;
+  }
+  #topbar {
+    margin: auto;
+    max-width: 1000px;
+  }
+  /* LANDING PAGE HOOK */
+  #landing_hook h1 {
+    font-size: 100px;
+  }
+  #landing_hook p {
+    font-size: x-large;
+  }
+  /* landing page img carousel */
+  #landing_img_carousel img {
+    width: 800px;
+    height: 500px;
+  }
+}
+
+/* ------600 to 900------ */
+@media only screen and (min-width: 650px) and (max-width: 900px) {
+  /* TOP BAR */
+  #contact_info {
+    max-width: fit-content;
+  }
+  #contact_info i {
+    font-size: x-large;
+    margin-right: 30px;
+    padding: 1em 0;
+  }
+  #topbar {
+    margin: auto;
+    max-width: 750px;
+  }
+  /* LANDING PAGE HOOK */
+  #landing_hook {
+    margin: 0;
+  }
+  #landing_hook h1 {
+    font-size: 100px;
+  }
+  #landing_hook p {
+    font-size: x-large;
+  }
+  /* LANDING PAGE CAROUSEL */
+  #landing_img_carousel {
+    margin: auto;
+    max-width: 600px;
+  }
+}
+
+/* ------300 to 650------ */
+@media only screen and (min-width: 300px) and (max-width: 650px) {
+  /* ------TOP BAR------ */
+  #contact_info {
+    max-width: fit-content;
+  }
+  #contact_info i {
+    font-size: large;
+    margin-right: 15px;
+  }
+  #navbar ul li a {
+    font-size: small;
+  }
+  #topbar {
+    margin: auto;
+    max-width: 300px;
+  }
+  #topbar ul li:nth-child(odd) {
+    display: none;
+  }
+  #business_logo img {
+    width: 70px;
+    margin-right: 10px;
+  }
+  #business_logo span {
+    font-size: small;
+  }
+  /* LANDING PAGE HOOK */
+  #landing_hook {
+    margin: 2em 0;
+  }
+  #landing_hook h1 {
+    font-size: 80px;
+  }
+  /* LANDING PAGE CAROUSEL */
+  /* LANDING PAGE CAROUSEL */
+  .carousel-inner {
+    max-height: 350px;
+  }
+  #landing_img_carousel {
+    margin: auto;
+    max-width: 280px;
+  }
+}
+
+/* UNDER 300 */
+@media only screen and (max-width: 300px) {
+  /* TOPBAR */
+  #contact_info {
+    max-width: fit-content;
+  }
+  #contact_info i {
+    font-size: small;
+    margin-right: 7px;
+  }
+  #topbar {
+    max-width: 250px;
+    margin: auto;
+  }
+  #navbar ul li:nth-child(odd) {
+    display: none;
+  }
+  #business_logo img {
+    width: 50px;
+    margin: 0;
+  }
+  #business_logo span {
+    font-size: x-small;
+  }
+  #navbar ul li a {
+    font-size: x-small;
+  }
+  #landing_img_carousel {
+    width: 250px;
+  }
+  /* LANDING PAGE CAROUSEL */
+  .carousel-inner {
+    max-height: 400px;
+  }
+}

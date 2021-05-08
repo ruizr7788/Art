@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "montserat";
+  src: url(/Montserrat/Montserrat-Black.ttf);
+  src: url(/Montserrat/Montserrat-BlackItalic.ttf);
+  src: url(/Montserrat/Montserrat-Bold.ttf);
+  src: url(/Montserrat/Montserrat-BoldItalic.ttf);
+  src: url(/Montserrat/Montserrat-ExtraBold.ttf);
+  src: url(/Montserrat/Montserrat-ExtraBoldItalic.ttf);
+  src: url(/Montserrat/Montserrat-ExtraLight.ttf);
+  src: url(/Montserrat/Montserrat-ExtraLightItalic.ttf);
+  src: url(/Montserrat/Montserrat-Italic.ttf);
+  src: url(/Montserrat/Montserrat-Light.ttf);
+  src: url(/Montserrat/Montserrat-LightItalic.ttf);
+  src: url(/Montserrat/Montserrat-Medium.ttf);
+  src: url(/Montserrat/Montserrat-MediumItalic.ttf);
+  src: url(/Montserrat/Montserrat-Regular.ttf);
+  src: url(/Montserrat/Montserrat-SemiBold.ttf);
+  src: url(/Montserrat/Montserrat-SemiBoldItalic.ttf);
+  src: url(/Montserrat/Montserrat-Thin.ttf);
+  src: url(/Montserrat/Montserrat-ThinItalic.ttf);
+}
+
+:root {
+  --ease-9: all 0.9s ease;
+  --ease-6: all 0.6s ease;
+  --ease-3: all 0.3s ease;
+  --main-color: black;
+  --hover-color: purple;
+  --dim-black: rgba(0, 0, 0, 0.3);
+  --dimmer-black: rgba(0, 0, 0, 0.7);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ------COLLECTIVE STYLING------ */
+.purple {
+  color: purple;
+}
+/* buttons */
+
+.light-btn {
+  cursor: pointer;
+  width: 120px;
+  height: 38px;
+  background: transparent;
+  outline: none;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  font-weight: bold;
+  transition: var(--ease-6);
+}
+.light-btn a {
+  text-decoration: none;
+  color: black;
+}
+.light-btn:hover a {
+  color: #fff;
+}
+.light-btn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  transition: var(--ease-6);
+}
+
+.dark-btn {
+  cursor: pointer;
+  width: 110px;
+  height: 38px;
+  background-color: black;
+  outline: none;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  transition: var(--ease-6);
+}
+.dark-btn:hover {
+  background-color: #fff;
+  color: black;
+  transition: var(--ease-6);
+}

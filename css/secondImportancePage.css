@@ -1,0 +1,229 @@
+/* ---------------SECOND IMPORTANCE--------------- */
+#secondImportance {
+  background-image: url(/pageBGs/secondImportanceBG.jpg);
+  background-size: cover;
+}
+/*----------- GRAPHIC DESIGN PAGE----------- */
+#graphic_design_container {
+  min-height: 60vh;
+  font-family: sans-serif;
+  padding: 5em 0;
+  text-align: center;
+}
+#graphic_design_container h1 {
+  font-weight: bold;
+  margin: auto;
+  width: 650px;
+  text-shadow: 3px 3px 3px var(--dim-black);
+}
+#label-graphic-design {
+  color: rgb(66, 65, 65);
+}
+#graphic_design {
+  border-bottom: 2px solid #333;
+  display: grid;
+  margin: auto;
+  column-gap: 1em;
+  padding: 4em 0 2em 0;
+  max-width: 1200px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.graphic-design-img {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 380px;
+  height: 250px;
+  padding-top: 3em;
+  box-shadow: 5px 5px 3px var(--dim-black);
+}
+.graphic-design-img h1 {
+  max-width: fit-content;
+}
+.gd1 {
+  background-image: linear-gradient(var(--dim-black), var(--dim-black)),
+    url(/graphicDesigns/agenda.jpg);
+  background-size: cover;
+}
+.gd2 {
+  background-image: linear-gradient(var(--dim-black), var(--dim-black)),
+    url(/graphicDesigns/handbook.jpg);
+  background-size: cover;
+}
+.gd3 {
+  background-image: linear-gradient(var(--dim-black), var(--dim-black)),
+    url(/graphicDesigns/photoAlbum.jpg);
+  background-size: cover;
+}
+
+/* ------------MAKEUP AND JEWELRY SECTION---------- */
+
+#makeupANDjewelry_container {
+  min-height: 40vh;
+  font-family: sans-serif;
+  text-align: center;
+}
+#makeupANDjewelry_container h1 {
+  font-weight: bold;
+  max-width: 650px;
+  margin: auto;
+  text-shadow: 3px 3px 3px var(--dim-black);
+}
+#label-mj {
+  color: rgb(66, 65, 65);
+}
+#makeupANDjewelry {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+  column-gap: 1em;
+  padding: 4em 0 7em 0;
+}
+.makeup-and-jewlry-img {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 380px;
+  height: 250px;
+  padding-top: 3em;
+  box-shadow: 5px 5px 3px var(--dim-black);
+}
+.mj1 {
+  background-image: linear-gradient(var(--dim-black), var(--dim-black)),
+    url(/makeupANDjewlry/facePaint.jpg);
+  background-size: cover;
+}
+.mj2 {
+  background-image: linear-gradient(var(--dim-black), var(--dim-black)),
+    url(/makeupANDjewlry/jewelry.jpg);
+  background-size: cover;
+}
+
+/* MEDIA QUERYS */
+
+/* 900 TO 1400 */
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
+  /* ------MAKEUP AND JEWELRY SECTION------ */
+  #makeupANDjewelry_container h1 {
+    margin: auto;
+    width: 580px;
+  }
+  #makeupANDjewelry {
+    max-width: 900px;
+    row-gap: 1em;
+    border-bottom: 3px solid black;
+  }
+
+  /* ------GRAPHIC DESIGN SECTION------ */
+  #graphic_design_container h1 {
+    margin: auto;
+    width: 580px;
+  }
+  #graphic_design {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    row-gap: 1em;
+    border-bottom: 3px solid black;
+  }
+  .graphic-design-img {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+/* 600 TO 900 */
+@media only screen and (min-width: 650px) and (max-width: 900px) {
+  /* ------MAKEUP AND JEWELRY SECTION------ */
+  #makeupANDjewelry_container h1 {
+    margin: auto;
+    width: 500px;
+  }
+  #makeupANDjewelry {
+    max-width: 400px;
+    row-gap: 1em;
+    grid-template-columns: 1fr;
+  }
+  /* ------GRAPHIC DESIGN SECTION------ */
+  #graphic_design_container h1 {
+    margin: auto;
+    width: 520px;
+  }
+  #graphic_design {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    row-gap: 1em;
+    border-bottom: 3px solid black;
+  }
+  .graphic-design-img {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+/* 300 TO 650 */
+@media only screen and (min-width: 300px) and (max-width: 650px) {
+  /* ------MAKEUP AND JEWELRY SECTION------ */
+  #makeupANDjewelry_container h1 {
+    margin: auto;
+    width: 250px;
+  }
+  #makeupANDjewelry {
+    max-width: 300px;
+    row-gap: 1em;
+    grid-template-columns: 1fr;
+  }
+  .makeup-and-jewlry-img {
+    width: 300px;
+    /* height: 350px; */
+  }
+  /* ------GRAPHIC DESIGN SECTION------ */
+  #graphic_design_container h1 {
+    margin: auto;
+    width: 300px;
+    font-size: 25px;
+  }
+  #graphic_design {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    row-gap: 1em;
+    border-bottom: 3px solid black;
+  }
+  .graphic-design-img {
+    width: 300px;
+    height: 350px;
+  }
+} /* UNDER 300 */
+@media only screen and (max-width: 300px) {
+  /* ------MAKEUP AND JEWELRY SECTION------ */
+  #makeupANDjewelry_container h1 {
+    margin: auto;
+    width: 250px;
+  }
+  #makeupANDjewelry {
+    max-width: 250px;
+    row-gap: 1em;
+    border-bottom: 3px solid black;
+    grid-template-columns: 1fr;
+  }
+  .makeup-and-jewlry-img {
+    width: 250px;
+    /* height: 350px; */
+  }
+  /* ------GRAPHIC DESIGN SECTION------ */
+  #graphic_design_container h1 {
+    margin: auto;
+    width: 250px;
+    font-size: 22px;
+  }
+  #graphic_design {
+    grid-template-columns: 1fr;
+    max-width: 250px;
+    row-gap: 1em;
+    border-bottom: 3px solid black;
+  }
+  .graphic-design-img {
+    width: 250px;
+    /* height: 350px; */
+  }
+}
