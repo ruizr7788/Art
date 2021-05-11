@@ -4,6 +4,7 @@
     url(/pageBGs/landingPageBG.jpg);
   background-size: cover;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 /* ------TOPBAR STYLING------ */
@@ -418,6 +419,15 @@
     display: flex;
     flex-direction: row;
     position: static;
+  }
+  #navbar ul {
+    padding: 0;
+  }
+  #landing_img_carousel {
+    max-width: 657px;
+  }
+  #landing_img_carousel .carousel-inner {
+    max-width: 657px;
   }
 }
 
