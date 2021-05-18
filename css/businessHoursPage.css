@@ -1,40 +1,61 @@
 /* ------BUSINESS HOURS------ */
 #business_hours_container {
-  background-color: blanchedalmond;
-  padding: 2em 1em;
+  background-image: linear-gradient(to top, #f39d1271, #f1c40f7a);
+  padding: 1em 1em;
 }
 #businessHours {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  row-gap: 0.5em;
+  column-gap: 0.5em;
+  overflow-x: hidden;
+  padding-bottom: 1em;
+}
+#businessHours h3 {
+  font-weight: bold;
   display: flex;
   align-items: center;
-  margin: 0;
-  flex-wrap: nowrap;
+  line-height: 1.5em;
+  color: #8e44ad;
 }
 .dateCard {
-  border-radius: 0.7em;
+  border-radius: 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 1em;
   background-color: rgb(255, 255, 255);
   transition: var(--ease-3);
+  padding: 10px 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.171);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .dateCard h5 {
   font-weight: bold;
+  font-size: 15px;
+  color: #2c3e50;
 }
 .dateCard span {
   font-weight: bold;
+  font-size: 20px;
+  padding: 0.5em;
+}
+.dateCard p {
+  color: #2c3e50;
+  font-weight: 400;
 }
 #business_hours_address {
   text-align: center;
   margin: 0;
-  font-size: x-large;
+  font-size: small;
   font-weight: bold;
 }
 #closed_interval {
   text-align: center;
   margin: 0;
-  font-size: x-large;
+  font-size: small;
 }
 
 /* MEDIA QUERYS */
@@ -42,7 +63,7 @@
 /* 1400 up*/
 @media only screen and (min-width: 1400px) {
   /* ------BUSSINESS HOURS PAGE------ */
-  #businessHours {
+  /* #businessHours {
     height: 35vh;
     max-width: 1350px;
     margin: auto;
@@ -60,13 +81,13 @@
   .dateCard span {
     font-size: 28px;
     padding: 0.5em 0;
-  }
+  } */
 }
 
 /* 900 TO 1400 */
 @media only screen and (min-width: 900px) and (max-width: 1400px) {
   /* BUSINESS HOURS */
-  #businessHours {
+  /* #businessHours {
     height: 25vh;
     max-width: 950px;
     margin: auto;
@@ -83,13 +104,13 @@
   }
   .dateCard span {
     font-size: 28px;
-  }
+  } */
 }
 
 /* 600 TO 900 */
 @media only screen and (min-width: 650px) and (max-width: 900px) {
   /* BUSINESS HOURS */
-  #businessHours {
+  /* #businessHours {
     display: grid;
     grid-template-columns: repeat(3, 4fr);
     width: fit-content;
@@ -117,13 +138,13 @@
   }
   #business_hours_address {
     padding: 2em 0;
-  }
+  } */
 }
 
 /* 300 TO 650 */
 @media only screen and (min-width: 300px) and (max-width: 650px) {
   /* BUSINESS HOURS */
-  #businessHours {
+  /* #businessHours {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: fit-content;
@@ -155,13 +176,13 @@
   #business_hours_address {
     padding: 2em 0;
     font-size: small;
-  }
+  } */
 }
 
 /* UNDER 300 */
 @media only screen and (max-width: 300px) {
   /* BUSINESS HOURS */
-  #businessHours {
+  /* #businessHours {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: fit-content;
@@ -189,5 +210,5 @@
   #closed_interval {
     padding: 2em 0;
     font-size: small;
-  }
+  } */
 }

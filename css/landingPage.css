@@ -671,6 +671,9 @@
 /* ------900 to 1400------ */
 @media only screen and (min-width: 900px) and (max-width: 1400px) and (min-device-height: 1000px) {
   /* TOP BAR */
+  #business_logo img {
+    margin-right: 10px;
+  }
   #contact_info {
     max-width: fit-content;
   }
