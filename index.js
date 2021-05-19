@@ -141,11 +141,28 @@ window.addEventListener("scroll", checkPhotoContainer);
 checkPhotoContainer();
 
 function checkPhotoContainer() {
-  const triggerHalf = (window.innerHeight / 5) * 3.5;
+  const triggerHalf = (window.innerHeight / 5) * 4;
   const photoContainerTop = photoContainer.getBoundingClientRect().top;
   if (photoContainerTop < triggerHalf) {
     photoContainer.style.opacity = 100;
   } else {
     photoContainer.style.opacity = 0;
+  }
+}
+
+// Business Hours fade in
+const businessHoursContainer = document.getElementById("businessHours");
+
+window.addEventListener("scroll", checkbusinessHoursContainer);
+checkbusinessHoursContainer();
+
+function checkbusinessHoursContainer() {
+  const triggerHalf = (window.innerHeight / 5) * 4;
+  const businessHoursContainerTop =
+    businessHoursContainer.getBoundingClientRect().top;
+  if (businessHoursContainerTop < triggerHalf) {
+    businessHoursContainer.style.opacity = 100;
+  } else {
+    businessHoursContainer.style.opacity = 0;
   }
 }
