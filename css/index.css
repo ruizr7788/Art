@@ -21,6 +21,7 @@
 }
 
 :root {
+  --ease-15: all 1.5s ease;
   --ease-9: all 0.9s ease;
   --ease-6: all 0.6s ease;
   --ease-3: all 0.3s ease;
