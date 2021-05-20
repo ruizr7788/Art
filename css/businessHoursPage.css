@@ -16,6 +16,7 @@
   padding: 2em 0;
 }
 #businessHours h3 {
+  color: #8e44ad;
   font-size: x-large;
   font-weight: bold;
   display: flex;
@@ -202,6 +203,9 @@
   .dateCard h5 {
     font-size: x-large;
   }
+  .dateCard {
+    padding: 2em 0;
+  }
   #businessHours {
     max-width: 1400px;
     grid-template-columns: repeat(4, 1fr);
@@ -231,6 +235,9 @@
   }
   .dateCard h5 {
     font-size: large;
+  }
+  .dateCard {
+    padding: 1.5em 0;
   }
   #businessHours {
     max-width: 1100px;

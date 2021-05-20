@@ -4,7 +4,7 @@
     url(/pageBGs/landingPageBG.jpg);
   background-size: cover;
   overflow-x: hidden;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 /* ------TOPBAR STYLING------ */
@@ -273,7 +273,6 @@
 }
 
 /* iPhone X ----------- */
-
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   /* ------TOP BAR------ */
   #contact_info i {
