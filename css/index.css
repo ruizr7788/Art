@@ -1,23 +1,13 @@
 @font-face {
-  font-family: "montserat";
-  src: url(/Montserrat/Montserrat-Black.ttf);
-  src: url(/Montserrat/Montserrat-BlackItalic.ttf);
-  src: url(/Montserrat/Montserrat-Bold.ttf);
-  src: url(/Montserrat/Montserrat-BoldItalic.ttf);
-  src: url(/Montserrat/Montserrat-ExtraBold.ttf);
-  src: url(/Montserrat/Montserrat-ExtraBoldItalic.ttf);
-  src: url(/Montserrat/Montserrat-ExtraLight.ttf);
-  src: url(/Montserrat/Montserrat-ExtraLightItalic.ttf);
-  src: url(/Montserrat/Montserrat-Italic.ttf);
-  src: url(/Montserrat/Montserrat-Light.ttf);
-  src: url(/Montserrat/Montserrat-LightItalic.ttf);
-  src: url(/Montserrat/Montserrat-Medium.ttf);
-  src: url(/Montserrat/Montserrat-MediumItalic.ttf);
-  src: url(/Montserrat/Montserrat-Regular.ttf);
-  src: url(/Montserrat/Montserrat-SemiBold.ttf);
-  src: url(/Montserrat/Montserrat-SemiBoldItalic.ttf);
-  src: url(/Montserrat/Montserrat-Thin.ttf);
-  src: url(/Montserrat/Montserrat-ThinItalic.ttf);
+  font-family: "dancing";
+  src: url(/fonts/dancing/DancingScript-Bold.woff);
+  src: url(/fonts/dancing/DancingScript-Bold.woff2);
+  src: url(/fonts/dancing/DancingScript-Medium.woff);
+  src: url(/fonts/dancing/DancingScript-Medium.woff2);
+  src: url(/fonts/dancing/DancingScript-Regular.woff);
+  src: url(/fonts/dancing/DancingScript-Regular.woff2);
+  src: url(/fonts/dancing/DancingScript-SemiBold.woff);
+  src: url(/fonts/dancing/DancingScript-SemiBold.woff2);
 }
 
 :root {

@@ -1,10 +1,11 @@
 /* -----------LANDING PAGE---------- */
 #landing_page {
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), white),
-    url(/pageBGs/landingPageBG.jpg);
+    url(/pageBGs/landingBG.jpg);
   background-size: cover;
   overflow-x: hidden;
   min-height: 60vh;
+  background-size: cover;
 }
 
 /* ------TOPBAR STYLING------ */
@@ -21,7 +22,8 @@
 }
 #contact_info i {
   margin-right: 1em;
-  color: #2d3436;
+  padding-bottom: 0.5em;
+  color: #283135;
   transition: var(--ease-3);
 }
 #contact_info i:hover {
@@ -37,8 +39,7 @@
   max-width: fit-content;
 }
 #business_logo img {
-  width: 150px;
-  margin-right: 50px;
+  width: 125px;
 }
 #business_logo span {
   font-size: 25px;
@@ -74,24 +75,21 @@
   align-items: center;
   font-family: montserat, sans-serif;
 }
-#landing_hook h2 {
-  font-weight: bold;
-  margin: 0;
-  text-decoration: underline;
-}
 #landing_hook h1 {
   font-weight: normal;
   margin: 0;
-  font-family: serif;
+  font-family: "dancing", sans-serif;
 }
 #landing_hook p {
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
+  padding-bottom: 2em;
+  font-size: large;
 }
 
 /* ------LANDING IMGS CAROUSEL------ */
 #landing_img_carousel {
-  padding: 0 0 5em 0;
+  padding: 1em 0;
   max-width: 800px;
   margin: auto;
 }
@@ -146,11 +144,11 @@
     padding: 5px;
   }
   #business_logo img {
-    width: 70px;
-    margin-right: 10px;
+    width: 50px;
+    margin-right: 5px;
   }
   #business_logo span {
-    font-size: 15px;
+    font-size: 12px;
   }
   #navbar ul {
     padding: 0 0 0 5px;
@@ -185,11 +183,11 @@
     padding: 5px;
   }
   #business_logo img {
-    width: 70px;
-    margin-right: 10px;
+    width: 50px;
+    margin-right: 5px;
   }
   #business_logo span {
-    font-size: 13px;
+    font-size: 11px;
   }
   #navbar ul {
     padding: 0 0 0 5px;
@@ -268,7 +266,7 @@
   }
   #contact_info i {
     font-size: xx-large;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -452,11 +450,11 @@
     padding: 5px;
   }
   #business_logo img {
-    width: 70px;
-    margin-right: 10px;
+    width: 50px;
+    margin-right: 5px;
   }
   #business_logo span {
-    font-size: 13px;
+    font-size: 11px;
   }
   #navbar ul {
     padding: 0;
@@ -500,11 +498,11 @@
     max-width: 550px;
   }
   #business_logo img {
-    width: 70px;
-    margin-right: 10px;
+    width: 50px;
+    margin-right: 5px;
   }
   #business_logo span {
-    font-size: 16px;
+    font-size: 13px;
   }
   /* LANDING PAGE HOOK */
   #landing_hook {
@@ -543,7 +541,7 @@
   #contact_info i {
     font-size: x-large;
     margin-right: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 10px;
   }
   #topbar {
     padding: 5px;
@@ -553,10 +551,6 @@
   }
 
   /* LANDING HOOK */
-  #landing_hook h2 {
-    font-size: xx-large;
-    /* padding-bottom: 1em; */
-  }
   #landing_hook h1 {
     font-size: 105px;
     letter-spacing: 7px;
@@ -580,11 +574,11 @@
 @media only screen and (min-width: 1823px) {
   /* TOP BAR STYLE */
   #business_logo img {
-    width: 150px;
+    width: 120px;
     margin-right: 10px;
   }
   #business_logo span {
-    font-size: 35px;
+    font-size: 25px;
   }
   #contact_info {
     max-width: fit-content;
@@ -596,7 +590,7 @@
   }
   #contact_info i {
     font-size: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   #topbar {
     max-width: 1800px;
@@ -606,19 +600,15 @@
     font-size: 20px;
   }
   /* LANDING PAGE HOOK STYLE */
-  #landing_hook h2 {
-    font-weight: bold;
-    font-size: 35px;
-  }
   #landing_hook h1 {
     font-weight: normal;
-    font-size: 260px;
+    font-size: 160px;
     margin: 0;
 
     text-shadow: 7px 10px 10px rgba(0, 0, 0, 0.397);
   }
   #landing_hook p {
-    font-size: 40px;
+    font-size: 35px;
   }
   #landing_img_carousel img {
     width: 800px;
@@ -628,7 +618,6 @@
 
 /* -------1400px to 1823px------ */
 @media only screen and (min-width: 1400px) and (max-width: 1823px) {
-  /* TOP BAR STYLE */
   #contact_info {
     max-width: fit-content;
     display: flex;
@@ -646,10 +635,6 @@
     margin: auto;
   }
   /* LANDING PAGE HOOK STYLE */
-  #landing_hook h2 {
-    font-weight: bold;
-    font-size: 35px;
-  }
   #landing_hook h1 {
     font-weight: normal;
     font-size: 260px;
@@ -679,7 +664,7 @@
   #contact_info i {
     font-size: xx-large;
     margin-right: 30px;
-    padding-bottom: 1em;
+    padding-bottom: 10px;
   }
   #topbar {
     margin: auto;
@@ -716,7 +701,7 @@
   #contact_info i {
     font-size: x-large;
     margin-right: 30px;
-    padding: 1em 0;
+    padding: 0.5em 0;
   }
   #topbar {
     margin: auto;
