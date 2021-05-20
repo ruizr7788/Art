@@ -14,6 +14,9 @@
   text-align: center;
   overflow-x: hidden;
 }
+#service_painting {
+  max-width: 100%;
+}
 #service_contact a {
   color: #fff;
   text-decoration: none;
@@ -27,7 +30,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  border-bottom: 2px solid rgb(9, 22, 145);
+  /* border-bottom: 2px solid rgb(9, 22, 145); */
 }
 #service_container .introduction h1 {
   font-family: sans-serif;
@@ -35,7 +38,9 @@
 }
 #service_container .introduction p {
   font-size: 13px;
+  color: rgb(139, 134, 134);
 }
+
 .service-option {
   position: relative;
   text-align: left;
@@ -90,6 +95,10 @@
   .service-option button {
     font-size: small;
   }
+  .service-img {
+    width: 330px;
+    padding: 1em 0;
+  }
   #services {
     padding: 1em;
   }
@@ -115,6 +124,10 @@
   }
   .service-option button {
     font-size: small;
+  }
+  .service-img {
+    width: 330px;
+    padding: 1em 0;
   }
   #services {
     padding: 1em;
@@ -142,6 +155,10 @@
   .service-option button {
     font-size: small;
   }
+  .service-img {
+    width: 300px;
+    padding: 1em 0;
+  }
   #services {
     padding: 1em;
   }
@@ -153,7 +170,7 @@
 /* iPhone 6+, 7+, 8+ ----------- */
 @media only screen and (min-device-width: 413px) and (max-device-height: 737px) and (orientation: portrait) {
   .service-option {
-    padding: 1.5em 0;
+    padding: 1.5em;
   }
   .service-option i {
     padding: 5px;
@@ -167,6 +184,10 @@
   }
   .service-option button {
     font-size: small;
+  }
+  .service-img {
+    width: 330px;
+    padding: 1em 0;
   }
   #services {
     padding: 1em;
@@ -191,6 +212,10 @@
   .service-option button {
     font-size: x-small;
   }
+  .service-img {
+    width: 450px;
+    padding: 1em 0;
+  }
   #services {
     padding: 0 2em 2em 2em;
   }
@@ -209,13 +234,17 @@
   }
   .service-option p {
     text-align: justify;
-    font-size: 8px;
+    font-size: 12px;
   }
   .service-option h3 {
     font-size: large;
   }
   .service-option button {
     font-size: x-small;
+  }
+  .service-img {
+    width: 300px;
+    padding: 1em 0;
   }
   #services {
     padding: 1em;
@@ -233,7 +262,7 @@
   }
   .service-option p {
     text-align: justify;
-    font-size: 8px;
+    font-size: 12px;
     max-width: 85%;
   }
   .service-option h3 {
@@ -241,6 +270,10 @@
   }
   .service-option button {
     font-size: x-small;
+  }
+  .service-img {
+    width: 500px;
+    padding: 1em 0;
   }
   #services {
     padding: 0 2em 2em 2em;
@@ -271,6 +304,10 @@
     height: fit-content;
     padding: 5px 10px;
   }
+  .service-img {
+    width: 270px;
+    padding: 1em 0;
+  }
   #services {
     padding: 1em;
   }
@@ -287,7 +324,7 @@
   }
   .service-option p {
     text-align: justify;
-    font-size: 8px;
+    font-size: 12px;
     max-width: 85%;
   }
   .service-option h3 {
@@ -295,6 +332,10 @@
   }
   .service-option button {
     font-size: x-small;
+  }
+  .service-img {
+    width: 350px;
+    padding: 1em 0;
   }
   #services {
     padding: 0 2em 2em 2em;
@@ -322,6 +363,10 @@
   }
   .service-option button {
     font-size: x-small;
+  }
+  .service-img {
+    width: 280px;
+    padding: 1em 0;
   }
   #services {
     padding: 1em;
@@ -355,6 +400,10 @@
   .service-option h3 {
     font-size: x-large;
   }
+  .service-img {
+    width: 550px;
+    padding: 1em 0;
+  }
   #services {
     grid-template-columns: 1fr;
     row-gap: 2em;
@@ -387,6 +436,10 @@
   #service_container .introduction p {
     font-size: x-large;
   }
+  .service-img {
+    width: 500px;
+    padding: 1.5em 0;
+  }
   .service-option {
     padding: 2em;
     border-bottom: none;
@@ -408,12 +461,13 @@
 /* 1400 to 1950 */
 @media only screen and (min-width: 1400px) and (max-width: 1950px) {
   #service_container {
-    padding: 10vh 0;
+    padding: 8vh 1em;
     min-height: 45vh;
   }
   #services {
     max-width: 1600px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 2em 0;
   }
   #service_container .introduction h1 {
@@ -422,7 +476,12 @@
   #service_container .introduction p {
     font-size: large;
   }
+  .service-img {
+    width: 500px;
+    padding: 1.5em 0;
+  }
   .service-option {
+    min-height: 28em;
     padding: 2em;
     border-bottom: none;
     border-radius: 10px;
@@ -459,6 +518,10 @@
   #service_container .introduction p {
     font-size: 16px;
   }
+  .service-img {
+    width: 390px;
+    padding: 1.5em 0;
+  }
   .service-option {
     padding: 2em;
     border-bottom: none;
@@ -494,6 +557,10 @@
   }
   #service_container .introduction p {
     font-size: 14px;
+  }
+  .service-img {
+    width: 220px;
+    padding: 1.5em 0;
   }
   .service-option {
     padding: 2em;
@@ -538,6 +605,10 @@
   }
   #service_container .introduction p {
     font-size: 14px;
+  }
+  .service-img {
+    width: 400px;
+    padding: 1.5em 0;
   }
   .service-option {
     padding: 2em;
@@ -587,6 +658,9 @@
   }
   .service-option button {
     font-size: x-small;
+  }
+  .service-img {
+    display: none;
   }
   #services {
     padding: 1em;
