@@ -27,6 +27,7 @@
 }
 #painting_introduction h1 {
   font-weight: bold;
+  color: var(--main-color-paintings-page);
   text-shadow: 4px 4px 10px white;
 }
 #painting_discover:hover {
@@ -42,7 +43,7 @@
 }
 .painting_box a {
   text-decoration: none;
-  color: black;
+  color: var(--main-color-paintings-page);
 }
 .painting_box {
   transition: var(--ease-6);

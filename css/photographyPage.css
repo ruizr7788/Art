@@ -15,7 +15,6 @@
   border-bottom: 3px solid black;
   border-top: 3px solid black;
 }
-
 /* photography top bar */
 #photography_top_bar {
   display: flex;
@@ -27,6 +26,7 @@
 }
 #label-photo {
   flex: 1;
+  color: var(--main-color-photography-page);
 }
 #photography_top_bar ul {
   display: flex;
@@ -36,11 +36,16 @@
 #photography_top_bar ul li {
   text-decoration: underline;
   cursor: pointer;
+  color: var(--main-color-photography-page);
   transition: var(--ease-3);
 }
 #photography_top_bar ul li:hover {
   color: var(--hover-color);
   transition: var(--ease-3);
+}
+
+#photography_footer {
+  color: var(--secondary-color-photography-page);
 }
 
 /* MEDIA QUERYS */

@@ -1,6 +1,7 @@
 /* ------BUSINESS HOURS------ */
 #business_hours_container {
-  background-image: linear-gradient(to top, #f39d1271, #f1c40f7a);
+  background: url(/pageBGs/landingBG1.jpg);
+  background-size: cover;
   padding: 3em 1em;
   overflow-x: hidden;
   border-bottom: 1px solid lightslategray;
@@ -17,13 +18,10 @@
   padding: 2em 0;
 }
 #businessHours h3 {
-  color: #8e44ad;
+  color: var(--main-color-business-hours-page);
   font-size: x-large;
   font-weight: bold;
-  display: flex;
-  align-items: center;
   line-height: 1.5em;
-  /* border-bottom: 2px solid rgb(9, 22, 145); */
   text-shadow: 2px 2px 20px rgba(230, 230, 230, 0.199);
 }
 .dateCard {
@@ -44,27 +42,31 @@
   font-size: 15px;
   color: #2c3e50;
   border-bottom: 2px solid red;
+  color: var(--secondary-color-business-hours-page);
 }
 .dateCard span {
   font-weight: bold;
   font-size: 20px;
   padding: 0.5em;
+  color: var(--secondary-color-business-hours-page);
 }
 .dateCard p {
   color: #2c3e50;
   font-weight: 400;
+  color: var(--secondary-color-business-hours-page);
 }
 #business_hours_address {
   text-align: center;
   margin: 0;
   font-size: small;
   font-weight: bold;
-  color: #333;
+  color: var(--secondary-color-business-hours-page);
 }
 #closed_interval {
   text-align: center;
   margin: 0;
   font-size: small;
+  color: var(--secondary-color-business-hours-page);
 }
 
 /* MEDIA QUERYS */
@@ -182,7 +184,7 @@
   }
   #businessHours h3 {
     justify-content: center;
-    font-size: 55px;
+    font-size: 70px;
     grid-column: 1/5;
     /* border-bottom: 2px solid rgb(9, 22, 145); */
   }
@@ -215,9 +217,8 @@
   }
   #businessHours h3 {
     justify-content: center;
-    font-size: 35px;
+    font-size: 40px;
     grid-column: 1/5;
-    /* border-bottom: 2px solid rgb(9, 22, 145); */
   }
   #closed_interval {
     font-size: large;

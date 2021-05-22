@@ -15,12 +15,12 @@
   position: relative;
 }
 #aboutAuthor small a {
-  color: rgb(156, 125, 45);
+  color: var(--secondary-color-second-importance-page);
   position: absolute;
   bottom: 2em;
 }
 #aboutAuthor p {
-  color: rgb(216, 214, 214);
+  color: var(--main-color-second-author-page);
   text-align: center;
   font-family: serif;
   line-height: 150%;
@@ -29,15 +29,15 @@
 #aboutAuthor h1 {
   font-family: montserat, sans-serif;
   font-weight: normal;
-  color: #fff;
+  color: var(--main-color-second-author-page);
   font-size: 80px;
 }
 #aboutAuthor h3 {
-  color: rgb(156, 125, 45);
+  color: var(--secondary-color-second-author-page);
 }
 #aboutAuthor_contact i {
   font-size: x-large;
-  color: rgb(156, 125, 45);
+  color: var(--secondary-color-second-author-page);
   transition: var(--ease-3);
   margin-right: 5px;
 }

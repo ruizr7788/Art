@@ -22,7 +22,7 @@
 #contact_info i {
   margin-right: 1em;
   padding-bottom: 0.5em;
-  color: #283135;
+  color: var(--main-color-landing-page);
   transition: var(--ease-3);
 }
 #contact_info i:hover {
@@ -58,7 +58,7 @@
 }
 #navbar ul li a {
   text-decoration: none;
-  color: var(--main-color);
+  color: var(--main-color-landing-page);
   font-weight: bold;
   transition: var(--ease-3);
 }
@@ -78,12 +78,14 @@
   font-weight: normal;
   margin: 0;
   font-family: "dancing", sans-serif;
+  color: var(--main-color-landing-page);
 }
 #landing_hook p {
   font-weight: 500;
   text-align: center;
   padding-bottom: 2em;
   font-size: large;
+  color: var(--main-color-landing-page);
 }
 
 /* ------LANDING IMGS CAROUSEL------ */
@@ -376,7 +378,7 @@
     padding: 5px;
   }
   #business_logo img {
-    width: 50px;
+    width: 60px;
     margin-right: 5px;
   }
   #business_logo span {
@@ -406,6 +408,19 @@
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) {
   /* TOP BAR */
+  #business_logo img {
+    width: 60px;
+    margin-right: 5px;
+  }
+  #business_logo span {
+    font-size: 11px;
+  }
+  #landing_hook h1 {
+    font-size: large;
+  }
+  #contact_info i {
+    font-size: large;
+  }
   #topbar {
     max-width: 667px;
     padding: 5px;
@@ -423,7 +438,7 @@
     max-width: 657px;
   }
   #landing_img_carousel .carousel-inner {
-    max-width: 657px;
+    max-width: 650px;
   }
 }
 

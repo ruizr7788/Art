@@ -1,6 +1,6 @@
 /* ---------------SECOND IMPORTANCE--------------- */
 #secondImportance {
-  background-image: url(/pageBGs/secondImportanceBG.jpg);
+  /* background-image: url(/pageBGs/landingBG2.jpg); */
   background-size: cover;
   border-bottom: 1px solid lightslategray;
 }
@@ -15,10 +15,10 @@
   font-weight: bold;
   margin: auto;
   width: 650px;
-  text-shadow: 3px 3px 3px var(--dim-black);
+  text-shadow: 3px 3px 10px var(--dim-black);
 }
 #label-graphic-design {
-  color: rgb(66, 65, 65);
+  color: var(--main-color-second-importance-page);
 }
 #graphic_design {
   border-bottom: 2px solid #333;
@@ -30,7 +30,7 @@
   grid-template-columns: repeat(3, 1fr);
 }
 .graphic-design-img {
-  color: #fff;
+  color: var(--secondary-color-second-importance-page);
   font-weight: bold;
   text-align: center;
   width: 380px;
@@ -68,10 +68,10 @@
   font-weight: bold;
   max-width: 650px;
   margin: auto;
-  text-shadow: 3px 3px 3px var(--dim-black);
+  text-shadow: 3px 3px 10px var(--dim-black);
 }
 #label-mj {
-  color: rgb(66, 65, 65);
+  color: var(--main-color-second-importance-page);
 }
 #makeupANDjewelry {
   display: grid;
@@ -82,7 +82,7 @@
   padding: 4em 0 7em 0;
 }
 .makeup-and-jewlry-img {
-  color: #fff;
+  color: var(--secondary-color-second-importance-page);
   font-weight: bold;
   text-align: center;
   width: 380px;
