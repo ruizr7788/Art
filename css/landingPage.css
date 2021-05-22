@@ -376,11 +376,11 @@
     padding: 5px;
   }
   #business_logo img {
-    width: 70px;
-    margin-right: 10px;
+    width: 50px;
+    margin-right: 5px;
   }
   #business_logo span {
-    font-size: 13px;
+    font-size: 11px;
   }
   #navbar ul {
     padding: 0 0 0 5px;
