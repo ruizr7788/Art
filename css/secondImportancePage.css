@@ -2,6 +2,7 @@
 #secondImportance {
   background-image: url(/pageBGs/secondImportanceBG.jpg);
   background-size: cover;
+  border-bottom: 1px solid lightslategray;
 }
 /*----------- GRAPHIC DESIGN PAGE----------- */
 #graphic_design_container {

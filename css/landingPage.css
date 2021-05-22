@@ -1,11 +1,10 @@
 /* -----------LANDING PAGE---------- */
 #landing_page {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), white),
-    url(/pageBGs/landingBG.jpg);
+  background: url(/pageBGs/landingBG3.jpg);
   background-size: cover;
   overflow-x: hidden;
   min-height: 60vh;
-  background-size: cover;
+  border-bottom: 1px solid lightslategray;
 }
 
 /* ------TOPBAR STYLING------ */
@@ -485,6 +484,7 @@
     display: flex;
     flex-direction: row;
     position: static;
+    padding: 0.5em 0 0 0;
   }
   #contact_info i {
     font-size: large;
@@ -498,15 +498,15 @@
     max-width: 550px;
   }
   #business_logo img {
-    width: 50px;
+    width: 40px;
     margin-right: 5px;
   }
   #business_logo span {
-    font-size: 13px;
+    font-size: 11px;
   }
   /* LANDING PAGE HOOK */
   #landing_hook {
-    margin: 1em 0;
+    margin: 0 0 1em 0;
   }
   #landing_hook h1 {
     font-size: 80px;
@@ -600,12 +600,14 @@
     font-size: 20px;
   }
   /* LANDING PAGE HOOK STYLE */
+  #landing_hook {
+    padding-left: 20%;
+    max-width: fit-content;
+  }
   #landing_hook h1 {
     font-weight: normal;
     font-size: 160px;
     margin: 0;
-
-    text-shadow: 7px 10px 10px rgba(0, 0, 0, 0.397);
   }
   #landing_hook p {
     font-size: 35px;
@@ -635,15 +637,17 @@
     margin: auto;
   }
   /* LANDING PAGE HOOK STYLE */
+  #landing_hook {
+    max-width: fit-content;
+    padding-left: 20%;
+  }
   #landing_hook h1 {
     font-weight: normal;
-    font-size: 260px;
+    font-size: 160px;
     margin: 0;
-
-    text-shadow: 7px 10px 10px rgba(0, 0, 0, 0.397);
   }
   #landing_hook p {
-    font-size: 50px;
+    font-size: 30px;
   }
   /* LANDING PAGE IMG CARDS */
   #landing_img_carousel img {
@@ -656,13 +660,17 @@
 @media only screen and (min-width: 900px) and (max-width: 1400px) and (min-device-height: 1000px) {
   /* TOP BAR */
   #business_logo img {
-    margin-right: 10px;
+    width: 80px;
+    margin-right: 5px;
+  }
+  #business_logo span {
+    font-size: large;
   }
   #contact_info {
     max-width: fit-content;
   }
   #contact_info i {
-    font-size: xx-large;
+    font-size: x-large;
     margin-right: 30px;
     padding-bottom: 10px;
   }
@@ -671,11 +679,15 @@
     padding: 10px;
   }
   /* LANDING PAGE HOOK */
+  #landing_hook {
+    max-width: fit-content;
+    padding-left: 15%;
+  }
   #landing_hook h1 {
-    font-size: 200px;
+    font-size: 100px;
   }
   #landing_hook p {
-    font-size: x-large;
+    font-size: large;
   }
   /* landing page img carousel */
   #landing_img_carousel {
@@ -692,8 +704,11 @@
 @media only screen and (min-width: 650px) and (max-width: 900px) and (min-device-height: 1000px) {
   /* TOP BAR */
   #business_logo img {
-    margin-right: 10px;
-    max-width: 90px;
+    margin-right: 5px;
+    max-width: 75px;
+  }
+  #business_logo span {
+    font-size: large;
   }
   #contact_info {
     max-width: fit-content;
@@ -709,7 +724,8 @@
   }
   /* LANDING PAGE HOOK */
   #landing_hook {
-    margin: 0;
+    margin: 0 auto;
+    width: 100%;
   }
   #landing_hook h1 {
     font-size: 100px;

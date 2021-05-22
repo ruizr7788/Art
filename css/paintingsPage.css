@@ -16,6 +16,7 @@
     ),
     url(/pageBGs/paintingBG.jpg);
   background-size: cover;
+  border-bottom: 1px solid lightslategray;
 }
 #painting_introduction {
   padding: 1em;

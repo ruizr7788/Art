@@ -3,6 +3,7 @@
   background-image: linear-gradient(to top, #f39d1271, #f1c40f7a);
   padding: 3em 1em;
   overflow-x: hidden;
+  border-bottom: 1px solid lightslategray;
 }
 #businessHours {
   display: grid;
