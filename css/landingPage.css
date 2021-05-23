@@ -1,6 +1,6 @@
 /* -----------LANDING PAGE---------- */
 #landing_page {
-  background: url(/pageBGs/landingBG3.jpg);
+  background: url(/pageBGs/landingBG5.jpg);
   background-size: cover;
   overflow-x: hidden;
   min-height: 60vh;
@@ -41,6 +41,7 @@
   width: 125px;
 }
 #business_logo span {
+  /* color: #fff; */
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
@@ -438,7 +439,7 @@
     max-width: 657px;
   }
   #landing_img_carousel .carousel-inner {
-    max-width: 650px;
+    max-width: 657px;
   }
 }
 
