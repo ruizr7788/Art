@@ -1,7 +1,6 @@
 /* ------------PHOTOGRAPHY SECTION------------ */
 #photography_container {
-  min-height: 110vh;
-  background-color: rgb(246, 246, 246);
+  min-height: 60vh;
   opacity: 0;
   transition: var(--ease-9);
   padding-bottom: 3em;
@@ -49,9 +48,430 @@
 }
 
 /* MEDIA QUERYS */
+/* Pixel 2XL */
+@media only screen and (min-device-width: 411px) and (max-device-height: 823px) and (orientation: portrait) {
+  #photography_top_bar ul li {
+    font-size: 15px;
+    margin-right: 1em;
+  }
+  #photography_top_bar {
+    align-items: center;
+    max-width: 300px;
+    padding: 4em 0 2em 0;
+    flex-direction: column;
+  }
+  #label-photo h1 {
+    font-size: 25px;
+  }
+  .photographyCard img {
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 10px;
+    font-size: small;
+  }
+}
+/* Pixel 2 */
+@media only screen and (min-device-width: 411px) and (max-device-height: 731px) and (orientation: portrait) {
+  #photography_top_bar ul li {
+    font-size: 15px;
+    margin-right: 1em;
+  }
+  #photography_top_bar {
+    align-items: center;
+    max-width: 300px;
+    padding: 4em 0 2em 0;
+    flex-direction: column;
+  }
+  #label-photo h1 {
+    font-size: 25px;
+  }
+  .photographyCard img {
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 10px;
+    font-size: small;
+  }
+}
 
-/* 1400 AND UP */
-@media only screen and (min-width: 1400px) {
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
+  #photography_top_bar ul li {
+    font-size: 15px;
+    margin-right: 1em;
+  }
+  #photography_top_bar {
+    align-items: center;
+    max-width: 300px;
+    padding: 4em 0 2em 0;
+    flex-direction: column;
+  }
+  #label-photo h1 {
+    font-size: 25px;
+  }
+  .photographyCard img {
+    width: 165px;
+    height: 165px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 10px;
+    font-size: small;
+  }
+}
+
+/* iPhone XS Max, XR ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
+  #photography_top_bar ul li {
+    font-size: 15px;
+    margin-right: 1em;
+  }
+  #photography_top_bar {
+    align-items: center;
+    max-width: 300px;
+    padding: 4em 0 2em 0;
+    flex-direction: column;
+  }
+  #label-photo h1 {
+    font-size: 25px;
+  }
+  .photographyCard img {
+    width: 170px;
+    height: 170px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 10px;
+    font-size: small;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) {
+  #photography_top_bar ul li {
+    font-size: 13px;
+    margin-right: 1em;
+  }
+  #photography_top_bar {
+    align-items: center;
+    max-width: 500px;
+    padding: 3em 0 2em 0;
+    flex-direction: row;
+  }
+  #label-photo h1 {
+    font-size: 25px;
+  }
+  .photographyCard img {
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 10px 5px;
+    font-size: small;
+  }
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
+  #photography_top_bar ul li {
+    font-size: 13px;
+    margin-right: 1em;
+  }
+  #photography_top_bar {
+    align-items: center;
+    max-width: 300px;
+    padding: 3em 0 2em 0;
+    flex-direction: column;
+  }
+  #label-photo h1 {
+    font-size: 25px;
+  }
+  .photographyCard img {
+    width: 165px;
+    height: 165px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 10px;
+    font-size: small;
+  }
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and (min-device-width: 413px) and (max-device-height: 737px) and (orientation: portrait) {
+  #photography_top_bar ul li {
+    font-size: 13px;
+    margin-right: 1em;
+  }
+  #photography_top_bar {
+    align-items: center;
+    max-width: 300px;
+    padding: 3em 0 2em 0;
+    flex-direction: column;
+  }
+  #label-photo h1 {
+    font-size: 25px;
+  }
+  .photographyCard img {
+    width: 165px;
+    height: 165px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 10px;
+    font-size: small;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) {
+  #photography_top_bar ul li {
+    font-size: 13px;
+    margin-right: 1em;
+  }
+  #photography_top_bar {
+    align-items: center;
+    max-width: 500px;
+    padding: 3em 0 2em 0;
+    flex-direction: row;
+  }
+  #label-photo h1 {
+    font-size: 25px;
+  }
+  .photographyCard img {
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 10px 5px;
+    font-size: small;
+  }
+}
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
+  #photography_top_bar ul li {
+    font-size: 13px;
+    margin-right: 1em;
+  }
+  #photography_top_bar {
+    align-items: center;
+    max-width: 300px;
+    padding: 3em 0 2em 0;
+    flex-direction: column;
+  }
+  #label-photo h1 {
+    font-size: 22px;
+  }
+  .photographyCard img {
+    width: 165px;
+    height: 165px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 10px 5px;
+    font-size: small;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) {
+  #photography_top_bar ul li {
+    font-size: 13px;
+    margin-right: 1em;
+  }
+  #photography_top_bar {
+    align-items: center;
+    max-width: 500px;
+    padding: 3em 0 2em 0;
+    flex-direction: row;
+  }
+  #label-photo h1 {
+    font-size: 22px;
+  }
+  .photographyCard img {
+    width: 160px;
+    height: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 10px 5px;
+    font-size: small;
+  }
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) {
+  #photography_top_bar ul li {
+    font-size: 13px;
+    margin-right: 1em;
+  }
+  #photography_top_bar {
+    align-items: center;
+    max-width: 300px;
+    padding: 3em 0 2em 0;
+    flex-direction: column;
+  }
+  #label-photo h1 {
+    font-size: 22px;
+  }
+  .photographyCard img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 10px 5px;
+    font-size: small;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) {
+  #photography_top_bar ul li {
+    font-size: 13px;
+    margin-right: 1em;
+  }
+  #photography_top_bar {
+    align-items: center;
+    max-width: 500px;
+    padding: 3em 0 2em 0;
+    flex-direction: row;
+  }
+  #label-photo h1 {
+    font-size: 22px;
+  }
+  .photographyCard img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 10px 5px;
+    font-size: small;
+  }
+}
+
+/* large screens ----------------- */
+@media only screen and (min-width: 1823px) {
+  #photography_top_bar ul li {
+    font-size: large;
+  }
+  #photography_top_bar {
+    max-width: 1500px;
+    padding: 0 0 3em 0;
+  }
+  #label-photo h1 {
+    font-size: 42px;
+  }
+  .photographyCard img {
+    width: 310px;
+    height: 310px;
+  }
+  #photography_container {
+    padding: 8vh 0;
+  }
+  #photography {
+    padding: 3em 0;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: fit-content;
+  }
+  #photography_footer {
+    padding-top: 1em;
+  }
+}
+
+/* -------1400px to 1823px------ */
+@media only screen and (min-width: 1400px) and (max-width: 1823px) {
   /* ------PHOTOGRAPHY PAGE------ */
   #photography_top_bar ul li {
     font-size: large;
@@ -74,36 +494,42 @@
     column-gap: 0.5em;
     max-width: fit-content;
   }
+  #photography_footer {
+    padding-top: 1em;
+  }
 }
 
-/* 900 TO 1400 */
-@media only screen and (min-width: 900px) and (max-width: 1400px) {
+/* ------900 to 1400------ */
+@media only screen and (min-width: 900px) and (max-width: 1400px) and (min-device-height: 1000px) {
   /* ------PHOTOGRAPHY PAGE------ */
   #photography_top_bar ul li {
     font-size: large;
   }
   #photography_top_bar {
-    max-width: 900px;
+    max-width: 850px;
     padding: 4em 0 3em 0;
   }
   #label-photo h1 {
-    font-size: 40px;
+    font-size: 37px;
   }
   .photographyCard img {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
   }
   #photography {
-    padding: 3em 0;
-    grid-template-columns: repeat(3, 1fr);
+    padding: 3em 1em;
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 0.5em;
     column-gap: 0.5em;
     max-width: fit-content;
   }
+  #photography_footer {
+    padding: 1em 0;
+  }
 }
 
-/* 600 TO 900 */
-@media only screen and (min-width: 650px) and (max-width: 900px) {
+/* ------600 to 900------ */
+@media only screen and (min-width: 650px) and (max-width: 900px) and (min-device-height: 1000px) {
   /* ------PHOTOGRAPHY PAGE------ */
   #photography_top_bar ul li {
     font-size: 17px;
@@ -116,20 +542,23 @@
     font-size: 30px;
   }
   .photographyCard img {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
   }
   #photography {
     padding: 3em 0;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 0.5em;
-    column-gap: 0.5em;
+    row-gap: 1em;
+    column-gap: 1em;
     max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 1em 0;
   }
 }
 
-/* 300 TO 650 */
-@media only screen and (min-width: 300px) and (max-width: 650px) {
+/* ------300 to 650------ */
+@media only screen and (min-width: 300px) and (max-width: 650px) and (min-device-height: 1000px) {
   /* ------PHOTOGRAPHY PAGE------ */
   #photography_top_bar ul li {
     font-size: 17px;
@@ -145,14 +574,18 @@
     font-size: 35px;
   }
   .photographyCard img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
   }
   #photography {
     padding: 3em 0;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 0.5em;
+    column-gap: 0.5em;
     max-width: fit-content;
+  }
+  #photography_footer {
+    padding: 1em 0;
   }
 }
 

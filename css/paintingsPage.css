@@ -1,6 +1,6 @@
 /* ------PANTINGS SECTION------ */
 #paintings {
-  min-height: 100vh;
+  min-height: 60vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
@@ -493,17 +493,17 @@
     height: 50px;
   }
   .painting_box img {
-    width: 280px;
+    width: 260px;
     border: 5px solid black;
   }
   #painting_introduction {
     max-width: 250px;
   }
   #painting_introduction h1 {
-    font-size: 40px;
+    font-size: 45px;
   }
   #paintings {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: auto;
   }
 }
