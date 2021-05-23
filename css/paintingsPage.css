@@ -1,6 +1,5 @@
 /* ------PANTINGS SECTION------ */
 #paintings {
-  min-height: 60vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
@@ -8,7 +7,7 @@
 
 /* fixing the painting grid assignments */
 #paintings_container {
-  min-height: 110vh;
+  min-height: 90vh;
   background-image: url(/pageBGs/paintingsBG3.jpg);
   background-size: cover;
   border-bottom: 1px solid lightslategray;
@@ -511,6 +510,7 @@
 /* -------1400px to 1823px------ */
 @media only screen and (min-width: 1400px) and (max-width: 1823px) {
   /* ------PAINTING PAGE------ */
+
   .painting-box4 {
     margin: auto;
   }
@@ -527,12 +527,18 @@
     width: 250px;
     border: 5px solid black;
   }
+  #painting_introduction h1 {
+    font-size: 40px;
+  }
   #painting_introduction {
     max-width: 250px;
   }
   #paintings {
     max-width: 1400px;
     margin: auto;
+  }
+  #paintings_container {
+    padding: 10vh 0;
   }
 }
 
@@ -563,8 +569,10 @@
     font-size: 35px;
   }
   #paintings {
-    max-width: 900px;
     margin: auto;
+  }
+  #paintings_container {
+    padding: 10vh 0;
   }
 }
 
@@ -576,7 +584,7 @@
     height: 50px;
   }
   .painting_box img {
-    width: 250px;
+    width: 280px;
     border: 4px solid black;
   }
   #painting_introduction {
@@ -591,9 +599,11 @@
     column-gap: 5em;
     padding: 2em;
     grid-template-columns: 1fr 1fr;
-    max-width: 630px;
     row-gap: 3em;
     margin: auto;
+  }
+  #paintings_container {
+    padding: 8vh 0;
   }
 }
 

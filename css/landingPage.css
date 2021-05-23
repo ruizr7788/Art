@@ -3,7 +3,7 @@
   background: url(/pageBGs/landingBG5.jpg);
   background-size: cover;
   overflow-x: hidden;
-  min-height: 60vh;
+  min-height: 100vh;
   border-bottom: 1px solid lightslategray;
 }
 
@@ -590,11 +590,11 @@
 @media only screen and (min-width: 1823px) {
   /* TOP BAR STYLE */
   #business_logo img {
-    width: 120px;
+    width: 80px;
     margin-right: 10px;
   }
   #business_logo span {
-    font-size: 25px;
+    font-size: 22px;
   }
   #contact_info {
     max-width: fit-content;
@@ -605,28 +605,30 @@
     top: 20em;
   }
   #contact_info i {
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
   #topbar {
     max-width: 1800px;
     margin: auto;
+    padding: 10px;
   }
   #navbar ul li a {
-    font-size: 20px;
+    font-size: 17px;
   }
   /* LANDING PAGE HOOK STYLE */
   #landing_hook {
     padding-left: 20%;
+    padding-top: 5%;
     max-width: fit-content;
   }
   #landing_hook h1 {
     font-weight: normal;
-    font-size: 160px;
+    font-size: 130px;
     margin: 0;
   }
   #landing_hook p {
-    font-size: 35px;
+    font-size: 30px;
   }
   #landing_img_carousel img {
     width: 800px;
@@ -698,12 +700,13 @@
   #landing_hook {
     max-width: fit-content;
     padding-left: 15%;
+    padding-top: 8%;
   }
   #landing_hook h1 {
     font-size: 100px;
   }
   #landing_hook p {
-    font-size: large;
+    font-size: xx-large;
   }
   /* landing page img carousel */
   #landing_img_carousel {
@@ -742,6 +745,7 @@
   #landing_hook {
     margin: 0 auto;
     width: 100%;
+    padding-top: 12%;
   }
   #landing_hook h1 {
     font-size: 100px;
@@ -763,7 +767,7 @@
     max-width: fit-content;
   }
   #contact_info i {
-    font-size: large;
+    font-size: x-large;
     margin-right: 15px;
   }
   #navbar ul li a {
@@ -782,7 +786,7 @@
   }
   /* LANDING PAGE HOOK */
   #landing_hook {
-    margin: 2em 0;
+    padding-top: 15%;
   }
   #landing_hook h1 {
     font-size: 80px;
@@ -793,7 +797,7 @@
   }
   #landing_img_carousel {
     margin: auto;
-    max-width: 450px;
+    max-width: 480px;
   }
 }
 
