@@ -18,8 +18,9 @@
   --hover-color: purple;
   --dim-black: rgba(0, 0, 0, 0.2);
   --dimmer-black: rgba(0, 0, 0, 0.7);
+  --small-text-color: rgb(163, 156, 156);
   /* landing page colors */
-  --main-color-landing-page: #222f3e;
+  --main-color-landing-page: #18314d;
   /* service page colors */
   --main-color-service-page: rgb(43, 41, 41);
   --secondary-color-service-page: rgb(43, 41, 41);
@@ -31,9 +32,9 @@
   /* photography page colors */
   --main-color-photography-page: rgb(43, 41, 41);
   --secondary-color-photography-page: rgb(43, 41, 41);
-  /* second importanve colors */
-  --main-color-second-importance-page: rgb(43, 41, 41);
-  --secondary-color-second-importance-page: rgb(255, 255, 255);
+  /* graphic design colors */
+  --main-color-graphic-designs-page: rgb(43, 41, 41);
+  --secondary-color-graphic-designs-page: rgb(255, 255, 255);
   /* about author colors */
   --main-color-second-author-page: rgb(255, 255, 255);
   --secondary-color-second-author-page: rgb(156, 125, 45);
