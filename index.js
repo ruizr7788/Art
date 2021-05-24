@@ -71,7 +71,7 @@ weekday.forEach((day, i) => {
 const dateCardEl = document.querySelectorAll(".dateCard");
 
 weekday.forEach((day, i) => {
-  const openHTML = `<p>10:30am - 8:00pm</p>`;
+  const openHTML = `<p>10:30am-8:00pm</p>`;
   const closedHTML = `<p>Closed</p>`;
   if (day.textContent !== "Sunday") {
     dateCardEl[i].insertAdjacentHTML("beforeend", openHTML);
