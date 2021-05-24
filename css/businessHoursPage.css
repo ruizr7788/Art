@@ -1,6 +1,6 @@
 /* ------BUSINESS HOURS------ */
 #business_hours_container {
-  background: url(/pageBGs/businessHoursBG.jpg);
+  background: url(/pageBGs/businessHoursBG3.jpg);
   background-size: cover;
   padding: 3em 1em;
   overflow-x: hidden;
@@ -25,7 +25,7 @@
   text-shadow: 2px 2px 20px rgba(230, 230, 230, 0.199);
 }
 .dateCard {
-  border-radius: 0.5em;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,17 +56,17 @@
   color: var(--secondary-color-business-hours-page);
 }
 #business_hours_address {
+  color: var(--main-color-business-hours-page);
   text-align: center;
   margin: 0;
   font-size: small;
   font-weight: bold;
-  color: var(--secondary-color-business-hours-page);
 }
 #closed_interval {
   text-align: center;
   margin: 0;
   font-size: small;
-  color: var(--secondary-color-business-hours-page);
+  color: var(--main-color-business-hours-page);
 }
 
 /* MEDIA QUERYS */

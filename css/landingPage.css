@@ -1,10 +1,11 @@
 /* -----------LANDING PAGE---------- */
 #landing_page {
-  background: url(/pageBGs/landingBG5.jpg);
+  background: url(/pageBGs/landingPageBG11.jpg);
   background-size: cover;
   overflow-x: hidden;
   min-height: 100vh;
   border-bottom: 1px solid lightslategray;
+  position: relative;
 }
 
 /* ------TOPBAR STYLING------ */
@@ -12,7 +13,7 @@
   display: flex;
   align-items: center;
   font-family: sans-serif;
-  padding: 1em 0;
+  padding: 5px 2em;
 }
 #contact_info {
   max-width: fit-content;
@@ -37,18 +38,12 @@
   flex: 1;
   max-width: fit-content;
 }
-#business_logo img {
-  width: 125px;
-}
-#business_logo span {
-  /* color: #fff; */
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+#business_logo {
+  width: 50px;
 }
 
 /* NAVBAR */
+
 #navbar {
   flex: 2;
 }
@@ -56,6 +51,7 @@
   display: flex;
   list-style: none;
   justify-content: space-evenly;
+  margin: 0;
 }
 #navbar ul li a {
   text-decoration: none;
@@ -66,6 +62,20 @@
 #navbar ul li a:hover {
   color: var(--hover-color);
   transition: var(--ease-3);
+}
+/* fixed navbar */
+.fixed-navbar {
+  height: fit-content;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.92);
+  width: 100%;
+  z-index: 100;
+}
+.fixed-navbar #navbar ul li a {
+  color: rgb(228, 218, 218);
+}
+.fixed-navbar #navbar ul li a:hover {
+  color: #fff;
 }
 
 /* ------LANDING PAGE HOOK------ */
@@ -106,12 +116,9 @@
     margin: auto;
     padding: 5px;
   }
-  #business_logo img {
-    width: 70px;
+  #business_logo {
+    width: 50px;
     margin-right: 10px;
-  }
-  #business_logo span {
-    font-size: 15px;
   }
   #navbar ul {
     padding: 0 0 0 5px;
@@ -145,12 +152,9 @@
     margin: auto;
     padding: 5px;
   }
-  #business_logo img {
-    width: 50px;
+  #business_logo {
+    width: 40px;
     margin-right: 5px;
-  }
-  #business_logo span {
-    font-size: 12px;
   }
   #navbar ul {
     padding: 0 0 0 5px;
@@ -184,12 +188,9 @@
     margin: auto;
     padding: 5px;
   }
-  #business_logo img {
+  #business_logo {
     width: 50px;
     margin-right: 5px;
-  }
-  #business_logo span {
-    font-size: 11px;
   }
   #navbar ul {
     padding: 0 0 0 5px;
@@ -227,12 +228,9 @@
     padding: 5px;
     max-width: 414px;
   }
-  #business_logo img {
+  #business_logo {
     width: 70px;
     margin-right: 10px;
-  }
-  #business_logo span {
-    font-size: 13px;
   }
   #navbar ul {
     padding: 0 0 0 5px;
@@ -255,23 +253,6 @@
     padding: 1em 0 3em 0;
   }
 }
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) {
-  /* TOP BAR STYLE */
-  #contact_info {
-    max-width: fit-content;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 1em;
-    top: 4.5em;
-  }
-  #contact_info i {
-    font-size: xx-large;
-    margin-bottom: 10px;
-  }
-}
-
 /* iPhone X ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   /* ------TOP BAR------ */
@@ -286,12 +267,9 @@
     padding: 5px;
     max-width: 414px;
   }
-  #business_logo img {
-    width: 70px;
+  #business_logo {
+    width: 50px;
     margin-right: 10px;
-  }
-  #business_logo span {
-    font-size: 13px;
   }
   #navbar ul {
     padding: 0 0 0 5px;
@@ -329,12 +307,9 @@
     padding: 5px;
     max-width: 414px;
   }
-  #business_logo img {
-    width: 70px;
+  #business_logo {
+    width: 50px;
     margin-right: 10px;
-  }
-  #business_logo span {
-    font-size: 13px;
   }
   #navbar ul {
     padding: 0 0 0 5px;
@@ -360,7 +335,6 @@
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) {
   #topbar {
-    max-width: none;
     padding: 5px;
   }
 }
@@ -378,13 +352,11 @@
     margin: auto;
     padding: 5px;
   }
-  #business_logo img {
-    width: 60px;
+  #business_logo {
+    width: 50px;
     margin-right: 5px;
   }
-  #business_logo span {
-    font-size: 11px;
-  }
+
   #navbar ul {
     padding: 0 0 0 5px;
   }
@@ -409,12 +381,9 @@
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) {
   /* TOP BAR */
-  #business_logo img {
+  #business_logo {
     width: 60px;
     margin-right: 5px;
-  }
-  #business_logo span {
-    font-size: 11px;
   }
   #landing_hook h1 {
     font-size: large;
@@ -423,7 +392,6 @@
     font-size: large;
   }
   #topbar {
-    max-width: 667px;
     padding: 5px;
   }
   #contact_info {
@@ -464,12 +432,9 @@
     margin: auto;
     padding: 5px;
   }
-  #business_logo img {
-    width: 50px;
+  #business_logo {
+    width: 40px;
     margin-right: 5px;
-  }
-  #business_logo span {
-    font-size: 11px;
   }
   #navbar ul {
     padding: 0;
@@ -511,14 +476,11 @@
   }
   #topbar {
     margin: auto;
-    max-width: 550px;
+    padding: 5px 2em;
   }
-  #business_logo img {
+  #business_logo {
     width: 40px;
     margin-right: 5px;
-  }
-  #business_logo span {
-    font-size: 11px;
   }
   /* LANDING PAGE HOOK */
   #landing_hook {
@@ -538,15 +500,11 @@
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and(orientation: portrait) {
   /*  TOP BAR */
-  #business_logo img {
+  #business_logo {
     width: 100px;
     margin-right: 10px;
-  }
-  #business_logo span {
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
   #contact_info {
     max-width: fit-content;
@@ -586,15 +544,54 @@
   }
 }
 
+@media only screen and (min-device-width: 1024px) and (max-device-height: 768px) and(orientation: landscape) {
+  /*  TOP BAR */
+  #business_logo {
+    width: 50px;
+  }
+  #contact_info {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+  #contact_info i {
+    font-size: x-large;
+    margin-right: 1em;
+    padding-bottom: 10px;
+  }
+  #topbar {
+    padding: 5px 2em;
+  }
+  #navbar ul {
+    padding: 0;
+  }
+
+  /* LANDING HOOK */
+  #landing_hook h1 {
+    font-size: 105px;
+    letter-spacing: 7px;
+  }
+  #landing_hook p {
+    padding-top: 1em;
+    font-size: x-large;
+  }
+  /* LANDING PAGE CAROUSEL */
+  #landing_img_carousel {
+    padding: 0 0 5em 0;
+    max-width: 640px;
+    margin: auto;
+  }
+  #landing_img_carousel .carousel-inner {
+    max-height: 390px;
+  }
+}
+
 /* large screens ----------------- */
 @media only screen and (min-width: 1823px) {
   /* TOP BAR STYLE */
-  #business_logo img {
-    width: 80px;
+  #business_logo {
+    width: 60px;
     margin-right: 10px;
-  }
-  #business_logo span {
-    font-size: 22px;
   }
   #contact_info {
     max-width: fit-content;
@@ -602,24 +599,28 @@
     flex-direction: column;
     position: absolute;
     left: 2em;
-    top: 20em;
+    top: 17em;
   }
   #contact_info i {
     font-size: 30px;
     margin-bottom: 10px;
   }
   #topbar {
-    max-width: 1800px;
     margin: auto;
-    padding: 10px;
+    padding: 5px 15em;
   }
   #navbar ul li a {
     font-size: 17px;
   }
+  #navbar ul {
+    margin: 0;
+  }
   /* LANDING PAGE HOOK STYLE */
   #landing_hook {
-    padding-left: 20%;
-    padding-top: 5%;
+    position: absolute;
+    top: 18%;
+    left: 45%;
+    transform: translateX(-45%);
     max-width: fit-content;
   }
   #landing_hook h1 {
@@ -641,27 +642,33 @@
   #contact_info {
     max-width: fit-content;
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 2em;
-    top: 20em;
+    padding: 3em 0 0 0;
   }
   #contact_info i {
-    font-size: xx-large;
-    margin-bottom: 30px;
+    font-size: x-large;
+    margin-bottom: 5px;
   }
   #topbar {
-    max-width: 1300px;
     margin: auto;
+    padding: 5px 5em;
+  }
+  #navbar ul {
+    margin: 0;
+  }
+  #business_logo {
+    width: 60px;
   }
   /* LANDING PAGE HOOK STYLE */
   #landing_hook {
     max-width: fit-content;
-    padding-left: 20%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #landing_hook h1 {
     font-weight: normal;
-    font-size: 160px;
+    font-size: 130px;
     margin: 0;
   }
   #landing_hook p {
@@ -677,33 +684,34 @@
 /* ------900 to 1400------ */
 @media only screen and (min-width: 900px) and (max-width: 1400px) and (min-device-height: 1000px) {
   /* TOP BAR */
-  #business_logo img {
-    width: 80px;
-    margin-right: 5px;
-  }
-  #business_logo span {
-    font-size: large;
+  #business_logo {
+    width: 55px;
   }
   #contact_info {
     max-width: fit-content;
+    padding: 4em 0 0 0;
   }
   #contact_info i {
     font-size: x-large;
     margin-right: 30px;
-    padding-bottom: 10px;
   }
   #topbar {
     margin: auto;
-    padding: 10px;
+    padding: 5px 3em;
+  }
+  #navbar ul {
+    margin: 0;
   }
   /* LANDING PAGE HOOK */
   #landing_hook {
     max-width: fit-content;
-    padding-left: 15%;
-    padding-top: 8%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #landing_hook h1 {
-    font-size: 100px;
+    font-size: 120px;
   }
   #landing_hook p {
     font-size: xx-large;
@@ -722,12 +730,8 @@
 /* ------600 to 900------ */
 @media only screen and (min-width: 650px) and (max-width: 900px) and (min-device-height: 1000px) {
   /* TOP BAR */
-  #business_logo img {
-    margin-right: 5px;
-    max-width: 75px;
-  }
-  #business_logo span {
-    font-size: large;
+  #business_logo {
+    max-width: 50px;
   }
   #contact_info {
     max-width: fit-content;
@@ -735,17 +739,18 @@
   #contact_info i {
     font-size: x-large;
     margin-right: 30px;
-    padding: 0.5em 0;
+    padding: 2em 0 1em 0;
   }
   #topbar {
     margin: auto;
-    padding: 10px;
+    padding: 5px 2em;
   }
   /* LANDING PAGE HOOK */
   #landing_hook {
     margin: 0 auto;
     width: 100%;
-    padding-top: 12%;
+    position: absolute;
+    top: 20%;
   }
   #landing_hook h1 {
     font-size: 100px;
@@ -769,24 +774,24 @@
   #contact_info i {
     font-size: x-large;
     margin-right: 15px;
+    padding: 2em 0 1em 0;
   }
   #navbar ul li a {
-    font-size: small;
+    font-size: 15px;
   }
   #topbar {
     margin: auto;
     padding: 10px;
   }
-  #business_logo img {
-    width: 70px;
-    margin-right: 10px;
-  }
-  #business_logo span {
-    font-size: small;
+  #business_logo {
+    width: 50px;
   }
   /* LANDING PAGE HOOK */
   #landing_hook {
-    padding-top: 15%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #landing_hook h1 {
     font-size: 80px;
@@ -797,7 +802,7 @@
   }
   #landing_img_carousel {
     margin: auto;
-    max-width: 480px;
+    max-width: 500px;
   }
 }
 
@@ -815,12 +820,9 @@
     padding: 5px;
     margin: auto;
   }
-  #business_logo img {
+  #business_logo {
     width: 50px;
     margin: 0;
-  }
-  #business_logo span {
-    font-size: x-small;
   }
   #navbar ul li a {
     font-size: x-small;
