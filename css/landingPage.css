@@ -114,10 +114,10 @@
   }
   #topbar {
     margin: auto;
-    padding: 5px;
+    padding: 2px;
   }
   #business_logo {
-    width: 50px;
+    width: 30px;
     margin-right: 10px;
   }
   #navbar ul {
@@ -150,10 +150,10 @@
   }
   #topbar {
     margin: auto;
-    padding: 5px;
+    padding: 2px;
   }
   #business_logo {
-    width: 40px;
+    width: 30px;
     margin-right: 5px;
   }
   #navbar ul {
@@ -186,10 +186,10 @@
   }
   #topbar {
     margin: auto;
-    padding: 5px;
+    padding: 2px;
   }
   #business_logo {
-    width: 50px;
+    width: 30px;
     margin-right: 5px;
   }
   #navbar ul {
@@ -225,11 +225,10 @@
   }
   #topbar {
     margin: auto;
-    padding: 5px;
-    max-width: 414px;
+    padding: 2px;
   }
   #business_logo {
-    width: 70px;
+    width: 35px;
     margin-right: 10px;
   }
   #navbar ul {
@@ -264,11 +263,10 @@
   }
   #topbar {
     margin: auto;
-    padding: 5px;
-    max-width: 414px;
+    padding: 2px;
   }
   #business_logo {
-    width: 50px;
+    width: 30px;
     margin-right: 10px;
   }
   #navbar ul {
@@ -304,11 +302,10 @@
   }
   #topbar {
     margin: auto;
-    padding: 5px;
-    max-width: 414px;
+    padding: 3px;
   }
   #business_logo {
-    width: 50px;
+    width: 35px;
     margin-right: 10px;
   }
   #navbar ul {
@@ -335,7 +332,7 @@
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) {
   #topbar {
-    padding: 5px;
+    padding: 3px;
   }
 }
 
@@ -350,10 +347,10 @@
   }
   #topbar {
     margin: auto;
-    padding: 5px;
+    padding: 2px;
   }
   #business_logo {
-    width: 50px;
+    width: 30px;
     margin-right: 5px;
   }
 
@@ -392,7 +389,7 @@
     font-size: large;
   }
   #topbar {
-    padding: 5px;
+    padding: 2px;
   }
   #contact_info {
     max-width: fit-content;
@@ -430,10 +427,10 @@
   }
   #topbar {
     margin: auto;
-    padding: 5px;
+    padding: 2px;
   }
   #business_logo {
-    width: 40px;
+    width: 30px;
     margin-right: 5px;
   }
   #navbar ul {
@@ -476,7 +473,7 @@
   }
   #topbar {
     margin: auto;
-    padding: 5px 2em;
+    padding: 2px 1em;
   }
   #business_logo {
     width: 40px;
