@@ -46,7 +46,7 @@
 .service-option {
   position: relative;
   text-align: left;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   background-color: rgb(252, 252, 252);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
@@ -424,19 +424,105 @@
 }
 
 /* -------------laptops and desktops---------------- */
-/* 1823 min width and 1400 min height ----------------- */
-@media only screen and (min-width: 1823px) and (min-height: 1400px) {
+
+/* 2300 min width and 1300 min height */
+@media only screen and (min-width: 2300px) and (min-height: 1300px) {
   #service_container {
     padding: 5vh 0;
     min-height: 45vh;
   }
   #services {
-    max-width: 1600px;
-    display: flex;
-    padding: 2em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
+    max-width: 80%;
   }
   #service_container .introduction h1 {
-    font-size: 55px;
+    font-size: 45px;
+  }
+  #service_container .introduction p {
+    font-size: large;
+  }
+  .service-img {
+    width: 500px;
+    padding: 1.5em 0;
+  }
+  .service-option {
+    padding: 2em;
+    border-bottom: none;
+    /* border-radius: 10px; */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 1em;
+    background-color: rgb(253, 253, 253);
+  }
+  .service-option p {
+    max-width: 70%;
+  }
+  .service-option i {
+    right: 2em;
+    font-size: large;
+    padding: 0.4em;
+  }
+  #service_footer {
+    font-size: large;
+  }
+}
+
+/* 1950 min width and 2300 max width and 1440 min height */
+@media only screen and (min-width: 1950px) and (max-width: 2304px) and (min-height: 1300px) {
+  #service_container {
+    padding: 5vh 0;
+    min-height: 45vh;
+  }
+  #services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
+    max-width: 90%;
+  }
+  #service_container .introduction h1 {
+    font-size: 45px;
+  }
+  #service_container .introduction p {
+    font-size: large;
+  }
+  .service-img {
+    width: 500px;
+    padding: 1.5em 0;
+  }
+  .service-option {
+    padding: 2em;
+    border-bottom: none;
+    /* border-radius: 10px; */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 1em;
+    background-color: rgb(253, 253, 253);
+  }
+  .service-option p {
+    max-width: 70%;
+  }
+  .service-option i {
+    right: 2em;
+    font-size: large;
+    padding: 0.4em;
+  }
+  #service_footer {
+    font-size: large;
+  }
+}
+
+/* 1823 min width and 1400 min height ----------------- */
+@media only screen and (min-width: 1823px) and (max-width: 1950px) and (min-height: 1300px) {
+  #service_container {
+    padding: 5vh 0;
+    min-height: 45vh;
+  }
+  #services {
+    display: flex;
+    padding: 2em;
+  }
+  #service_container .introduction h1 {
+    font-size: 50px;
   }
   #service_container .introduction p {
     font-size: x-large;
@@ -476,10 +562,10 @@
     padding: 2em 0;
   }
   #service_container .introduction h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
   #service_container .introduction p {
-    font-size: large;
+    font-size: small;
   }
   .service-img {
     width: 500px;
@@ -493,6 +579,12 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     margin-right: 1em;
     background-color: rgb(253, 253, 253);
+  }
+  .service-option h3 {
+    font-size: x-large;
+  }
+  .service-option p {
+    font-size: small;
   }
   .service-option i {
     right: 2em;
@@ -533,6 +625,12 @@
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(253, 253, 253);
+  }
+  .service-option h3 {
+    font-size: 25px;
+  }
+  .service-option p {
+    font-size: small;
   }
   .service-option i {
     right: 2em;
@@ -583,7 +681,7 @@
     font-size: 22px;
   }
   .service-option p {
-    font-size: 17px;
+    font-size: 14px;
   }
   .service-option button {
     font-size: small;
@@ -628,10 +726,10 @@
     padding: 0.4em;
   }
   .service-option h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .service-option p {
-    font-size: 17px;
+    font-size: 15px;
   }
   .service-option button {
     font-size: small;
