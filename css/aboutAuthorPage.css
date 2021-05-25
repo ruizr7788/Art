@@ -271,7 +271,7 @@
     grid-template-columns: repeat(2, 1fr);
     padding: 15px;
     align-items: center;
-    width: fit-content;
+    width: 70%;
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -319,7 +319,7 @@
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
     padding: 10px;
-    width: fit-content;
+    width: 80%;
   }
   #aboutAuthor_contact a {
     font-size: 11px;
