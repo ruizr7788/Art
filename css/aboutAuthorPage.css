@@ -1,130 +1,494 @@
 /* ------------ABOUT AUTHOR----------- */
 #aboutAuthor_container {
-  background-color: black;
-}
-#aboutAuthor {
-  background-image: linear-gradient(var(--dimmer-black), var(--dimmer-black)),
-    url(/pageBGs/authorIMG.jpeg);
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 150%;
   position: relative;
 }
-#aboutAuthor small a {
-  color: var(--secondary-color-second-importance-page);
-  position: absolute;
-  bottom: 2em;
+
+#aboutAuthor_container {
+  background-color: #f5f5f7;
 }
-#aboutAuthor p {
-  color: var(--main-color-second-author-page);
-  text-align: center;
-  font-family: serif;
-  line-height: 150%;
-  max-width: 700px;
+
+#about_author_info {
+  margin: auto;
+  display: grid;
 }
-#aboutAuthor h1 {
-  font-family: montserat, sans-serif;
-  font-weight: normal;
-  color: var(--main-color-second-author-page);
-  font-size: 80px;
+#aboutAuthor_contact {
+  display: flex;
+  flex-direction: column;
 }
-#aboutAuthor h3 {
-  color: var(--secondary-color-second-author-page);
+
+#aboutAuthor_contact a {
+  text-decoration: none;
+  color: var(--secondary-color-footer);
+  max-width: fit-content;
 }
-#aboutAuthor_contact i {
-  font-size: x-large;
-  color: var(--secondary-color-second-author-page);
-  transition: var(--ease-3);
-  margin-right: 5px;
+#aboutAuthor_contact a:hover {
+  text-decoration: underline;
 }
-#aboutAuthor_contact i:hover {
-  color: var(--hover-color);
-  transition: var(--ease-3);
+
+#aboutAuthor_location {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-color-footer);
 }
 
 /* MEDIA QUERYS */
 
-/* 900 TO 1400 */
-@media only screen and (min-width: 900px) and (max-width: 1400px) {
-  /* ------------ABOUT AUTHOR------------ */
+/* iPad landscape */
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+  #aboutAuthor_container img {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+  }
   #aboutAuthor_container {
-    overflow-x: hidden;
-    max-width: 1400px;
+    min-height: 15vh;
   }
-  #aboutAuthor {
-    line-height: 150%;
-    max-width: 900px;
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    transform: translateX(-55%);
+    width: 50%;
   }
-  #aboutAuthor p {
-    line-height: 150%;
-    max-width: 700px;
+  #aboutAuthor_contact a {
+    font-size: 11px;
   }
-  #aboutAuthor_contact i {
-    font-size: x-large;
-    margin-right: 5px;
-  }
-}
-
-/* 600 TO 900 */
-@media only screen and (min-width: 650px) and (max-width: 900px) {
-  /* ------------ABOUT AUTHOR------------ */
-  #aboutAuthor {
-    line-height: 150%;
-    width: 100%;
-  }
-  #aboutAuthor p {
-    line-height: 150%;
-    max-width: 700px;
-  }
-  #aboutAuthor h1 {
-    font-size: 70px;
+  #aboutAuthor_location small {
+    font-size: 11px;
   }
 }
 
-/* 300 TO 650 */
-@media only screen and (min-width: 300px) and (max-width: 650px) {
-  /* ------------ABOUT AUTHOR------------ */
-  #aboutAuthor {
-    line-height: 150%;
-    width: 100%;
-    background-image: none;
-    overflow-x: hidden;
+/* Pixel 2XL */
+@media only screen and (min-device-width: 411px) and (max-device-height: 823px) and (orientation: portrait) {
+  #aboutAuthor_container img {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
   }
-  #aboutAuthor p {
-    line-height: 150%;
-    padding: 0 1em;
+  #aboutAuthor_container {
+    min-height: 20vh;
   }
-  #aboutAuthor h1 {
-    font-size: 50px;
-    padding: 0 2em;
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    width: 75%;
   }
-  #aboutAuthor h3 {
-    font-size: 15px;
+  #aboutAuthor_contact a {
+    font-size: 11px;
+  }
+  #aboutAuthor_location small {
+    font-size: 11px;
+  }
+}
+
+/* Pixel 2 */
+@media only screen and (min-device-width: 411px) and (max-device-height: 731px) and (orientation: portrait) {
+  #aboutAuthor_container img {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+  }
+  #aboutAuthor_container {
+    min-height: 20vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+  #aboutAuthor_contact a {
+    font-size: 11px;
+  }
+  #aboutAuthor_location small {
+    font-size: 11px;
+  }
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
+  #aboutAuthor_container img {
+    width: 30px;
+    padding: 5px;
+  }
+  #aboutAuthor_container {
+    min-height: 20vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    width: 80%;
+  }
+  #aboutAuthor_contact a {
+    font-size: 11px;
+  }
+  #aboutAuthor_location small {
+    font-size: 11px;
+  }
+}
+
+/* iPhone XS Max, XR ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
+  #aboutAuthor_container img {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+  }
+  #aboutAuthor_container {
+    min-height: 20vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+  #aboutAuthor_contact a {
+    font-size: 11px;
+  }
+  #aboutAuthor_location small {
+    font-size: 11px;
+  }
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
+  #aboutAuthor_container img {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+  }
+  #aboutAuthor_container {
+    min-height: 20vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    width: 70%;
+  }
+  #aboutAuthor_contact a {
+    font-size: 11px;
+  }
+  #aboutAuthor_location small {
+    font-size: 11px;
+  }
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and (min-device-width: 413px) and (max-device-height: 737px) and (orientation: portrait) {
+  #aboutAuthor_container img {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+  }
+  #aboutAuthor_container {
+    min-height: 20vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    transform: translateX(-55%);
+    width: 60%;
+  }
+  #aboutAuthor_contact a {
+    font-size: 11px;
+  }
+  #aboutAuthor_location small {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) {
+  #aboutAuthor_container img {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+  }
+  #aboutAuthor_container {
+    min-height: 15vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    transform: translateX(-55%);
+    width: 50%;
+  }
+  #aboutAuthor_contact a {
+    font-size: 11px;
+  }
+  #aboutAuthor_location small {
+    font-size: 11px;
+  }
+}
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
+  #aboutAuthor_container img {
+    width: 30px;
+    padding: 5px;
+  }
+  #aboutAuthor_container {
+    min-height: 20vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+    align-items: center;
+    width: fit-content;
+  }
+  #aboutAuthor_contact a {
+    font-size: 11px;
+  }
+  #aboutAuthor_location small {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) {
+  #aboutAuthor_container img {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+  }
+  #aboutAuthor_container {
+    min-height: 35vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    transform: translateX(-55%);
+  }
+  #aboutAuthor_contact a {
+    font-size: 11px;
+  }
+  #aboutAuthor_location small {
+    font-size: 11px;
+  }
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) {
+  #aboutAuthor_container img {
+    width: 30px;
+    padding: 5px;
+  }
+  #aboutAuthor_container {
+    min-height: 20vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    width: fit-content;
+  }
+  #aboutAuthor_contact a {
+    font-size: 11px;
+  }
+  #aboutAuthor_location small {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) {
+  #aboutAuthor_container img {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+  }
+  #aboutAuthor_container {
+    min-height: 40vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    transform: translateX(-55%);
+  }
+  #aboutAuthor_contact a {
+    font-size: 11px;
+  }
+  #aboutAuthor_location small {
+    font-size: 11px;
+  }
+}
+
+/* large screens ----------------- */
+@media only screen and (min-width: 1823px) {
+  #aboutAuthor_container img {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+  }
+  #aboutAuthor_container {
+    min-height: 20vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+  }
+}
+
+/* -------1400px to 1823px------ */
+@media only screen and (min-width: 1400px) and (max-width: 1823px) {
+  #aboutAuthor_container img {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+  }
+  #aboutAuthor_container {
+    min-height: 20vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+  }
+}
+
+/* ------900 to 1400------ */
+@media only screen and (min-width: 900px) and (max-width: 1400px) and (min-device-height: 1000px) {
+  #aboutAuthor_container img {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+  }
+  #aboutAuthor_container {
+    min-height: 20vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+  }
+}
+
+/* ------600 to 900------ */
+@media only screen and (min-width: 650px) and (max-width: 900px) and (min-device-height: 1000px) {
+  #aboutAuthor_container img {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+  }
+  #aboutAuthor_container {
+    min-height: 20vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+  }
+}
+
+/* ------300 to 650------ */
+@media only screen and (min-width: 300px) and (max-width: 650px) and (min-device-height: 1000px) {
+  #aboutAuthor_container img {
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+  }
+  #aboutAuthor_container {
+    min-height: 20vh;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    transform: translateX(-55%);
+  }
+  #aboutAuthor_contact a {
+    font-size: 13px;
+  }
+  #aboutAuthor_location small {
+    font-size: 13px;
   }
 }
 
 /* UNDER 300 */
 @media only screen and (max-width: 300px) {
-  /* ------------ABOUT AUTHOR------------ */
-  #aboutAuthor {
-    line-height: 150%;
-    width: 100%;
-    background-image: none;
-    overflow-x: hidden;
+  #aboutAuthor_container img {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
   }
-  #aboutAuthor p {
-    line-height: 150%;
-    padding: 0 1em;
+  #aboutAuthor_container {
+    min-height: 30vh;
   }
-  #aboutAuthor h1 {
-    font-size: 35px;
-    padding: 0 2em;
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    transform: translateX(-55%);
   }
-  #aboutAuthor h3 {
-    font-size: 15px;
+  #aboutAuthor_contact a {
+    font-size: 9px;
+  }
+  #aboutAuthor_location small {
+    font-size: 9px;
   }
 }

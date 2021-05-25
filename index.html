@@ -33,384 +33,410 @@
     <title>Casa Arte</title>
   </head>
   <body>
-    <div id="landing_page">
-      <div id="topbar" class="fixed-navbar">
-        <div>
-          <a href="#landing_page">
-            <img id="business_logo" src="/landing-imgs/nowlogo.png" alt="Hey" />
-          </a>
-        </div>
-        <div id="navbar">
-          <ul>
-            <li><a href="#paintings_container">Gallery</a></li>
-            <li><a href="#service_container">Services</a></li>
-            <li><a href="#aboutAuthor_container">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div id="contact_info">
-        <a href="tel:3541168946"><i class="fas fa-phone"></i></a>
-        <a href="tel: 3545454259"><i class="fab fa-whatsapp"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-      <div id="landing_hook">
-        <!-- find fitting font -->
-        <h1>Casa Arte</h1>
-
-        <div id="landing_img_carousel">
-          <div
-            id="carouselExampleFade"
-            class="carousel slide carousel-fade"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="/landing-imgs/alexander-schimmeck-ineC_oi7NHs-unsplash.jpg"
-                  class=""
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/landing-imgs/gustavo-centurion-O6fs4ablxw8-unsplash.jpg"
-                  class=""
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/landing-imgs/timon-klauser-3MAmj1ZKSZA-unsplash.jpg"
-                  class=""
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleFade"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <!-- <span>Previous</span> -->
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleFade"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <!-- <span>Next</span> -->
-            </button>
+    <header>
+      <div id="landing_page">
+        <div id="topbar" class="fixed-navbar">
+          <div>
+            <a href="#landing_page">
+              <img
+                id="business_logo"
+                src="/landing-imgs/nowlogo.png"
+                alt="Hey"
+              />
+            </a>
+          </div>
+          <div id="navbar">
+            <ul>
+              <li><a href="#paintings_container">Gallery</a></li>
+              <li><a href="#service_container">Services</a></li>
+              <li><a href="#aboutAuthor_container">Contact Us</a></li>
+            </ul>
           </div>
         </div>
-        <!-- font weight 0, sans serif -->
-        <!-- <p>Buy Original Art At Our Gallery</p> -->
-      </div>
-    </div>
-
-    <div id="service_container">
-      <!-- display grid 2 columns, 6rows -->
-      <div class="introduction">
-        <h1>What We Offer</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum omnis
-          facilis ducimus
-        </p>
-        <!-- <button class="dark-btn" id="service_contact">
-          <a href="tel:">Call Us</a>
-        </button> -->
-      </div>
-      <div id="services">
-        <div class="service-option">
-          <h3><i class="fas fa-paint-brush"></i>&nbsp; Paint</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            sint repellat quisquam aspernatur qui ipsum consequatur aut quis
-            fugiat quo!
-          </p>
-          <img
-            id="service_painting"
-            class="service-img"
-            src="/paintings/service_painting.jpg"
-            alt="..."
-          />
-          <br />
-          <button id="seepaintings" class="light-btn">
-            <a href="#paintings_container">See Paintings</a>
-          </button>
-        </div>
-        <div class="service-option">
-          <h3><i class="fas fa-camera"></i>&nbsp; Photography</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
-            veniam voluptate impedit ut eaque fugiat aperiam corrupti debitis
-            enim neque.
-          </p>
-          <img
-            id="service_photo"
-            class="service-img"
-            src="/paintings/service_photo.jpg"
-            alt=""
-          />
-          <br />
-          <button class="light-btn">
-            <a href="#photography_container">See Photos</a>
-          </button>
-        </div>
-        <div class="service-option">
-          <h3><i class="fas fa-pencil-ruler"></i>&nbsp; Graphic Design</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum
-            commodi velit exercitationem natus ab culpa eos voluptatum modi
-            delectus.
-          </p>
-          <img
-            id="service_graphicDesign"
-            class="service-img"
-            src="/paintings/service_design.jpg"
-            alt="..."
-          />
-          <br />
-          <button id="seegraphics" class="light-btn">
-            <a href="/html/graphicdesigns.html">See Graphic Art</a>
-          </button>
-        </div>
-        <div class="service-option">
-          <h3><i class="fas fa-gem"></i>&nbsp; Makeup & Signature Jewelry</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut odio ex
-            quod dolorum impedit perferendis eos corporis, sunt fugiat! Minus?
-          </p>
-          <img
-            id="service_makeup"
-            class="service-img"
-            src="/paintings/service_makeup.jpg"
-            alt=""
-          />
-          <br />
-          <button class="light-btn">
-            <a href="/html/graphicdesigns.html">See Products</a>
-          </button>
-        </div>
-      </div>
-      <footer>
-        <small id="service_footer"
-          >All services provided by Isabel Moreno.</small
-        >
-      </footer>
-    </div>
-
-    <div id="business_hours_container">
-      <div id="businessHours">
-        <h3>Open and Close hours</h3>
-        <!-- add an info icon and periods of closing during day -->
-        <div class="dateCard">
-          <h5 class="weekday">Monday</h5>
-          <span class="days" id="monday">5</span>
-          <!-- <p id="mon_hours">10:30am - 8:00pm</p> -->
-        </div>
-        <div class="dateCard">
-          <h5 class="weekday">Tuesday</h5>
-          <span class="days" id="tuesday">6</span>
-          <!-- <p id="tue_hours">10:30am - 8:00pm</p> -->
-        </div>
-        <div class="dateCard">
-          <h5 class="weekday">Wednesday</h5>
-          <span class="days" id="wednesday">7</span>
-          <!-- <p id="wed_hours">10:30am - 8:00pm</p> -->
-        </div>
-        <div class="dateCard">
-          <h5 class="weekday">Thursday</h5>
-          <span class="days" id="thursday">8</span>
-          <!-- <p id="thu_hours">10:30am - 8:00pm</p> -->
-        </div>
-        <div class="dateCard">
-          <h5 class="weekday">Friday</h5>
-          <span class="days" id="friday">9</span>
-          <!-- <p id="fri_hours">10:30am - 8:00pm</p> -->
-        </div>
-        <div class="dateCard">
-          <h5 class="weekday">Saturday</h5>
-          <span class="days" id="saturday">10</span>
-          <!-- <p id="sat_hours">10:30am - 8:00pm</p> -->
-        </div>
-        <div class="dateCard">
-          <h5 class="weekday">Sunday</h5>
-          <span class="days" id="sunday">11</span>
-          <!-- <p id="sun_hours">Closed</p> -->
-        </div>
-      </div>
-      <p id="business_hours_address">Periban De Ramos, Michoacan, Ocampo #39</p>
-      <p id="closed_interval">Closed between 2:00pm and 4:30pm</p>
-    </div>
-
-    <div id="paintings_container">
-      <div id="paintings">
-        <div id="painting_introduction">
-          <h1>Discover the world through original paintings for sale</h1>
-          <button id="painting_discover">Discover&rarr;</button>
-        </div>
-        <div class="painting_box painting-box1">
-          <a href="">
-            <img
-              src="/paintings/birmingham-museums-trust-6fv0MEf3FUE-unsplash.jpg"
-              alt=""
-            />
-            <div class="descriptionANDgo">
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </a>
-        </div>
-        <div class="painting_box painting-box2">
-          <a href="">
-            <img
-              src="/paintings/birmingham-museums-trust-NspHfyZnMBE-unsplash.jpg"
-              alt=""
-            />
-            <div class="descriptionANDgo">
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </a>
-        </div>
-        <div class="painting_box painting-box3">
-          <a href="">
-            <img
-              src="/paintings/birmingham-museums-trust-zWE5pOLWkio-unsplash.jpg"
-              alt=""
-            />
-            <div class="descriptionANDgo">
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </a>
-        </div>
-        <div class="painting_box painting-box4">
-          <a href="">
-            <img
-              src="/paintings/chirag-saini-YP8drQuufyw-unsplash.jpg"
-              alt=""
-            />
-            <div class="descriptionANDgo">
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </a>
-        </div>
-        <div class="painting_box painting-box5">
-          <a href="">
-            <img
-              src="/paintings/michele-eckert-C6MHY2Lxg5c-unsplash.jpg"
-              alt=""
-            />
-            <div class="descriptionANDgo">
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </a>
-        </div>
-        <div class="painting_box painting-box6">
-          <a href="">
-            <img
-              src="/paintings/nathan-costa-yZL4kQN-0ts-unsplash.jpg"
-              alt=""
-            />
-            <div class="descriptionANDgo">
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div id="photography_container">
-      <div id="photography_top_bar">
-        <div id="label-photo">
-          <h1>Photography</h1>
-        </div>
-        <div id="photo-navbar">
-          <ul>
-            <li class="photoOption">Studio</li>
-            <li class="photoOption">Outdoors</li>
-            <li class="photoOption">Creative</li>
-          </ul>
-        </div>
-      </div>
-      <div id="photography"></div>
-      <p id="photography_footer">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sint?
-      </p>
-    </div>
-
-    <div id="graphic_design_container">
-      <h1>Everyday use items at your hand</h1>
-      <small
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-        aliquam!</small
-      >
-      <div id="graphic_design">
-        <div>
-          <div class="item-box item-box-1"></div>
-          <h4>Agendas</h4>
-          <small>Lorem, ipsum dolor sit amet consectetur adipisicing.</small>
-        </div>
-        <div>
-          <div class="item-box item-box-2"></div>
-          <h4>Notebooks</h4>
-          <small>Lorem, ipsum dolor sit amet consectetur adipisicing.</small>
-        </div>
-        <div>
-          <div class="item-box item-box-3"></div>
-          <h4>Photo Albums</h4>
-          <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
-        </div>
-        <div>
-          <div class="item-box item-box-4"></div>
-          <h4>Makeup</h4>
-          <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
-        </div>
-        <div>
-          <div class="item-box item-box-5"></div>
-          <h4>Jewelry</h4>
-          <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
-        </div>
-      </div>
-    </div>
-
-    <div id="aboutAuthor_container">
-      <div id="aboutAuthor">
-        <h1>Isabel Moreno</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque iure
-          eligendi, earum laudantium molestias fugiat ea esse suscipit!
-          Consequatur, ad.
-        </p>
-        <h3>Artist - Author - lorem - lorem</h3>
-        <div id="aboutAuthor_contact">
+        <div id="contact_info">
           <a href="tel:3541168946"><i class="fas fa-phone"></i></a>
           <a href="tel: 3545454259"><i class="fab fa-whatsapp"></i></a>
           <a href="#"><i class="fab fa-facebook"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-        <small class="back-to-top"
-          ><a href="#landing_page">Back to Top</a></small
-        >
-      </div>
-    </div>
+        <div id="landing_hook">
+          <!-- find fitting font -->
+          <h1>Casa Arte</h1>
 
-    <!-- <footer>
-      <div id="extraInfo">
-
+          <div id="landing_img_carousel">
+            <div
+              id="carouselExampleFade"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/landing-imgs/alexander-schimmeck-ineC_oi7NHs-unsplash.jpg"
+                    class=""
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/landing-imgs/gustavo-centurion-O6fs4ablxw8-unsplash.jpg"
+                    class=""
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/landing-imgs/timon-klauser-3MAmj1ZKSZA-unsplash.jpg"
+                    class=""
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <!-- <span>Previous</span> -->
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <!-- <span>Next</span> -->
+              </button>
+            </div>
+          </div>
+          <!-- font weight 0, sans serif -->
+          <!-- <p>Buy Original Art At Our Gallery</p> -->
+        </div>
       </div>
-    </footer> -->
+    </header>
+
+    <main>
+      <section>
+        <div id="service_container">
+          <!-- display grid 2 columns, 6rows -->
+          <div class="introduction">
+            <h1>What We Offer</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              omnis facilis ducimus
+            </p>
+            <!-- <button class="dark-btn" id="service_contact">
+              <a href="tel:">Call Us</a>
+            </button> -->
+          </div>
+          <div id="services">
+            <div class="service-option">
+              <h3><i class="fas fa-paint-brush"></i>&nbsp; Paint</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                sint repellat quisquam aspernatur qui ipsum consequatur aut quis
+                fugiat quo!
+              </p>
+              <img
+                id="service_painting"
+                class="service-img"
+                src="/paintings/service_painting.jpg"
+                alt="..."
+              />
+              <br />
+              <button id="seepaintings" class="light-btn">
+                <a href="#paintings_container">See Paintings</a>
+              </button>
+            </div>
+            <div class="service-option">
+              <h3><i class="fas fa-camera"></i>&nbsp; Photography</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorum veniam voluptate impedit ut eaque fugiat aperiam
+                corrupti debitis enim neque.
+              </p>
+              <img
+                id="service_photo"
+                class="service-img"
+                src="/paintings/service_photo.jpg"
+                alt=""
+              />
+              <br />
+              <button class="light-btn">
+                <a href="#photography_container">See Photos</a>
+              </button>
+            </div>
+            <div class="service-option">
+              <h3><i class="fas fa-pencil-ruler"></i>&nbsp; Graphic Design</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                illum commodi velit exercitationem natus ab culpa eos voluptatum
+                modi delectus.
+              </p>
+              <img
+                id="service_graphicDesign"
+                class="service-img"
+                src="/paintings/service_design.jpg"
+                alt="..."
+              />
+              <br />
+              <button id="seegraphics" class="light-btn">
+                <a href="/html/graphicdesigns.html">See Graphic Art</a>
+              </button>
+            </div>
+            <div class="service-option">
+              <h3>
+                <i class="fas fa-gem"></i>&nbsp; Makeup & Signature Jewelry
+              </h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+                odio ex quod dolorum impedit perferendis eos corporis, sunt
+                fugiat! Minus?
+              </p>
+              <img
+                id="service_makeup"
+                class="service-img"
+                src="/paintings/service_makeup.jpg"
+                alt=""
+              />
+              <br />
+              <button class="light-btn">
+                <a href="/html/graphicdesigns.html">See Products</a>
+              </button>
+            </div>
+          </div>
+          <footer>
+            <small id="service_footer"
+              >All services provided by Isabel Moreno.</small
+            >
+          </footer>
+        </div>
+      </section>
+
+      <section>
+        <div id="business_hours_container">
+          <div id="businessHours">
+            <h3>Open and Close hours</h3>
+            <!-- add an info icon and periods of closing during day -->
+            <div class="dateCard">
+              <h5 class="weekday">Monday</h5>
+              <span class="days" id="monday">5</span>
+              <!-- <p id="mon_hours">10:30am - 8:00pm</p> -->
+            </div>
+            <div class="dateCard">
+              <h5 class="weekday">Tuesday</h5>
+              <span class="days" id="tuesday">6</span>
+              <!-- <p id="tue_hours">10:30am - 8:00pm</p> -->
+            </div>
+            <div class="dateCard">
+              <h5 class="weekday">Wednesday</h5>
+              <span class="days" id="wednesday">7</span>
+              <!-- <p id="wed_hours">10:30am - 8:00pm</p> -->
+            </div>
+            <div class="dateCard">
+              <h5 class="weekday">Thursday</h5>
+              <span class="days" id="thursday">8</span>
+              <!-- <p id="thu_hours">10:30am - 8:00pm</p> -->
+            </div>
+            <div class="dateCard">
+              <h5 class="weekday">Friday</h5>
+              <span class="days" id="friday">9</span>
+              <!-- <p id="fri_hours">10:30am - 8:00pm</p> -->
+            </div>
+            <div class="dateCard">
+              <h5 class="weekday">Saturday</h5>
+              <span class="days" id="saturday">10</span>
+              <!-- <p id="sat_hours">10:30am - 8:00pm</p> -->
+            </div>
+            <div class="dateCard">
+              <h5 class="weekday">Sunday</h5>
+              <span class="days" id="sunday">11</span>
+              <!-- <p id="sun_hours">Closed</p> -->
+            </div>
+          </div>
+          <p id="business_hours_address">
+            Periban De Ramos, Michoacan, Ocampo #39
+          </p>
+          <p id="closed_interval">Closed between 2:00pm and 4:30pm</p>
+        </div>
+      </section>
+
+      <section>
+        <div id="paintings_container">
+          <div id="paintings">
+            <div id="painting_introduction">
+              <h1>Discover the world through original paintings for sale</h1>
+              <button id="painting_discover">Discover&rarr;</button>
+            </div>
+            <div class="painting_box painting-box1">
+              <a href="">
+                <img
+                  src="/paintings/birmingham-museums-trust-6fv0MEf3FUE-unsplash.jpg"
+                  alt=""
+                />
+                <div class="descriptionANDgo">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+            </div>
+            <div class="painting_box painting-box2">
+              <a href="">
+                <img
+                  src="/paintings/birmingham-museums-trust-NspHfyZnMBE-unsplash.jpg"
+                  alt=""
+                />
+                <div class="descriptionANDgo">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+            </div>
+            <div class="painting_box painting-box3">
+              <a href="">
+                <img
+                  src="/paintings/birmingham-museums-trust-zWE5pOLWkio-unsplash.jpg"
+                  alt=""
+                />
+                <div class="descriptionANDgo">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+            </div>
+            <div class="painting_box painting-box4">
+              <a href="">
+                <img
+                  src="/paintings/chirag-saini-YP8drQuufyw-unsplash.jpg"
+                  alt=""
+                />
+                <div class="descriptionANDgo">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+            </div>
+            <div class="painting_box painting-box5">
+              <a href="">
+                <img
+                  src="/paintings/michele-eckert-C6MHY2Lxg5c-unsplash.jpg"
+                  alt=""
+                />
+                <div class="descriptionANDgo">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+            </div>
+            <div class="painting_box painting-box6">
+              <a href="">
+                <img
+                  src="/paintings/nathan-costa-yZL4kQN-0ts-unsplash.jpg"
+                  alt=""
+                />
+                <div class="descriptionANDgo">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="photography_container">
+          <div id="photography_top_bar">
+            <div id="label-photo">
+              <h1>Photography</h1>
+            </div>
+            <div id="photo-navbar">
+              <ul>
+                <li class="photoOption">Studio</li>
+                <li class="photoOption">Outdoors</li>
+                <li class="photoOption">Creative</li>
+              </ul>
+            </div>
+          </div>
+          <div id="photography"></div>
+          <p id="photography_footer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            sint?
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div id="graphic_design_container">
+          <h1>Everyday use items at your hand</h1>
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            aliquam!</small
+          >
+          <div id="graphic_design">
+            <div>
+              <div class="item-box item-box-1"></div>
+              <h4>Agendas</h4>
+              <small
+                >Lorem, ipsum dolor sit amet consectetur adipisicing.</small
+              >
+            </div>
+            <div>
+              <div class="item-box item-box-2"></div>
+              <h4>Notebooks</h4>
+              <small
+                >Lorem, ipsum dolor sit amet consectetur adipisicing.</small
+              >
+            </div>
+            <div>
+              <div class="item-box item-box-3"></div>
+              <h4>Photo Albums</h4>
+              <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+            </div>
+            <div>
+              <div class="item-box item-box-4"></div>
+              <h4>Makeup</h4>
+              <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+            </div>
+            <div>
+              <div class="item-box item-box-5"></div>
+              <h4>Jewelry</h4>
+              <small>Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="aboutAuthor_container">
+        <img src="/landing-imgs/nowlogo.png" alt="" />
+        <div id="about_author_info">
+          <!-- <h2>Casa Arte</h2> -->
+          <div id="aboutAuthor_contact">
+            <a href="tel:3541168946"
+              ><class class="fas fa-phone"></class> 354 116 8946</a
+            >
+            <a href="tel: 3545454259"
+              ><i class="fab fa-whatsapp"></i> 354 545 4259</a
+            >
+            <a href="#"><i class="fab fa-facebook"></i> isabelmoreno</a>
+            <a href="#"><i class="fab fa-twitter"></i> isabelmoreno</a>
+            <a href="#"><i class="fab fa-instagram"></i> isabelmoreno</a>
+          </div>
+          <div id="aboutAuthor_location">
+            <small>Calle Ocampo #39</small>
+            <small>Periban de Ramos</small>
+            <small>60440 Periban de Ramos, MICH</small>
+            <small>Mexico</small>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="/index.js"></script>
     <script

@@ -35,9 +35,9 @@
   /* graphic design colors */
   --main-color-graphic-designs-page: rgb(43, 41, 41);
   --secondary-color-graphic-designs-page: rgb(255, 255, 255);
-  /* about author colors */
-  --main-color-second-author-page: rgb(255, 255, 255);
-  --secondary-color-second-author-page: rgb(156, 125, 45);
+  /* footer colors */
+  --main-color-footer: rgb(255, 255, 255);
+  --secondary-color-footer: #8d8c99;
 }
 html {
   scroll-behavior: smooth;
