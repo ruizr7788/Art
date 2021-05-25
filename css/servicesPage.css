@@ -31,7 +31,6 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* border-bottom: 2px solid rgb(9, 22, 145); */
 }
 #service_container .introduction h1 {
   font-family: sans-serif;
@@ -48,7 +47,7 @@
   text-align: left;
   /* border-radius: 5px; */
   background-color: rgb(252, 252, 252);
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .service-option p {
   line-height: 150%;
@@ -131,7 +130,7 @@
     font-size: small;
   }
   .service-img {
-    width: 330px;
+    width: 200px;
     padding: 1em 0;
   }
   #services {
@@ -204,25 +203,32 @@
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) {
   .service-option {
-    padding: 1em 0;
+    padding: 1em;
+  }
+  .service-option i {
+    padding: 5px;
   }
   .service-option p {
     text-align: justify;
-    font-size: 12px;
+    font-size: 10px;
     max-width: 85%;
   }
   .service-option h3 {
-    font-size: large;
+    font-size: small;
   }
   .service-option button {
     font-size: x-small;
   }
   .service-img {
-    width: 450px;
-    padding: 1em 0;
+    width: 230px;
+    padding: 0.5em 0;
   }
   #services {
-    padding: 0 2em 2em 2em;
+    padding: 0 1em 2em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
   }
   #service_container footer {
     font-size: xx-small;
@@ -267,21 +273,25 @@
   }
   .service-option p {
     text-align: justify;
-    font-size: 12px;
+    font-size: 10px;
     max-width: 85%;
   }
   .service-option h3 {
-    font-size: large;
+    font-size: small;
   }
   .service-option button {
     font-size: x-small;
   }
   .service-img {
-    width: 500px;
-    padding: 1em 0;
+    width: 230px;
+    padding: 0.5em 0;
   }
   #services {
-    padding: 0 2em 2em 2em;
+    padding: 0 1em 2em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
   }
   #service_container footer {
     font-size: xx-small;
@@ -329,21 +339,25 @@
   }
   .service-option p {
     text-align: justify;
-    font-size: 12px;
+    font-size: 10px;
     max-width: 85%;
   }
   .service-option h3 {
-    font-size: large;
+    font-size: small;
   }
   .service-option button {
     font-size: x-small;
   }
   .service-img {
-    width: 350px;
-    padding: 1em 0;
+    width: 230px;
+    padding: 0.5em 0;
   }
   #services {
-    padding: 0 2em 2em 2em;
+    padding: 0 1em 2em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
   }
   #service_container footer {
     font-size: xx-small;
@@ -382,7 +396,7 @@
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   #service_container .introduction h1 {
     font-size: xx-large;
   }
@@ -426,7 +440,7 @@
 /* -------------laptops and desktops---------------- */
 
 /* 2300 min width and 1300 min height */
-@media only screen and (min-width: 2300px) and (min-height: 1300px) {
+@media only screen and (min-width: 2300px) and (min-height: 1200px) {
   #service_container {
     padding: 5vh 0;
     min-height: 45vh;
@@ -469,7 +483,7 @@
 }
 
 /* 1950 min width and 2300 max width and 1440 min height */
-@media only screen and (min-width: 1950px) and (max-width: 2304px) and (min-height: 1300px) {
+@media only screen and (min-width: 1950px) and (max-width: 2304px) and (min-height: 1200px) {
   #service_container {
     padding: 5vh 0;
     min-height: 45vh;
@@ -512,7 +526,7 @@
 }
 
 /* 1823 min width and 1400 min height ----------------- */
-@media only screen and (min-width: 1823px) and (max-width: 1950px) and (min-height: 1300px) {
+@media only screen and (min-width: 1823px) and (max-width: 1950px) and (min-height: 1200px) {
   #service_container {
     padding: 5vh 0;
     min-height: 45vh;
@@ -597,7 +611,7 @@
 }
 
 /* ------900 to 1400------ */
-@media only screen and (min-width: 900px) and (max-width: 1400px) and (min-device-height: 1000px) {
+@media only screen and (min-width: 900px) and (max-width: 1400px) and (min-device-height: 768px) {
   #service_container {
     padding: 7vh 0;
     min-height: 45vh;
@@ -643,7 +657,7 @@
 }
 
 /* ------600 to 900------ */
-@media only screen and (min-width: 650px) and (max-width: 900px) and (min-device-height: 1025px) {
+@media only screen and (min-width: 650px) and (max-width: 900px) and (min-device-height: 700px) {
   #service_container {
     padding: 3vh 0;
     min-height: 45vh;
