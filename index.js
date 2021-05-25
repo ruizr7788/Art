@@ -14,72 +14,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// dates for business hours page
-const days = document.querySelectorAll(".days");
-const weekday = document.querySelectorAll(".weekday");
-
-const currentDate = new Date();
-const today = currentDate.getDate();
-const todayWeek = new Date();
-const tomorrow = new Date(+currentDate + 24 * 60 * 60 * 1000);
-const day3 = new Date(+currentDate + 2 * 24 * 60 * 60 * 1000);
-const day4 = new Date(+currentDate + 3 * 24 * 60 * 60 * 1000);
-const day5 = new Date(+currentDate + 4 * 24 * 60 * 60 * 1000);
-const day6 = new Date(+currentDate + 5 * 24 * 60 * 60 * 1000);
-const day7 = new Date(+currentDate + 6 * 24 * 60 * 60 * 1000);
-
-const nextDays = [
-  [today],
-  [tomorrow.getDate()],
-  [day3.getDate()],
-  [day4.getDate()],
-  [day5.getDate()],
-  [day6.getDate()],
-  [day7.getDate()],
-];
-days.forEach((day, i) => {
-  day.textContent = nextDays[i];
-});
-
-const weekDayNum = [
-  [todayWeek.getDay()],
-  [tomorrow.getDay()],
-  [day3.getDay()],
-  [day4.getDay()],
-  [day5.getDay()],
-  [day6.getDay()],
-  [day7.getDay()],
-];
-const weekDays = [
-  ["Sunday"],
-  ["Monday"],
-  ["Tuesday"],
-  ["Wednesday"],
-  ["Thursday"],
-  ["Friday"],
-  ["Saturday"],
-];
-
-weekday.forEach((day, i) => {
-  const currentDay = weekDayNum[i];
-  const currentWeekDay = weekDays[Number(currentDay)];
-  day.textContent = currentWeekDay;
-});
-
-// check if the weekday is not sunday and if its not add the business hours HTML: <p>10:30am - 8:00pm</p> : to the 'date card contiainer, but if Sunday add HTML: <p>Closed</p>
-
-const dateCardEl = document.querySelectorAll(".dateCard");
-
-weekday.forEach((day, i) => {
-  const openHTML = `<p>10:30am-8:00pm</p>`;
-  const closedHTML = `<p>Closed</p>`;
-  if (day.textContent !== "Sunday") {
-    dateCardEl[i].insertAdjacentHTML("beforeend", openHTML);
-  } else {
-    dateCardEl[i].insertAdjacentHTML("beforeend", closedHTML);
-  }
-});
-
 // photo navbar
 const allTypes = {
   studio: [
@@ -164,22 +98,5 @@ function checkPhotoContainer() {
     photoContainer.style.opacity = 100;
   } else {
     photoContainer.style.opacity = 0;
-  }
-}
-
-// Business Hours fade in
-const businessHoursContainer = document.getElementById("businessHours");
-
-window.addEventListener("scroll", checkbusinessHoursContainer);
-checkbusinessHoursContainer();
-
-function checkbusinessHoursContainer() {
-  const triggerHalf = (window.innerHeight / 5) * 4;
-  const businessHoursContainerTop =
-    businessHoursContainer.getBoundingClientRect().top;
-  if (businessHoursContainerTop < triggerHalf) {
-    businessHoursContainer.style.opacity = 100;
-  } else {
-    businessHoursContainer.style.opacity = 0;
   }
 }
