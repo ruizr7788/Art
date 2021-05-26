@@ -387,6 +387,8 @@
   }
   #graphic_design {
     padding-top: 4em;
+    max-width: 80%;
+    margin: auto;
   }
   #graphic_design_container {
     padding: 15vh 0;

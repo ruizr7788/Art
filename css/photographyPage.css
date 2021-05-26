@@ -26,10 +26,6 @@
 #photo-navbar {
   flex: 3;
 }
-#label-photo {
-  flex: 1;
-  color: var(--main-color-photography-page);
-}
 #photography_top_bar ul {
   display: flex;
   justify-content: space-around;
@@ -48,6 +44,30 @@
 
 #photography_footer {
   color: var(--small-text-color);
+}
+
+/* integrated beginning */
+#introductions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 0 5em 0;
+  max-width: 700px;
+  margin: auto;
+}
+#introductions h1 {
+  font-size: xx-large;
+  color: darkgrey;
+}
+.btn-photography {
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+}
+
+.display_option.active h1 {
+  transition: var(--ease-3);
 }
 
 /* MEDIA QUERYS */
@@ -516,10 +536,7 @@
   }
   #photography_top_bar {
     max-width: 1500px;
-    padding: 0 0 3em 0;
-  }
-  #label-photo h1 {
-    font-size: 42px;
+    padding: 0 0 1em 0;
   }
   .photographyCard img {
     width: 310px;
@@ -527,9 +544,6 @@
   }
   #photography_container {
     padding: 8vh 0;
-  }
-  #photography_introduction {
-    margin-bottom: 3em;
   }
   #photography {
     padding: 3em 0;
@@ -551,7 +565,7 @@
   }
   #photography_top_bar {
     max-width: 1300px;
-    padding: 5em 0 3em 0;
+    padding: 1.5em 0 0 0;
   }
   #label-photo h1 {
     font-size: 45px;
@@ -598,9 +612,6 @@
   #photography_container {
     padding: 8vh 0;
   }
-  #photography_introduction {
-    margin-bottom: 1.8em;
-  }
   #photography {
     padding: 3em 1em;
     grid-template-columns: repeat(4, 1fr);
@@ -632,9 +643,6 @@
   }
   #photography_container {
     padding: 8vh 0;
-  }
-  #photography_introduction {
-    margin-bottom: 1em;
   }
   #photography {
     padding: 3em 0;
@@ -671,9 +679,6 @@
   #photography_container {
     padding: 8vh 0;
   }
-  #photography_introduction {
-    margin-bottom: 1em;
-  }
   #photography {
     padding: 3em 0;
     grid-template-columns: 1fr 1fr;
@@ -708,9 +713,6 @@
   }
   #photography_container {
     padding: 8vh 0;
-  }
-  #photography_introduction {
-    margin-bottom: 1em;
   }
   #photography {
     padding: 3em 0;
