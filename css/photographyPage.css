@@ -13,9 +13,7 @@
   margin: auto;
   border-bottom: 3px solid black;
   border-top: 3px solid black;
-}
-#small-photo {
-  color: var(--small-text-color);
+  transition: var(--ease-6);
 }
 /* photography top bar */
 #photography_top_bar {
@@ -57,7 +55,6 @@
 }
 #introductions h1 {
   font-size: xx-large;
-  color: darkgrey;
 }
 .btn-photography {
   border: none;
@@ -66,8 +63,15 @@
   background-color: #fff;
 }
 
+.display_option h1 {
+  color: gray;
+  transition: var(--ease-3);
+}
+
 .display_option.active h1 {
   transition: var(--ease-3);
+  color: black;
+  transform: scale(1.1);
 }
 
 /* MEDIA QUERYS */
