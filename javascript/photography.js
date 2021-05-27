@@ -1,8 +1,35 @@
 // painting photos
 const allTypesPaintings = {
-  blackWhite: [],
-  abstract: [],
-  creative: [],
+  blackWhite: [
+    "/paintingsPG/paintings1.jpg",
+    "/paintingsPG/paintings2.jpg",
+    "/paintingsPG/paintings3.jpg",
+    "/paintingsPG/paintings4.jpg",
+    "/paintingsPG/paintings13.jpg",
+    "/paintingsPG/paintings14.jpg",
+    "/paintingsPG/paintings15.jpg",
+    "/paintingsPG/paintings16.jpg",
+  ],
+  abstract: [
+    "/paintingsPG/paintings5.jpg",
+    "/paintingsPG/paintings6.jpg",
+    "/paintingsPG/paintings7.jpg",
+    "/paintingsPG/paintings8.jpg",
+    "/paintingsPG/paintings17.jpg",
+    "/paintingsPG/paintings18.jpg",
+    "/paintingsPG/paintings19.jpg",
+    "/paintingsPG/paintings20.jpg",
+  ],
+  creative: [
+    "/paintingsPG/paintings9.jpg",
+    "/paintingsPG/paintings10.jpg",
+    "/paintingsPG/paintings11.jpg",
+    "/paintingsPG/paintings12.jpg",
+    "/paintingsPG/paintings21.jpg",
+    "/paintingsPG/paintings22.jpg",
+    "/paintingsPG/paintings23.jpg",
+    "/paintingsPG/paintings24.jpg",
+  ],
 };
 
 // makeup photos
@@ -12,18 +39,30 @@ const allTypesMakeup = {
     "/makeup/makeup2.jpg",
     "/makeup/makeup3.jpg",
     "/makeup/makeup4.jpg",
+    "/makeup/makeup13.jpg",
+    "/makeup/makeup14.jpg",
+    "/makeup/makeup15.jpg",
+    "/makeup/makeup16.jpg",
   ],
   art: [
     "/makeup/makeup5.jpg",
     "/makeup/makeup6.jpg",
     "/makeup/makeup7.jpg",
     "/makeup/makeup8.jpg",
+    "/makeup/makeup17.jpg",
+    "/makeup/makeup18.jpg",
+    "/makeup/makeup19.jpg",
+    "/makeup/makeup20.jpg",
   ],
   creative: [
     "/makeup/makeup9.jpg",
     "/makeup/makeup10.jpg",
     "/makeup/makeup11.jpg",
     "/makeup/makeup12.jpg",
+    "/makeup/makeup21.jpg",
+    "/makeup/makeup22.jpg",
+    "/makeup/makeup23.jpg",
+    "/makeup/makeup24.jpg",
   ],
 };
 
@@ -186,12 +225,61 @@ updatePhotos(currentDisplay);
 function updatePhotos(current = "photography") {
   photoSectionEl = document.getElementById("photography");
   if (current === "photography") {
+    let btns = document.querySelectorAll(".photoOption");
     clearCurrentPhotos();
     displayPhotos(allTypesPhotos.studio);
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        if (i === 0) {
+          clearCurrentPhotos();
+          displayPhotos(allTypesPhotos.studio);
+        } else if (i === 1) {
+          clearCurrentPhotos();
+          displayPhotos(allTypesPhotos.outdoors);
+        } else if (i === 2) {
+          clearCurrentPhotos();
+          displayPhotos(allTypesPhotos.creative);
+        }
+      });
+    });
   }
   if (current === "makeup") {
+    let btns = document.querySelectorAll(".photoOption");
     clearCurrentPhotos();
     displayPhotos(allTypesMakeup.festive);
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        if (i === 0) {
+          clearCurrentPhotos();
+          displayPhotos(allTypesMakeup.festive);
+        } else if (i === 1) {
+          clearCurrentPhotos();
+          displayPhotos(allTypesMakeup.art);
+        } else if (i === 2) {
+          clearCurrentPhotos();
+          displayPhotos(allTypesMakeup.creative);
+        }
+      });
+    });
+  }
+  if (current === "paintings") {
+    let btns = document.querySelectorAll(".photoOption");
+    clearCurrentPhotos();
+    displayPhotos(allTypesPaintings.blackWhite);
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        if (i === 0) {
+          clearCurrentPhotos();
+          displayPhotos(allTypesPaintings.blackWhite);
+        } else if (i === 1) {
+          clearCurrentPhotos();
+          displayPhotos(allTypesPaintings.abstract);
+        } else if (i === 2) {
+          clearCurrentPhotos();
+          displayPhotos(allTypesPaintings.creative);
+        }
+      });
+    });
   }
 }
 
@@ -200,7 +288,7 @@ function displayPhotos(photoObj) {
   photoObj.forEach((photo) => {
     const html = `
       <div class="photographyCard">
-        <img src="${photo}" alt="..." />
+        <img class="photo" src="${photo}" alt="..." />
       </div>`;
     photoSectionEl.insertAdjacentHTML("beforeend", html);
   });
@@ -209,24 +297,6 @@ function displayPhotos(photoObj) {
 function clearCurrentPhotos() {
   photoSectionEl.innerHTML = "";
 }
-
-// displaying and clearing
-// const btns = document.querySelectorAll(".photoOption");
-
-// btns.forEach((btn, i) => {
-//   btn.addEventListener("click", () => {
-//     if (i === 0) {
-//       clearCurrentPhotos();
-//       displayPhotos(allTypes.studio);
-//     } else if (i === 1) {
-//       clearCurrentPhotos();
-//       displayPhotos(allTypes.outdoors);
-//     } else if (i === 2) {
-//       clearCurrentPhotos();
-//       displayPhotos(allTypes.creative);
-//     }
-//   });
-// });
 
 // photography section fade-in -----------------------------------
 const photoContainer = document.getElementById("photography_container");
