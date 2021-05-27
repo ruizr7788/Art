@@ -34,24 +34,20 @@
 /* MEDIA QUERYS */
 
 /* iPad landscape */
-@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
   #aboutAuthor_container img {
-    width: 40px;
+    width: 30px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1%;
+    bottom: 1em;
+    left: 1em;
   }
   #aboutAuthor_container {
-    min-height: 15vh;
+    min-height: fit-content;
+    padding: 7vh 0;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    left: 55%;
-    top: 20%;
-    transform: translateX(-55%);
-    width: 50%;
+    max-width: 60%;
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -66,22 +62,16 @@
   #aboutAuthor_container img {
     width: 30px;
     position: absolute;
-    top: 50%;
-    left: 1%;
-    transform: translateY(-50%);
+    bottom: 1em;
+    left: 1em;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 7vh 0;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    width: 75%;
+    max-width: 60%;
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -96,22 +86,16 @@
   #aboutAuthor_container img {
     width: 30px;
     position: absolute;
-    top: 50%;
-    left: 1%;
-    transform: translateY(-50%);
+    bottom: 1em;
+    left: 1em;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 7vh;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    width: 80%;
+    max-width: 60%;
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -125,15 +109,17 @@
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
   #aboutAuthor_container img {
     width: 30px;
-    padding: 5px;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 7vh 0;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
-    width: 80%;
+    max-width: 80%;
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -148,22 +134,16 @@
   #aboutAuthor_container img {
     width: 30px;
     position: absolute;
-    top: 50%;
-    left: 1%;
-    transform: translateY(-50%);
+    bottom: 1em;
+    left: 1em;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 7vh 0;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    width: 80%;
+    max-width: 60%;
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -178,22 +158,16 @@
   #aboutAuthor_container img {
     width: 30px;
     position: absolute;
-    top: 50%;
-    left: 1%;
-    transform: translateY(-50%);
+    bottom: 1em;
+    left: 1em;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 7vh 0;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-    align-items: center;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    width: 70%;
+    max-width: 60%;
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -206,22 +180,18 @@
 /* iPhone 6+, 7+, 8+ ----------- */
 @media only screen and (min-device-width: 413px) and (max-device-height: 737px) and (orientation: portrait) {
   #aboutAuthor_container img {
-    width: 40px;
+    width: 30px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1%;
+    bottom: 1em;
+    left: 1em;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 7vh;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    left: 55%;
-    top: 20%;
-    transform: translateX(-55%);
-    width: 60%;
+    max-width: 70%;
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -233,22 +203,18 @@
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) {
   #aboutAuthor_container img {
-    width: 40px;
+    width: 30px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1%;
+    bottom: 1em;
+    left: 1em;
   }
   #aboutAuthor_container {
-    min-height: 15vh;
+    min-height: fit-content;
+    padding: 7vh 0;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    left: 55%;
-    top: 20%;
-    transform: translateX(-55%);
-    width: 50%;
+    max-width: 50%;
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -262,16 +228,17 @@
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
   #aboutAuthor_container img {
     width: 30px;
-    padding: 5px;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 7vh;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-    align-items: center;
-    width: 70%;
+    max-width: 75%;
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -283,21 +250,16 @@
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) {
   #aboutAuthor_container img {
-    width: 40px;
+    width: 30px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1%;
+    bottom: 1em;
+    left: 1em;
   }
   #aboutAuthor_container {
-    min-height: 35vh;
+    min-height: fit-content;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    left: 55%;
-    top: 20%;
-    transform: translateX(-55%);
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -310,16 +272,18 @@
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) {
   #aboutAuthor_container img {
-    width: 30px;
-    padding: 5px;
+    width: 35px;
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 7vh 0;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
-    width: 80%;
+    max-width: 80%;
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -331,21 +295,16 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) {
   #aboutAuthor_container img {
-    width: 40px;
+    width: 30px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1%;
+    bottom: 1em;
+    left: 1em;
   }
   #aboutAuthor_container {
-    min-height: 40vh;
+    min-height: fit-content;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    left: 55%;
-    top: 20%;
-    transform: translateX(-55%);
   }
   #aboutAuthor_contact a {
     font-size: 11px;
@@ -355,8 +314,8 @@
   }
 }
 
-/* large screens ----------------- */
-@media only screen and (min-width: 1823px) {
+/* imac--------------------------- */
+@media only screen and (min-width: 2300px) and (min-height: 1250px) {
   #aboutAuthor_container img {
     width: 100px;
     position: absolute;
@@ -365,14 +324,31 @@
     left: 1%;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 5vh 0;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 20%;
+  }
+}
+
+/* large screens ----------------- */
+@media only screen and (min-width: 1823px) and (max-width: 2300px) {
+  #aboutAuthor_container img {
+    width: 100px;
     position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+  }
+  #aboutAuthor_container {
+    min-height: fit-content;
+    padding: 5vh 0;
+  }
+  #about_author_info {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 25%;
   }
 }
 
@@ -386,14 +362,12 @@
     left: 1%;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 7vh 0;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
+    max-width: 25%;
   }
 }
 
@@ -407,56 +381,50 @@
     left: 1%;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 7vh 0;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
+    max-width: 40%;
   }
 }
 
 /* ------600 to 900------ */
 @media only screen and (min-width: 650px) and (max-width: 900px) and (min-device-height: 1000px) {
   #aboutAuthor_container img {
-    width: 100px;
+    width: 80px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 1%;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 7vh;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
+    max-width: 60%;
   }
 }
 
 /* ------300 to 650------ */
 @media only screen and (min-width: 300px) and (max-width: 650px) and (min-device-height: 1000px) {
   #aboutAuthor_container img {
-    width: 100px;
+    width: 70px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 1%;
   }
   #aboutAuthor_container {
-    min-height: 20vh;
+    min-height: fit-content;
+    padding: 7vh 0;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    left: 55%;
-    top: 20%;
-    transform: translateX(-55%);
+    max-width: 60%;
   }
   #aboutAuthor_contact a {
     font-size: 13px;
@@ -476,14 +444,12 @@
     left: 1%;
   }
   #aboutAuthor_container {
-    min-height: 30vh;
+    min-height: fit-content;
+    padding: 6vh 0;
   }
   #about_author_info {
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    left: 55%;
-    top: 20%;
-    transform: translateX(-55%);
+    max-width: 70%;
   }
   #aboutAuthor_contact a {
     font-size: 9px;
