@@ -61,9 +61,6 @@ body {
 }
 
 /* ------COLLECTIVE STYLING------ */
-.purple {
-  color: purple;
-}
 /* buttons */
 
 .light-btn {
@@ -106,4 +103,9 @@ body {
   background-color: #fff;
   color: black;
   transition: var(--ease-6);
+}
+
+.hidden {
+  display: none;
+  transition: var(--ease-9);
 }

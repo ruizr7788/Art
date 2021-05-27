@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="/css/servicesPage.css" />
     <link rel="stylesheet" href="/css/photographyPage.css" />
     <link rel="stylesheet" href="/css/graphicDesign.css" />
-    <link rel="stylesheet" href="/css/aboutAuthorPage.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/mediaQuerys.css" />
     <link rel="icon" href="/landing-imgs/fixedNavLOGO.png" />
 
@@ -47,7 +47,7 @@
             <ul>
               <li><a href="#service_container">Services</a></li>
               <li><a href="#photography_container">Gallery</a></li>
-              <li><a href="#aboutAuthor_container">Contact Us</a></li>
+              <li id="open_modal">Contact Us</li>
             </ul>
           </div>
         </div>
@@ -57,6 +57,30 @@
             “If I could say it in words there would be no reason to paint.”
           </h3>
           <small>– Edward Hopper</small>
+        </div>
+        <div id="modal_contact" class="modal-contact hidden">
+          <span id="modal_btn"><i class="fas fa-times"></i></span>
+          <h2>Casa de Arte</h2>
+          <ul>
+            <li>
+              <a href="tel:3541168946"
+                ><class class="fas fa-phone"></class> 354 116 8946</a
+              >
+            </li>
+            <li>
+              <a href="tel: 3545454259"
+                ><i class="fab fa-whatsapp"></i> 354 545 4259</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i> isabelmoreno</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i> isabelmoreno</a>
+            </li>
+          </ul>
+          <p>Calle Ocampo #39, 60440 Periban de Ramos, MICH</p>
+          <small>Mon-Fri 8:30-10:00, closed between 2:30 & 4:00</small>
         </div>
       </div>
     </header>
@@ -229,11 +253,11 @@
     </main>
 
     <footer>
-      <div id="aboutAuthor_container">
+      <div id="footer_container">
         <img src="/landing-imgs/nowlogo.png" alt="" />
-        <div id="about_author_info">
+        <div id="footer_info">
           <!-- <h2>Casa Arte</h2> -->
-          <div id="aboutAuthor_contact">
+          <div id="footer_contact">
             <a href="tel:3541168946"
               ><class class="fas fa-phone"></class> 354 116 8946</a
             >
@@ -244,7 +268,7 @@
 
             <a href="#"><i class="fab fa-instagram"></i> isabelmoreno</a>
           </div>
-          <div id="aboutAuthor_location">
+          <div id="footer_location">
             <small>Calle Ocampo #39</small>
             <small>Periban de Ramos</small>
             <small>60440 Periban de Ramos, MICH</small>
@@ -258,6 +282,7 @@
 
     <script src="/javascript/photography.js"></script>
     <script src="/javascript/fixedNavbar.js"></script>
+    <script src="/javascript/modal.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
