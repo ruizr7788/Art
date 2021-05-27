@@ -10,6 +10,12 @@
   src: url(/fonts/dancing/DancingScript-SemiBold.woff2);
 }
 
+@font-face {
+  font-family: "Azonix";
+  src: url(/fonts/webfontkit-20210527-115004/azonix-webfont.woff);
+  src: url(/fonts/webfontkit-20210527-115004/azonix-webfont.woff2);
+}
+
 :root {
   --grayed-out-color: rgb(216, 216, 216);
   --ease-15: all 1.5s ease;
@@ -21,7 +27,7 @@
   --dimmer-black: rgba(0, 0, 0, 0.7);
   --small-text-color: rgb(163, 156, 156);
   /* landing page colors */
-  --main-color-landing-page: #000000;
+  --main-color-landing-page: #fff;
   /* service page colors */
   --main-color-service-page: rgb(43, 41, 41);
   --secondary-color-service-page: rgb(43, 41, 41);

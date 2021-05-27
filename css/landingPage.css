@@ -1,9 +1,10 @@
 /* -----------LANDING PAGE---------- */
 #landing_page {
-  background: url(/pageBGs/landingPageBG11.jpg);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)),
+    url(/pageBGs/landingBG2.jpg);
+  min-height: 100vh;
   background-size: cover;
   overflow-x: hidden;
-  min-height: 100vh;
   border-bottom: 1px solid lightslategray;
   position: relative;
 }
@@ -15,21 +16,6 @@
   font-family: sans-serif;
   padding: 5px 2em;
   transition: background-color 0.6s ease;
-}
-#contact_info {
-  max-width: fit-content;
-  margin: auto;
-  padding-top: 1em;
-}
-#contact_info i {
-  margin-right: 1em;
-  padding-bottom: 0.5em;
-  color: var(--main-color-landing-page);
-  transition: var(--ease-3);
-}
-#contact_info i:hover {
-  color: var(--hover-color);
-  transition: var(--ease-3);
 }
 
 /* PAGE LOGO */
@@ -80,32 +66,16 @@
   color: #fff;
 }
 
-/* ------LANDING PAGE HOOK------ */
+/* landing hook */
+
 #landing_hook {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: montserat, sans-serif;
-}
-#landing_hook h1 {
-  font-weight: normal;
-  margin: 0;
-  font-family: "dancing", sans-serif;
-  color: var(--main-color-landing-page);
-}
-#landing_hook p {
-  font-weight: 500;
-  text-align: center;
-  padding-bottom: 2em;
-  font-size: large;
+  position: absolute;
   color: var(--main-color-landing-page);
 }
 
-/* ------LANDING IMGS CAROUSEL------ */
-#landing_img_carousel {
-  padding: 1em 0;
-  max-width: 800px;
-  margin: auto;
+#landing_hook h1 {
+  font-weight: normal;
+  font-family: azonix;
 }
 
 /* Pixel 2XL */
@@ -121,22 +91,21 @@
   #business_logo {
     width: 30px;
   }
-  /* LANDING PAGE HOOK */
-  #landing_hook {
-    margin: 1em 0;
-  }
+  /* LANDING HOOK */
   #landing_hook h1 {
-    font-size: 80px;
+    font-size: 22px;
   }
-  /* LANDING PAGE CAROUSEL */
-  .carousel-inner {
-    max-height: 300px;
-    max-width: 401px;
+  #landing_hook {
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(50%);
+    max-width: 200px;
   }
-  #landing_img_carousel {
-    margin: auto;
-    max-width: 401px;
-    padding: 1em 0 3em 0;
+  #landing_hook h3 {
+    font-size: x-small;
+  }
+  #landing_hook small {
+    font-size: xx-small;
   }
 }
 
@@ -153,22 +122,21 @@
   #business_logo {
     width: 30px;
   }
-  /* LANDING PAGE HOOK */
-  #landing_hook {
-    margin: 1em 0;
-  }
+  /* LANDING HOOK */
   #landing_hook h1 {
-    font-size: 80px;
+    font-size: 22px;
   }
-  /* LANDING PAGE CAROUSEL */
-  .carousel-inner {
-    max-height: 300px;
-    max-width: 401px;
+  #landing_hook {
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(50%);
+    max-width: 200px;
   }
-  #landing_img_carousel {
-    margin: auto;
-    max-width: 401px;
-    padding: 1em 0 3em 0;
+  #landing_hook h3 {
+    font-size: x-small;
+  }
+  #landing_hook small {
+    font-size: xx-small;
   }
 }
 
@@ -185,31 +153,28 @@
   #business_logo {
     width: 30px;
   }
-  /* LANDING PAGE HOOK */
-  #landing_hook {
-    margin: 1em 0;
-  }
+  /* LANDING HOOK */
   #landing_hook h1 {
-    font-size: 80px;
+    font-size: 22px;
   }
-  /* LANDING PAGE CAROUSEL */
-  .carousel-inner {
-    max-height: 300px;
-    max-width: 350px;
+  #landing_hook {
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(50%);
+    max-width: 200px;
   }
-  #landing_img_carousel {
-    margin: auto;
-    max-width: 350px;
-    padding: 1em 0 3em 0;
+  #landing_hook h3 {
+    font-size: x-small;
+  }
+  #landing_hook small {
+    font-size: xx-small;
   }
 }
 
 /* iPhone XS Max, XR ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
   /* ------TOP BAR------ */
-  #contact_info i {
-    font-size: 18px;
-  }
+
   #navbar ul li a {
     font-size: 13px;
   }
@@ -220,30 +185,27 @@
   #business_logo {
     width: 35px;
   }
-  /* LANDING PAGE HOOK */
-  #landing_hook {
-    margin: 1em 0;
-  }
+  /* LANDING HOOK */
   #landing_hook h1 {
-    font-size: 80px;
+    font-size: 23px;
   }
-  /* LANDING PAGE CAROUSEL */
-  .carousel-inner {
-    max-height: 320px;
-    max-width: 404px;
+  #landing_hook {
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(50%);
+    max-width: 200px;
   }
-  #landing_img_carousel {
-    margin: auto;
-    max-width: 404px;
-    padding: 1em 0 3em 0;
+  #landing_hook h3 {
+    font-size: x-small;
+  }
+  #landing_hook small {
+    font-size: xx-small;
   }
 }
 /* iPhone X ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   /* ------TOP BAR------ */
-  #contact_info i {
-    font-size: 18px;
-  }
+
   #navbar ul li a {
     font-size: 12px;
   }
@@ -254,31 +216,28 @@
   #business_logo {
     width: 30px;
   }
-  /* LANDING PAGE HOOK */
-  #landing_hook {
-    margin: 1em 0;
-  }
+  /* LANDING HOOK */
   #landing_hook h1 {
-    font-size: 80px;
+    font-size: 22px;
   }
-  /* LANDING PAGE CAROUSEL */
-  .carousel-inner {
-    max-height: 320px;
-    max-width: 365px;
+  #landing_hook {
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(50%);
+    max-width: 200px;
   }
-  #landing_img_carousel {
-    margin: auto;
-    max-width: 365px;
-    padding: 1em 0 3em 0;
+  #landing_hook h3 {
+    font-size: x-small;
+  }
+  #landing_hook small {
+    font-size: xx-small;
   }
 }
 
 /* iPhone 6+, 7+, 8+ ----------- */
 @media only screen and (min-device-width: 413px) and (max-device-height: 737px) and (orientation: portrait) {
   /* ------TOP BAR------ */
-  #contact_info i {
-    font-size: 16px;
-  }
+
   #navbar ul li a {
     font-size: 12px;
   }
@@ -289,22 +248,21 @@
   #business_logo {
     width: 35px;
   }
-  /* LANDING PAGE HOOK */
-  #landing_hook {
-    margin: 1em 0;
-  }
+  /* LANDING HOOK */
   #landing_hook h1 {
-    font-size: 80px;
+    font-size: 23px;
   }
-  /* LANDING PAGE CAROUSEL */
-  .carousel-inner {
-    max-height: 320px;
-    max-width: 400px;
+  #landing_hook {
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(50%);
+    max-width: 200px;
   }
-  #landing_img_carousel {
-    margin: auto;
-    max-width: 400px;
-    padding: 1em 0 3em 0;
+  #landing_hook h3 {
+    font-size: x-small;
+  }
+  #landing_hook small {
+    font-size: xx-small;
   }
 }
 
@@ -312,14 +270,28 @@
   #topbar {
     padding: 3.5px;
   }
+  /* LANDING HOOK */
+  #landing_hook h1 {
+    font-size: 22px;
+  }
+  #landing_hook {
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(50%);
+    max-width: 200px;
+  }
+  #landing_hook h3 {
+    font-size: x-small;
+  }
+  #landing_hook small {
+    font-size: xx-small;
+  }
 }
 
 /* iPhone 6, 7, 8 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
   /* ------TOP BAR------ */
-  #contact_info i {
-    font-size: small;
-  }
+
   #navbar ul li a {
     font-size: 13px;
   }
@@ -330,23 +302,21 @@
   #business_logo {
     width: 30px;
   }
-
-  /* LANDING PAGE HOOK */
-  #landing_hook {
-    margin: 1em 0;
-  }
+  /* LANDING HOOK */
   #landing_hook h1 {
-    font-size: 80px;
+    font-size: 22px;
   }
-  /* LANDING PAGE CAROUSEL */
-  .carousel-inner {
-    max-height: 280px;
-    max-width: 350px;
+  #landing_hook {
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(50%);
+    max-width: 200px;
   }
-  #landing_img_carousel {
-    margin: auto;
-    max-width: 350px;
-    padding: 2em 0;
+  #landing_hook h3 {
+    font-size: x-small;
+  }
+  #landing_hook small {
+    font-size: xx-small;
   }
 }
 
@@ -358,40 +328,35 @@
   #landing_hook h1 {
     font-size: large;
   }
-  #contact_info i {
-    font-size: small;
-  }
+
   #topbar {
     padding: 3.5px;
   }
-  #contact_info {
-    max-width: fit-content;
-    display: flex;
-    flex-direction: row;
-    position: static;
-  }
+
   #navbar ul {
     padding: 0;
   }
-  #landing_img_carousel {
-    max-width: 657px;
+  /* LANDING HOOK */
+  #landing_hook h1 {
+    font-size: 22px;
   }
-  #landing_img_carousel .carousel-inner {
-    max-width: 657px;
+  #landing_hook {
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(50%);
+    max-width: 200px;
+  }
+  #landing_hook h3 {
+    font-size: x-small;
+  }
+  #landing_hook small {
+    font-size: xx-small;
   }
 }
 
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) {
   /* ------TOP BAR------ */
-  #contact_info {
-    max-width: fit-content;
-    padding-top: 1em;
-  }
-  #contact_info i {
-    font-size: large;
-    margin-right: 1em;
-  }
   #navbar ul li a {
     font-size: small;
   }
@@ -409,38 +374,27 @@
   #navbar ul {
     padding: 0;
   }
-  /* LANDING PAGE HOOK */
-  #landing_hook {
-    margin: 1em 0;
-  }
+  /* LANDING HOOK */
   #landing_hook h1 {
-    font-size: 80px;
+    font-size: 22px;
   }
-  /* LANDING PAGE CAROUSEL */
-  .carousel-inner {
-    max-height: 250px;
-    max-width: 300px;
+  #landing_hook {
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(50%);
+    max-width: 200px;
   }
-  #landing_img_carousel {
-    margin: auto;
-    max-width: 300px;
-    padding: 2em 0;
+  #landing_hook h3 {
+    font-size: x-small;
+  }
+  #landing_hook small {
+    font-size: xx-small;
   }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) {
   /* ------TOP BAR------ */
-  #contact_info {
-    max-width: fit-content;
-    display: flex;
-    flex-direction: row;
-    position: static;
-    padding: 0.5em 0 0 0;
-  }
-  #contact_info i {
-    font-size: large;
-    margin-right: 1em;
-  }
+
   #navbar ul li a {
     font-size: x-small;
   }
@@ -452,40 +406,30 @@
     width: 40px;
     margin-right: 5px;
   }
-  /* LANDING PAGE HOOK */
-  #landing_hook {
-    margin: 0 0 1em 0;
-  }
+  /* LANDING HOOK */
   #landing_hook h1 {
-    font-size: 80px;
+    font-size: 22px;
   }
-  /* LANDING PAGE CAROUSEL */
-  .carousel-inner {
-    max-height: 300px;
+  #landing_hook {
+    bottom: 50%;
+    left: 15px;
+    transform: translateY(50%);
+    max-width: 200px;
   }
-  #landing_img_carousel {
-    margin: auto;
-    max-width: 470px;
+  #landing_hook h3 {
+    font-size: x-small;
+  }
+  #landing_hook small {
+    font-size: xx-small;
   }
 }
 
-/* iPads (portrait and landscape) ----------- */
+/* iPads  ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
   /*  TOP BAR */
   #business_logo {
     width: 100px;
     margin-right: 10px;
-  }
-  #contact_info {
-    max-width: fit-content;
-    display: flex;
-    flex-direction: row;
-    position: static;
-  }
-  #contact_info i {
-    font-size: x-large;
-    margin-right: 1em;
-    padding-bottom: 10px;
   }
   #topbar {
     padding: 5px;
@@ -493,24 +437,23 @@
   #navbar ul {
     padding: 0;
   }
-
   /* LANDING HOOK */
-  #landing_hook h1 {
-    font-size: 105px;
-    letter-spacing: 7px;
-  }
   #landing_hook p {
-    padding-top: 1em;
-    font-size: x-large;
+    padding: 10px 0 0 20px;
   }
-  /* LANDING PAGE CAROUSEL */
-  #landing_img_carousel {
-    padding: 0 0 5em 0;
-    max-width: 640px;
-    margin: auto;
+  #landing_hook h1 {
+    font-size: 50px;
   }
-  #landing_img_carousel .carousel-inner {
-    max-height: 390px;
+  #landing_hook {
+    bottom: 50%;
+    left: 5em;
+    transform: translateY(50%);
+  }
+  #landing_hook h3 {
+    font-size: small;
+  }
+  #landing_hook small {
+    font-size: x-small;
   }
 }
 
@@ -518,16 +461,6 @@
   /*  TOP BAR */
   #business_logo {
     width: 50px;
-  }
-  #contact_info {
-    max-width: fit-content;
-    display: flex;
-    flex-direction: row;
-  }
-  #contact_info i {
-    font-size: x-large;
-    margin-right: 1em;
-    padding-bottom: 10px;
   }
   #topbar {
     padding: 5px 2em;
@@ -537,47 +470,72 @@
   }
 
   /* LANDING HOOK */
-  #landing_hook h1 {
-    font-size: 105px;
-    letter-spacing: 7px;
-  }
   #landing_hook p {
-    padding-top: 1em;
-    font-size: x-large;
+    padding: 10px 0 0 20px;
   }
-  /* LANDING PAGE CAROUSEL */
-  #landing_img_carousel {
-    padding: 0 0 5em 0;
-    max-width: 640px;
-    margin: auto;
+  #landing_hook h1 {
+    font-size: 50px;
   }
-  #landing_img_carousel .carousel-inner {
-    max-height: 390px;
+  #landing_hook {
+    bottom: 50%;
+    left: 5em;
+    transform: translateY(50%);
+  }
+  #landing_hook h3 {
+    font-size: small;
+  }
+  #landing_hook small {
+    font-size: x-small;
   }
 }
 
-/* large screens ----------------- */
-@media only screen and (min-width: 1823px) {
+/* imac---------------------------- */
+@media only screen and (min-width: 2300px) and (min-height: 1250px) {
   /* TOP BAR STYLE */
   #business_logo {
     width: 60px;
     margin-right: 10px;
   }
-  #contact_info {
-    max-width: fit-content;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 2em;
-    top: 17em;
+  #topbar {
+    margin: auto;
+    padding: 5px 8em;
   }
-  #contact_info i {
-    font-size: 30px;
-    margin-bottom: 10px;
+  #navbar ul li a {
+    font-size: 18px;
+  }
+  #navbar ul {
+    margin: 0;
+  }
+  /* LANDING HOOK */
+  #landing_hook p {
+    padding: 10px 0 0 25px;
+  }
+  #landing_hook h1 {
+    font-size: 60px;
+  }
+  #landing_hook {
+    bottom: 42%;
+    left: 5em;
+    transform: translateY(42%);
+  }
+  #landing_hook h3 {
+    font-size: small;
+  }
+  #landing_hook small {
+    font-size: x-small;
+  }
+}
+
+/* large screens ----------------- */
+@media only screen and (min-width: 1823px) and (max-width: 2300px) {
+  /* TOP BAR STYLE */
+  #business_logo {
+    width: 60px;
+    margin-right: 10px;
   }
   #topbar {
     margin: auto;
-    padding: 5px 15em;
+    padding: 5px 8em;
   }
   #navbar ul li a {
     font-size: 17px;
@@ -585,39 +543,31 @@
   #navbar ul {
     margin: 0;
   }
-  /* LANDING PAGE HOOK STYLE */
-  #landing_hook {
-    position: absolute;
-    top: 18%;
-    left: 45%;
-    transform: translateX(-45%);
-    max-width: fit-content;
+  /* LANDING HOOK */
+  #landing_hook small {
+    padding: 10px 0 0 25px;
+  }
+  #landing_hook h3 {
+    padding: 10px 0 0 20px;
   }
   #landing_hook h1 {
-    font-weight: normal;
-    font-size: 130px;
-    margin: 0;
+    font-size: 55px;
   }
-  #landing_hook p {
-    font-size: 30px;
+  #landing_hook {
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 4%;
   }
-  #landing_img_carousel img {
-    width: 800px;
-    height: 500px;
+  #landing_hook h3 {
+    font-size: small;
+  }
+  #landing_hook small {
+    font-size: x-small;
   }
 }
 
 /* -------1400px to 1823px------ */
 @media only screen and (min-width: 1400px) and (max-width: 1823px) {
-  #contact_info {
-    max-width: fit-content;
-    display: flex;
-    padding: 3em 0 0 0;
-  }
-  #contact_info i {
-    font-size: x-large;
-    margin-bottom: 5px;
-  }
   #topbar {
     margin: auto;
     padding: 5px 5em;
@@ -628,26 +578,23 @@
   #business_logo {
     width: 60px;
   }
-  /* LANDING PAGE HOOK STYLE */
-  #landing_hook {
-    max-width: fit-content;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
+  /* LANDING HOOK */
+  #landing_hook p {
+    padding: 10px 0 0 20px;
   }
   #landing_hook h1 {
-    font-weight: normal;
-    font-size: 130px;
-    margin: 0;
+    font-size: 55px;
   }
-  #landing_hook p {
-    font-size: 30px;
+  #landing_hook {
+    bottom: 42%;
+    left: 5em;
+    transform: translateY(-42%);
   }
-  /* LANDING PAGE IMG CARDS */
-  #landing_img_carousel img {
-    width: 800px;
-    height: 500px;
+  #landing_hook h3 {
+    font-size: small;
+  }
+  #landing_hook small {
+    font-size: x-small;
   }
 }
 
@@ -657,14 +604,6 @@
   #business_logo {
     width: 55px;
   }
-  #contact_info {
-    max-width: fit-content;
-    padding: 4em 0 0 0;
-  }
-  #contact_info i {
-    font-size: x-large;
-    margin-right: 30px;
-  }
   #topbar {
     margin: auto;
     padding: 5px 3em;
@@ -672,28 +611,23 @@
   #navbar ul {
     margin: 0;
   }
-  /* LANDING PAGE HOOK */
-  #landing_hook {
-    max-width: fit-content;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
+  /* LANDING HOOK */
+  #landing_hook p {
+    padding: 10px 0 0 20px;
   }
   #landing_hook h1 {
-    font-size: 120px;
+    font-size: 55px;
   }
-  #landing_hook p {
-    font-size: xx-large;
+  #landing_hook {
+    bottom: 42%;
+    left: 5em;
+    transform: translateY(-42%);
   }
-  /* landing page img carousel */
-  #landing_img_carousel {
-    max-width: fit-content;
-    margin: auto;
+  #landing_hook h3 {
+    font-size: small;
   }
-  #landing_img_carousel .carousel-inner {
-    max-width: fit-content;
-    max-height: 400px;
+  #landing_hook small {
+    font-size: x-small;
   }
 }
 
@@ -703,49 +637,35 @@
   #business_logo {
     max-width: 50px;
   }
-  #contact_info {
-    max-width: fit-content;
-  }
-  #contact_info i {
-    font-size: x-large;
-    margin-right: 30px;
-    padding: 2em 0 1em 0;
-  }
+
   #topbar {
     margin: auto;
     padding: 5px 2em;
   }
-  /* LANDING PAGE HOOK */
-  #landing_hook {
-    margin: 0 auto;
-    width: 100%;
-    position: absolute;
-    top: 20%;
+  /* LANDING HOOK */
+  #landing_hook p {
+    padding: 10px 0 0 20px;
   }
   #landing_hook h1 {
-    font-size: 100px;
+    font-size: 45px;
   }
-  #landing_hook p {
-    font-size: x-large;
+  #landing_hook {
+    bottom: 45%;
+    left: 3em;
+    transform: translateY(-45%);
   }
-  /* LANDING PAGE CAROUSEL */
-  #landing_img_carousel {
-    margin: auto;
-    max-width: 600px;
+  #landing_hook h3 {
+    font-size: small;
+  }
+  #landing_hook small {
+    font-size: x-small;
   }
 }
 
 /* ------300 to 650------ */
 @media only screen and (min-width: 300px) and (max-width: 650px) and (min-device-height: 1000px) {
   /* ------TOP BAR------ */
-  #contact_info {
-    max-width: fit-content;
-  }
-  #contact_info i {
-    font-size: x-large;
-    margin-right: 15px;
-    padding: 2em 0 1em 0;
-  }
+
   #navbar ul li a {
     font-size: 15px;
   }
@@ -756,36 +676,31 @@
   #business_logo {
     width: 50px;
   }
-  /* LANDING PAGE HOOK */
-  #landing_hook {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
+  /* LANDING HOOK */
+  #landing_hook p {
+    font-size: 15px;
+    padding: 10px 0 0 20px;
   }
   #landing_hook h1 {
-    font-size: 80px;
+    font-size: 40px;
   }
-  /* LANDING PAGE CAROUSEL */
-  .carousel-inner {
-    max-height: 350px;
+  #landing_hook {
+    bottom: 45%;
+    left: 3em;
+    transform: translateY(-45%);
   }
-  #landing_img_carousel {
-    margin: auto;
-    max-width: 500px;
+  #landing_hook h3 {
+    font-size: small;
+  }
+  #landing_hook small {
+    font-size: x-small;
   }
 }
 
 /* UNDER 300 */
 @media only screen and (max-width: 300px) {
   /* TOPBAR */
-  #contact_info {
-    max-width: fit-content;
-  }
-  #contact_info i {
-    font-size: small;
-    margin-right: 7px;
-  }
+
   #topbar {
     padding: 5px;
     margin: auto;
@@ -800,12 +715,23 @@
   #navbar ul {
     padding: 0;
   }
-  #landing_img_carousel {
-    width: 270px;
+  /* LANDING HOOK */
+  #landing_hook p {
+    font-size: 12px;
+    padding: 10px 0 0 20px;
   }
-  /* LANDING PAGE CAROUSEL */
-  .carousel-inner {
-    max-height: 250px;
-    max-width: 270px;
+  #landing_hook h1 {
+    font-size: 32px;
+  }
+  #landing_hook {
+    bottom: 45%;
+    left: 3em;
+    transform: translateY(-45%);
+  }
+  #landing_hook h3 {
+    font-size: small;
+  }
+  #landing_hook small {
+    font-size: x-small;
   }
 }

@@ -10,6 +10,6 @@ window.addEventListener("scroll", () => {
     businessLogo.src = "/landing-imgs/fixedNavLOGO.png";
   } else {
     navbar.classList.remove("fixed-navbar");
-    businessLogo.src = "/landing-imgs/nowlogo.png";
+    businessLogo.src = "/landing-imgs/fixedNavLOGO.png";
   }
 });
