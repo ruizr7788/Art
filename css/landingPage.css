@@ -241,6 +241,36 @@
   #landing_hook small {
     font-size: xx-small;
   }
+  /* modal */
+  #modal_contact {
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    padding: 25px 10px;
+    width: 280px;
+  }
+  #modal_contact #modal_btn {
+    font-size: small;
+  }
+  #modal_contact h2 {
+    font-size: 17px;
+  }
+  #modal_contact p {
+    font-size: x-small;
+  }
+  #modal_contact small {
+    font-size: xx-small;
+  }
+  #modal_contact #modal_btn {
+    top: 1em;
+    right: 1em;
+  }
+  #modal_contact ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1em 0 0 0;
+    font-size: small;
+  }
 }
 
 /* Samsung Galaxy S3 ----------- */
@@ -622,6 +652,36 @@
   #landing_hook small {
     font-size: xx-small;
   }
+  /* modal */
+  #modal_contact {
+    left: 50%;
+    top: 19%;
+    transform: translateX(-50%);
+    padding: 25px 10px;
+    width: 280px;
+  }
+  #modal_contact #modal_btn {
+    font-size: small;
+  }
+  #modal_contact h2 {
+    font-size: 17px;
+  }
+  #modal_contact p {
+    font-size: x-small;
+  }
+  #modal_contact small {
+    font-size: xx-small;
+  }
+  #modal_contact #modal_btn {
+    top: 1em;
+    right: 1em;
+  }
+  #modal_contact ul {
+    font-size: small;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1em 0 0 0;
+  }
 }
 
 /* iPhone 5 ----------- */
@@ -789,6 +849,36 @@
   }
   #landing_hook small {
     font-size: x-small;
+  }
+  /* modal */
+  #modal_contact {
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    padding: 25px 10px;
+    width: 280px;
+  }
+  #modal_contact #modal_btn {
+    font-size: small;
+  }
+  #modal_contact h2 {
+    font-size: 17px;
+  }
+  #modal_contact p {
+    font-size: x-small;
+  }
+  #modal_contact small {
+    font-size: xx-small;
+  }
+  #modal_contact #modal_btn {
+    top: 1em;
+    right: 1em;
+  }
+  #modal_contact ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1em 0 0 0;
+    font-size: small;
   }
 }
 
