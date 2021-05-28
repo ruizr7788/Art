@@ -325,7 +325,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 1%;
+    left: 45%;
   }
   #footer_container {
     min-height: fit-content;
@@ -334,6 +334,7 @@
   #footer_info {
     grid-template-columns: repeat(2, 1fr);
     max-width: 20%;
+    margin: 0 0 0 15em;
   }
 }
 
@@ -344,7 +345,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 1%;
+    left: 45%;
   }
   #footer_container {
     min-height: fit-content;
@@ -353,6 +354,7 @@
   #footer_info {
     grid-template-columns: repeat(2, 1fr);
     max-width: 25%;
+    margin: 0 0 0 15em;
   }
 }
 
@@ -363,7 +365,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 1%;
+    left: 35%;
   }
   #footer_container {
     min-height: fit-content;
@@ -372,6 +374,7 @@
   #footer_info {
     grid-template-columns: repeat(2, 1fr);
     max-width: 25%;
+    margin: 0 0 0 5em;
   }
 }
 
