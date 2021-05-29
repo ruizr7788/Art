@@ -948,12 +948,11 @@
 @media only screen and (min-width: 2300px) and (min-height: 1250px) {
   /* TOP BAR STYLE */
   #business_logo {
-    width: 60px;
-    margin-right: 10px;
+    width: 55px;
   }
   #topbar {
     margin: auto;
-    padding: 5px 8em;
+    padding: 3px 8em;
   }
   #navbar ul li a {
     font-size: 18px;
@@ -1001,12 +1000,11 @@
 @media only screen and (min-width: 1823px) and (max-width: 2300px) {
   /* TOP BAR STYLE */
   #business_logo {
-    width: 60px;
-    margin-right: 10px;
+    width: 50px;
   }
   #topbar {
     margin: auto;
-    padding: 5px 8em;
+    padding: 3px 15em;
   }
   #navbar ul li a {
     font-size: 17px;
@@ -1057,13 +1055,13 @@
 @media only screen and (min-width: 1400px) and (max-width: 1823px) {
   #topbar {
     margin: auto;
-    padding: 5px 5em;
+    padding: 3px 5em;
   }
   #navbar ul {
     margin: 0;
   }
   #business_logo {
-    width: 60px;
+    width: 50px;
   }
   /* LANDING HOOK */
   #landing_hook p {
@@ -1105,11 +1103,11 @@
 @media only screen and (min-width: 900px) and (max-width: 1400px) and (min-device-height: 1000px) {
   /* TOP BAR */
   #business_logo {
-    width: 55px;
+    width: 50px;
   }
   #topbar {
     margin: auto;
-    padding: 5px 3em;
+    padding: 3px 3em;
   }
   #navbar ul {
     margin: 0;
@@ -1168,7 +1166,7 @@
 
   #topbar {
     margin: auto;
-    padding: 5px 2em;
+    padding: 3px 2em;
   }
   /* LANDING HOOK */
   #landing_hook p {

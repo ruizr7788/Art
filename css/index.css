@@ -16,6 +16,12 @@
   src: url(/fonts/webfontkit-20210527-115004/azonix-webfont.woff2);
 }
 
+@font-face {
+  font-family: "SF Pro";
+  src: url(/fonts/SF-pro-regular/fontsfree-net-sfprodisplay-regular-webfont.woff);
+  src: url(/fonts/SF-pro-regular/fontsfree-net-sfprodisplay-regular-webfont.woff2);
+}
+
 :root {
   --grayed-out-color: rgb(216, 216, 216);
   --ease-15: all 1.5s ease;
@@ -107,5 +113,17 @@ body {
 
 .hidden {
   display: none;
-  transition: var(--ease-9);
+  opacity: 0;
+  transition: var(--ease-6);
+}
+
+.blur {
+  z-index: 101;
+  margin: 0;
+  position: absolute;
+  justify-content: center;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
 }
