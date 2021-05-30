@@ -37,7 +37,8 @@
   z-index: 3;
   transition: var(--ease-6);
   border: 1px solid #c7c7c7;
-  background-color: #fafafa;
+  background-color: #485460;
+  color: #d2dae2;
   border-radius: 1em;
   margin: auto;
 }
@@ -45,7 +46,7 @@
   position: absolute;
   top: 1em;
   right: 1em;
-  color: rgb(172, 172, 172);
+  color: #d2dae2;
   cursor: pointer;
   transition: var(--ease-3);
 }
@@ -58,21 +59,38 @@
 }
 
 .card-modal .painting-modal-info {
-  text-align: left;
+  position: relative;
   display: flex;
   flex-direction: column;
+  text-align: left;
+  margin: auto;
+  border-radius: 1em;
+  background-color: #313c44;
+}
+.card-info_list {
+  list-style: circle;
+}
+.card-info_list li {
+  color: #d2dae2;
+}
+.card-modal .painting-modal-info h5 {
+  font-weight: normal;
+  color: #f53b57;
 }
 .card-modal .painting-modal-info h2 {
   font-weight: bold;
 }
 
 .card-modal .painting-modal-info p {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: auto;
+  font-family: "SF pro", Arial, Helvetica, sans-serif;
+  color: #808e9b;
 }
 
 .card-modal .painting-modal-info span {
   text-decoration: underline;
+}
+.card-modal .painting-modal-info small {
+  width: fit-content;
 }
 
 /* image side styling */
@@ -145,39 +163,51 @@
     font-size: small;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 1em;
+    width: 100%;
+    height: 70%;
+  }
+  .card-modal .painting-modal-info h5 {
+    font-size: 9px;
   }
   .card-modal .painting-modal-info h2 {
-    font-size: 20px;
-    padding: 0 0 10px 0;
+    font-size: 15px;
     text-align: left;
   }
   .card-modal .painting-modal-info p {
-    font-size: x-small;
-    padding: 0 0 10px 0;
+    font-size: 8px;
     text-align: justify;
   }
   .card-modal .painting-modal-info span {
     font-size: 9px;
-    padding: 0 0 20px 0;
     text-align: left;
   }
   .card-modal .painting-modal-info small {
-    font-size: x-small;
-    text-align: left;
+    font-size: 7px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-info_list {
+    padding: 5px 0 0 10px;
+  }
+  .card-info_list li {
+    font-size: 9px;
   }
   .card-modal {
     grid-template-columns: 1fr 1fr;
-    column-gap: 1em;
-    padding: 2em;
+    column-gap: 17px;
+    padding: 1em;
     width: 800px;
     height: 500px;
-    top: 55%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .card-modal-exit {
-    font-size: small;
+    font-size: xx-small;
   }
 }
 
@@ -228,30 +258,43 @@
     font-size: small;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 1em;
   }
   .card-modal .painting-modal-info h2 {
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 0 10px 0;
+  }
+  .card-modal .painting-modal-info h5 {
+    font-size: xx-small;
   }
   .card-modal .painting-modal-info p {
-    font-size: small;
-    padding: 0 0 10px 0;
-    text-align: center;
+    font-size: x-small;
+    text-align: justify;
   }
   .card-modal .painting-modal-info span {
-    font-size: 14px;
-    padding: 0 0 20px 0;
+    font-size: 11px;
+    padding-bottom: 7px;
   }
   .card-modal .painting-modal-info small {
-    font-size: x-small;
+    font-size: xx-small;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-info_list {
+    padding: 0 0 0 15px;
+  }
+  .card-info_list li {
+    font-size: 9px;
   }
   .card-modal {
     grid-template-columns: 1fr;
     padding: 2em 1em;
     width: 340px;
     height: 550px;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -306,30 +349,43 @@
     font-size: small;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 1em;
   }
   .card-modal .painting-modal-info h2 {
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 0 10px 0;
+  }
+  .card-modal .painting-modal-info h5 {
+    font-size: xx-small;
   }
   .card-modal .painting-modal-info p {
-    font-size: small;
-    padding: 0 0 10px 0;
-    text-align: center;
+    font-size: x-small;
+    text-align: justify;
   }
   .card-modal .painting-modal-info span {
-    font-size: 14px;
-    padding: 0 0 20px 0;
+    font-size: 11px;
+    padding-bottom: 7px;
   }
   .card-modal .painting-modal-info small {
-    font-size: x-small;
+    font-size: xx-small;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-info_list {
+    padding: 0 0 0 15px;
+  }
+  .card-info_list li {
+    font-size: 9px;
   }
   .card-modal {
     grid-template-columns: 1fr;
     padding: 2em 1em;
     width: 340px;
     height: 550px;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -384,30 +440,43 @@
     font-size: small;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 1em;
   }
   .card-modal .painting-modal-info h2 {
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 0 10px 0;
+  }
+  .card-modal .painting-modal-info h5 {
+    font-size: xx-small;
   }
   .card-modal .painting-modal-info p {
-    font-size: small;
-    padding: 0 0 10px 0;
-    text-align: center;
+    font-size: x-small;
+    text-align: justify;
   }
   .card-modal .painting-modal-info span {
-    font-size: 14px;
-    padding: 0 0 20px 0;
+    font-size: 11px;
+    padding-bottom: 7px;
   }
   .card-modal .painting-modal-info small {
-    font-size: x-small;
+    font-size: xx-small;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-info_list {
+    padding: 0 0 0 15px;
+  }
+  .card-info_list li {
+    font-size: 9px;
   }
   .card-modal {
     grid-template-columns: 1fr;
     padding: 2em 1em;
     width: 340px;
     height: 550px;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -462,30 +531,43 @@
     font-size: small;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 1em;
   }
   .card-modal .painting-modal-info h2 {
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 0 10px 0;
   }
+  .card-modal .painting-modal-info h5 {
+    font-size: xx-small;
+  }
   .card-modal .painting-modal-info p {
-    font-size: small;
-    padding: 0 0 10px 0;
+    font-size: x-small;
     text-align: justify;
   }
   .card-modal .painting-modal-info span {
-    font-size: 14px;
-    padding: 0 0 20px 0;
+    font-size: 11px;
+    padding-bottom: 7px;
   }
   .card-modal .painting-modal-info small {
-    font-size: x-small;
+    font-size: xx-small;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-info_list {
+    padding: 0 0 10px 15px;
+  }
+  .card-info_list li {
+    font-size: 9px;
   }
   .card-modal {
     grid-template-columns: 1fr;
     padding: 2em 1em;
     width: 384px;
     height: 550px;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -532,46 +614,58 @@
   }
   .card-img-height {
     margin: 0 10px 0 0;
-    font-size: small;
+    font-size: x-small;
   }
   .card-img-width {
     margin: 10px 0 0 0;
-    font-size: small;
+    font-size: x-small;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+  }
+  .card-modal .painting-modal-info h5 {
+    font-size: 9px;
   }
   .card-modal .painting-modal-info h2 {
-    font-size: 20px;
-    padding: 0 0 10px 0;
+    font-size: 15px;
     text-align: left;
   }
   .card-modal .painting-modal-info p {
-    font-size: x-small;
-    padding: 0 0 10px 0;
+    font-size: 8px;
     text-align: justify;
   }
   .card-modal .painting-modal-info span {
     font-size: 9px;
-    padding: 0 0 20px 0;
     text-align: left;
   }
   .card-modal .painting-modal-info small {
-    font-size: x-small;
-    text-align: left;
+    font-size: 7px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-info_list {
+    padding: 5px 0 0 10px;
+  }
+  .card-info_list li {
+    font-size: 9px;
   }
   .card-modal {
     grid-template-columns: 1fr 1fr;
     column-gap: 17px;
     padding: 1em;
-    width: 650px;
-    height: 300px;
-    top: 55%;
+    width: 520px;
+    height: 250px;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .card-modal-exit {
-    font-size: small;
+    font-size: xx-small;
   }
 }
 
@@ -621,30 +715,44 @@
     font-size: small;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 1em;
+    width: 100%;
   }
   .card-modal .painting-modal-info h2 {
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 0 10px 0;
   }
+  .card-modal .painting-modal-info h5 {
+    font-size: xx-small;
+  }
   .card-modal .painting-modal-info p {
-    font-size: small;
-    padding: 0 0 10px 0;
+    font-size: x-small;
     text-align: justify;
   }
   .card-modal .painting-modal-info span {
-    font-size: 14px;
-    padding: 0 0 20px 0;
+    font-size: 11px;
+    padding-bottom: 7px;
   }
   .card-modal .painting-modal-info small {
-    font-size: x-small;
+    font-size: xx-small;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-info_list {
+    padding: 0 0 0 15px;
+  }
+  .card-info_list li {
+    font-size: 9px;
   }
   .card-modal {
     grid-template-columns: 1fr;
     padding: 2em;
     width: 355px;
     height: 550px;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -691,46 +799,58 @@
   }
   .card-img-height {
     margin: 0 10px 0 0;
-    font-size: small;
+    font-size: xx-small;
   }
   .card-img-width {
     margin: 10px 0 0 0;
-    font-size: small;
+    font-size: xx-small;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+  }
+  .card-modal .painting-modal-info h5 {
+    font-size: 9px;
   }
   .card-modal .painting-modal-info h2 {
-    font-size: 20px;
-    padding: 0 0 10px 0;
+    font-size: 15px;
     text-align: left;
   }
   .card-modal .painting-modal-info p {
-    font-size: x-small;
-    padding: 0 0 10px 0;
+    font-size: 8px;
     text-align: justify;
   }
   .card-modal .painting-modal-info span {
     font-size: 9px;
-    padding: 0 0 20px 0;
     text-align: left;
   }
   .card-modal .painting-modal-info small {
-    font-size: x-small;
-    text-align: left;
+    font-size: 7px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-info_list {
+    padding: 5px 0 0 10px;
+  }
+  .card-info_list li {
+    font-size: 9px;
   }
   .card-modal {
     grid-template-columns: 1fr 1fr;
     column-gap: 17px;
     padding: 1em;
-    width: 550px;
-    height: 310px;
-    top: 55%;
+    width: 520px;
+    height: 250px;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .card-modal-exit {
-    font-size: small;
+    font-size: xx-small;
   }
 }
 
@@ -780,30 +900,43 @@
     font-size: small;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 1em;
   }
   .card-modal .painting-modal-info h2 {
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 0 10px 0;
   }
+  .card-modal .painting-modal-info h5 {
+    font-size: xx-small;
+  }
   .card-modal .painting-modal-info p {
-    font-size: small;
-    padding: 0 0 10px 0;
+    font-size: x-small;
     text-align: justify;
   }
   .card-modal .painting-modal-info span {
-    font-size: 14px;
-    padding: 0 0 20px 0;
+    font-size: 11px;
+    padding-bottom: 7px;
   }
   .card-modal .painting-modal-info small {
-    font-size: x-small;
+    font-size: xx-small;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-info_list {
+    padding: 0 0 0 15px;
+  }
+  .card-info_list li {
+    font-size: 9px;
   }
   .card-modal {
     grid-template-columns: 1fr;
     padding: 2em 1em;
     width: 300px;
-    height: 500px;
-    top: 53%;
+    height: 470px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -850,33 +983,45 @@
   }
   .card-img-height {
     margin: 0 10px 0 0;
-    font-size: small;
+    font-size: xx-small;
   }
   .card-img-width {
     margin: 10px 0 0 0;
-    font-size: small;
+    font-size: xx-small;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
+  }
+  .card-modal .painting-modal-info h5 {
+    font-size: 9px;
   }
   .card-modal .painting-modal-info h2 {
-    font-size: 20px;
-    padding: 0 0 10px 0;
+    font-size: 15px;
     text-align: left;
   }
   .card-modal .painting-modal-info p {
-    font-size: x-small;
-    padding: 0 0 10px 0;
+    font-size: 8px;
     text-align: justify;
   }
   .card-modal .painting-modal-info span {
     font-size: 9px;
-    padding: 0 0 20px 0;
     text-align: left;
   }
   .card-modal .painting-modal-info small {
-    font-size: x-small;
-    text-align: left;
+    font-size: 7px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-info_list {
+    padding: 5px 0 0 10px;
+  }
+  .card-info_list li {
+    font-size: 9px;
   }
   .card-modal {
     grid-template-columns: 1fr 1fr;
@@ -889,7 +1034,7 @@
     transform: translate(-50%, -50%);
   }
   .card-modal-exit {
-    font-size: small;
+    font-size: xx-small;
   }
 }
 
@@ -939,30 +1084,43 @@
     font-size: small;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 1em;
   }
   .card-modal .painting-modal-info h2 {
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 0 10px 0;
+  }
+  .card-modal .painting-modal-info h5 {
+    font-size: xx-small;
   }
   .card-modal .painting-modal-info p {
-    font-size: small;
-    padding: 0 0 10px 0;
-    text-align: center;
+    font-size: x-small;
+    text-align: justify;
   }
   .card-modal .painting-modal-info span {
-    font-size: 14px;
-    padding: 0 0 20px 0;
+    font-size: 11px;
+    padding-bottom: 7px;
   }
   .card-modal .painting-modal-info small {
-    font-size: x-small;
+    font-size: xx-small;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-info_list {
+    padding: 0 0 0 15px;
+  }
+  .card-info_list li {
+    font-size: 9px;
   }
   .card-modal {
     grid-template-columns: 1fr;
     padding: 2em 1em;
     width: 340px;
-    height: 580px;
-    top: 53%;
+    height: 520px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -1007,17 +1165,32 @@
     margin: 1em 0 0 0;
   }
   .card-modal .painting-modal-info {
-    max-width: 90%;
+    width: 80%;
+    height: 70%;
+    padding: 6em 2em;
   }
   .card-modal .painting-modal-info h2 {
-    padding: 0 0 1em 0;
+    font-size: 40px;
   }
   .card-modal .painting-modal-info p {
-    padding: 0 0 1em 0;
-    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 90%;
+  }
+  .card-info_list {
+    position: absolute;
+    bottom: 15%;
   }
   .card-modal .painting-modal-info span {
-    padding: 0 0 2em 0;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .card-modal .painting-modal-info small {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .card-modal {
     padding: 3em 1em;
@@ -1069,21 +1242,35 @@
     margin: 1em 0 0 0;
   }
   .card-modal .painting-modal-info {
-    max-width: 90%;
+    width: 80%;
+    height: 100%;
+    padding: 6em 2em;
   }
   .card-modal .painting-modal-info h2 {
-    padding: 0 0 1em 0;
+    font-size: 40px;
   }
   .card-modal .painting-modal-info p {
-    padding: 0 0 1em 0;
-    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 90%;
+  }
+  .card-info_list {
+    position: absolute;
+    bottom: 15%;
   }
   .card-modal .painting-modal-info span {
-    padding: 0 0 2em 0;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .card-modal .painting-modal-info small {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .card-modal {
     padding: 3em 1em;
-    column-gap: 1em;
     height: 70%;
     width: 1400px;
     top: 50%;
@@ -1133,17 +1320,32 @@
     margin: 1em 0 0 0;
   }
   .card-modal .painting-modal-info {
-    max-width: 90%;
+    width: 80%;
+    height: 100%;
+    padding: 6em 2em;
   }
   .card-modal .painting-modal-info h2 {
-    padding: 0 0 1em 0;
+    font-size: 40px;
   }
   .card-modal .painting-modal-info p {
-    padding: 0 0 1em 0;
-    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 90%;
+  }
+  .card-info_list {
+    position: absolute;
+    bottom: 15%;
   }
   .card-modal .painting-modal-info span {
-    padding: 0 0 2em 0;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .card-modal .painting-modal-info small {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .card-modal {
     padding: 3em 1em;
@@ -1199,25 +1401,40 @@
     margin: 1em 0 0 0;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    width: 80%;
+    height: 300px;
+    padding: 2em 2em;
   }
   .card-modal .painting-modal-info h2 {
-    padding: 0 0 1em 0;
+    font-size: 40px;
   }
   .card-modal .painting-modal-info p {
-    padding: 0 0 1em 0;
-    text-align: center;
-    max-width: 700px;
+    position: absolute;
+    top: 61%;
+    left: 35%;
+    transform: translateY(-61%);
+    max-width: 90%;
+  }
+  .card-info_list {
+    position: absolute;
+    bottom: 15%;
   }
   .card-modal .painting-modal-info span {
-    padding: 0 0 1em 0;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .card-modal .painting-modal-info small {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .card-modal {
     grid-template-columns: 1fr;
     padding: 2em 1em;
     height: fit-content;
-    width: 900px;
-    height: 850px;
+    width: 1000px;
+    height: 900px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1264,24 +1481,39 @@
     margin: 1em 0 0 0;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    width: 80%;
+    height: 300px;
+    padding: 2em 2em;
   }
   .card-modal .painting-modal-info h2 {
-    padding: 0 0 1em 0;
+    font-size: 40px;
   }
   .card-modal .painting-modal-info p {
-    padding: 0 0 1em 0;
-    text-align: center;
-    max-width: 700px;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translateY(-65%);
+    max-width: 90%;
+  }
+  .card-info_list {
+    position: absolute;
+    bottom: 15%;
   }
   .card-modal .painting-modal-info span {
-    padding: 0 0 1em 0;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .card-modal .painting-modal-info small {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .card-modal {
     grid-template-columns: 1fr;
     padding: 2em;
     height: fit-content;
-    width: 800px;
+    width: 900px;
     height: 850px;
     top: 50%;
     left: 50%;
@@ -1329,15 +1561,24 @@
     margin: 1em 0 0 0;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 2em;
+    width: 95%;
+    height: 100%;
   }
   .card-modal .painting-modal-info h2 {
     padding: 0 0 1em 0;
   }
   .card-modal .painting-modal-info p {
     padding: 0 0 1em 0;
-    text-align: center;
     max-width: 500px;
+    /* position: absolute; */
+  }
+  .card-modal .painting-modal-info small {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .card-modal .painting-modal-info span {
     padding: 0 0 1em 0;
@@ -1346,8 +1587,8 @@
     grid-template-columns: 1fr;
     padding: 2em;
     height: fit-content;
-    width: 600px;
-    height: 800px;
+    width: 650px;
+    height: 860px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1394,15 +1635,24 @@
     margin: 1em 0 0 0;
   }
   .card-modal .painting-modal-info {
-    text-align: center;
+    text-align: left;
+    padding: 2em;
+    width: 95%;
+    height: 100%;
   }
   .card-modal .painting-modal-info h2 {
     padding: 0 0 1em 0;
   }
   .card-modal .painting-modal-info p {
     padding: 0 0 1em 0;
-    text-align: center;
     max-width: 500px;
+    /* position: absolute; */
+  }
+  .card-modal .painting-modal-info small {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .card-modal .painting-modal-info span {
     padding: 0 0 1em 0;
@@ -1411,8 +1661,8 @@
     grid-template-columns: 1fr;
     padding: 2em;
     height: fit-content;
-    width: 400px;
-    height: 700px;
+    width: 470px;
+    height: 750px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
