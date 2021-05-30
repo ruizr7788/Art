@@ -51,6 +51,11 @@
   /* footer colors */
   --main-color-footer: rgb(255, 255, 255);
   --secondary-color-footer: #8d8c99;
+
+  /* PAINTINGS SHOWCASING COLORS */
+  /* card modal colors */
+  --main-color-modal: black;
+  --secondary-color-modal: #718093;
 }
 html {
   scroll-behavior: smooth;

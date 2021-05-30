@@ -15,3 +15,15 @@ function openClose() {
 function close() {
   modal.classList.add("hidden");
 }
+
+// select the .price and format it according to the users location
+const modal_price = document.querySelectorAll(".price");
+const userLocale = navigator.language;
+
+modal_price.forEach((price) => {
+  const currentPrice = price.textContent;
+  price.textContent = new Intl.NumberFormat(userLocale, {
+    style: "currency",
+    currency: "MXN",
+  }).format(currentPrice);
+});

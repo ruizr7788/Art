@@ -51,6 +51,11 @@
   /* border-radius: 5px; */
   background-color: rgb(252, 252, 252);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: var(--ease-6);
+}
+.service-option:hover {
+  transform: scale(1.01);
+  transition: var(--ease-6);
 }
 .service-option p {
   line-height: 150%;

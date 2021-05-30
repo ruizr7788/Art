@@ -18,6 +18,7 @@ cards.forEach((card, i) => {
     if (modalIsOpen === false) {
       card_modal[i].style.display = "grid";
       main_container.classList.add("blur");
+
       opacity02();
       modalIsOpen = true;
     }
@@ -29,6 +30,7 @@ btn_exit_modal.forEach((btn, i) => {
   btn.addEventListener("click", () => {
     card_modal[i].style.display = "none";
     main_container.classList.remove("blur");
+
     opacity1();
     modalIsOpen = false;
   });

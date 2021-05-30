@@ -37,8 +37,8 @@
   z-index: 3;
   transition: var(--ease-6);
   border: 1px solid #c7c7c7;
-  background-color: #485460;
-  color: #d2dae2;
+  background-color: #ecf0f1;
+  color: var(--main-color-modal);
   border-radius: 1em;
   margin: auto;
 }
@@ -46,7 +46,7 @@
   position: absolute;
   top: 1em;
   right: 1em;
-  color: #d2dae2;
+  color: var(--secondary-color-modal);
   cursor: pointer;
   transition: var(--ease-3);
 }
@@ -65,13 +65,13 @@
   text-align: left;
   margin: auto;
   border-radius: 1em;
-  background-color: #313c44;
+  background-color: #dcdde1;
 }
 .card-info_list {
   list-style: circle;
 }
 .card-info_list li {
-  color: #d2dae2;
+  color: var(--main-color-modal);
 }
 .card-modal .painting-modal-info h5 {
   font-weight: normal;
@@ -83,7 +83,7 @@
 
 .card-modal .painting-modal-info p {
   font-family: "SF pro", Arial, Helvetica, sans-serif;
-  color: #808e9b;
+  color: var(--secondary-color-modal);
 }
 
 .card-modal .painting-modal-info span {
@@ -91,6 +91,7 @@
 }
 .card-modal .painting-modal-info small {
   width: fit-content;
+  color: var(--secondary-color-modal);
 }
 
 /* image side styling */
@@ -106,14 +107,14 @@
 }
 .card-img-height {
   display: flex;
-  border-right: 1px solid lightgray;
+  border-right: 1px solid #2f3640;
   align-items: center;
   grid-column: 1/2;
   grid-row: 1/2;
   height: 100%;
 }
 .card-img-width {
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #2f3640;
   padding: 5px;
   grid-row: 2/3;
   grid-column: 2/3;
