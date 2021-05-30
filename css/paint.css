@@ -11,17 +11,21 @@
 #paintings_container h1 {
   font-weight: bold;
 }
-#paintings {
+.paintingsDisplayFormat {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: auto;
 }
-#paintings .card {
-  cursor: pointer;
-  opacity: 1;
-}
-#paintings .card small {
+.card small {
   text-align: left;
+}
+.card {
+  cursor: pointer;
+  transition: var(--ease-6);
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: var(--ease-6);
 }
 
 /* card modal/info on click */
@@ -37,16 +41,17 @@
   border-radius: 1em;
   margin: auto;
 }
-
-/* .card2 {
-  display: grid;
-} */
-#card-modal-exit {
+.card-modal-exit {
   position: absolute;
   top: 1em;
   right: 1em;
   color: rgb(172, 172, 172);
   cursor: pointer;
+  transition: var(--ease-3);
+}
+.card-modal-exit:hover {
+  color: var(--hover-color);
+  transition: var(--ease-3);
 }
 .img-side img {
   align-self: center;
@@ -101,18 +106,18 @@
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 350px;
     height: 215px;
   }
-  #paintings .card {
+  .card {
     width: 350px;
     height: 250px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 3em;
     column-gap: 1em;
@@ -171,7 +176,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #card-modal-exit {
+  .card-modal-exit {
     font-size: small;
   }
 }
@@ -180,19 +185,19 @@
 
 @media only screen and (min-device-width: 411px) and (max-device-height: 823px) and (orientation: portrait) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     font-size: 12px;
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 210px;
     height: 140px;
   }
-  #paintings .card {
+  .card {
     width: 210px;
     height: 175px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 1em;
     column-gap: 1em;
@@ -250,7 +255,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #card-modal-exit {
+  .card-modal-exit {
     font-size: small;
   }
 }
@@ -258,19 +263,19 @@
 /* iPhone XS Max, XR ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     font-size: 12px;
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 210px;
     height: 140px;
   }
-  #paintings .card {
+  .card {
     width: 210px;
     height: 175px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 1em;
     column-gap: 1em;
@@ -328,7 +333,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #card-modal-exit {
+  .card-modal-exit {
     font-size: small;
   }
 }
@@ -336,19 +341,19 @@
 /* iPhone X ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     font-size: 12px;
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 210px;
     height: 140px;
   }
-  #paintings .card {
+  .card {
     width: 210px;
     height: 175px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 1em;
     column-gap: 1em;
@@ -406,7 +411,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #card-modal-exit {
+  .card-modal-exit {
     font-size: small;
   }
 }
@@ -414,19 +419,19 @@
 /* iPhone 6+, 7+, 8+ ----------- */
 @media only screen and (min-device-width: 413px) and (max-device-height: 737px) and (orientation: portrait) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     font-size: 12px;
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 210px;
     height: 140px;
   }
-  #paintings .card {
+  .card {
     width: 210px;
     height: 175px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 1em;
     column-gap: 1em;
@@ -484,26 +489,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #card-modal-exit {
+  .card-modal-exit {
     font-size: small;
   }
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     font-size: 12px;
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 210px;
     height: 140px;
   }
-  #paintings .card {
+  .card {
     width: 210px;
     height: 175px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 1em;
     column-gap: 1em;
@@ -565,7 +570,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #card-modal-exit {
+  .card-modal-exit {
     font-size: small;
   }
 }
@@ -573,19 +578,19 @@
 /* iPhone 6, 7, 8 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     font-size: 12px;
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 210px;
     height: 140px;
   }
-  #paintings .card {
+  .card {
     width: 210px;
     height: 175px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 1em;
     column-gap: 1em;
@@ -643,26 +648,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #card-modal-exit {
+  .card-modal-exit {
     font-size: small;
   }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     font-size: 12px;
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 210px;
     height: 140px;
   }
-  #paintings .card {
+  .card {
     width: 210px;
     height: 175px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 1em;
     column-gap: 1em;
@@ -724,7 +729,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #card-modal-exit {
+  .card-modal-exit {
     font-size: small;
   }
 }
@@ -732,19 +737,19 @@
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     font-size: 12px;
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 210px;
     height: 140px;
   }
-  #paintings .card {
+  .card {
     width: 210px;
     height: 175px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 1em;
     column-gap: 1em;
@@ -802,26 +807,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #card-modal-exit {
+  .card-modal-exit {
     font-size: small;
   }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     font-size: 12px;
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 210px;
     height: 140px;
   }
-  #paintings .card {
+  .card {
     width: 210px;
     height: 175px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 1em;
     column-gap: 1em;
@@ -883,7 +888,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #card-modal-exit {
+  .card-modal-exit {
     font-size: small;
   }
 }
@@ -891,19 +896,19 @@
 /* Samsung Galaxy S3 ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     font-size: 12px;
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 225px;
     height: 140px;
   }
-  #paintings .card {
+  .card {
     width: 225px;
     height: 175px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 1em;
     column-gap: 1em;
@@ -961,7 +966,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #card-modal-exit {
+  .card-modal-exit {
     font-size: small;
   }
 }
@@ -969,18 +974,18 @@
 /* imac---------------------------- */
 @media only screen and (min-width: 2300px) and (min-height: 1250px) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 450px;
     height: 310px;
   }
-  #paintings .card {
+  .card {
     width: 450px;
     height: 350px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 80%;
     row-gap: 4em;
   }
@@ -1023,23 +1028,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .card-modal-exit {
+    font-size: 23px;
+  }
 }
 
 /* large screens ----------------- */
 @media only screen and (min-width: 1823px) and (max-width: 2300px) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 400px;
     height: 260px;
   }
-  #paintings .card {
+  .card {
     width: 400px;
     height: 300px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 90%;
     row-gap: 4em;
   }
@@ -1082,23 +1090,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .card-modal-exit {
+    font-size: 20px;
+  }
 }
 
 /* -------1400px to 1823px------ */
 @media only screen and (min-width: 1400px) and (max-width: 1823px) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 375px;
     height: 240px;
   }
-  #paintings .card {
+  .card {
     width: 375px;
     height: 275px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 3em;
     column-gap: 1em;
@@ -1143,23 +1154,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .card-modal-exit {
+    font-size: 20px;
+  }
 }
 
 /* ------1100 to 1400------ */
 @media only screen and (min-width: 1100px) and (max-width: 1400px) and (min-device-height: 1000px) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 375px;
     height: 240px;
   }
-  #paintings .card {
+  .card {
     width: 375px;
     height: 275px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 3em;
     column-gap: 1em;
@@ -1208,23 +1222,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .card-modal-exit {
+    font-size: 19px;
+  }
 }
 
 /* ------900 to 1100------ */
 @media only screen and (min-width: 900px) and (max-width: 1100px) and (min-device-height: 1000px) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 375px;
     height: 240px;
   }
-  #paintings .card {
+  .card {
     width: 375px;
     height: 275px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 3em;
     column-gap: 1em;
@@ -1275,18 +1292,18 @@
 /* ------600 to 900------ */
 @media only screen and (min-width: 650px) and (max-width: 900px) and (min-device-height: 1000px) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 350px;
     height: 215px;
   }
-  #paintings .card {
+  .card {
     width: 350px;
     height: 250px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 3em;
     column-gap: 1em;
@@ -1340,18 +1357,18 @@
 /* ------300 to 650------ */
 @media only screen and (min-width: 300px) and (max-width: 650px) and (min-device-height: 1000px) {
   /* page styling */
-  #paintings .card small {
+  .card small {
     padding: 8px 0 0 15px;
   }
-  #paintings .card img {
+  .card img {
     width: 375px;
     height: 240px;
   }
-  #paintings .card {
+  .card {
     width: 375px;
     height: 275px;
   }
-  #paintings {
+  .paintingsDisplayFormat {
     max-width: 95%;
     row-gap: 3em;
     column-gap: 1em;
@@ -1404,7 +1421,7 @@
 
 /* for js select all card-modal 's creating a nodelist. then loop over the card nodelist (by selecting them all) and add an event listener to all of them, when they are clicked set opacity to 100 to  card-modal  at position [i]. Close the modal with an X or by pressing 'esc' key */
 
-/* when opacity is set to 100 for any card add a blur class to main and when opacity is set back to 0 (when modal is closed) remove blur class from body */
+/* when a card modal is shown add a blur class to main and when opacity is set back to 0 (when modal is closed) remove blur class from body */
 
 /* with all the cards selected, set their opacity to .2 when showing the modal and back to 1 when modal is closed */
 
