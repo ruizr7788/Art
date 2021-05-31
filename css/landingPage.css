@@ -62,7 +62,7 @@
 .fixed-navbar {
   height: fit-content;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: #1d1d1ff6;
   width: 100%;
   z-index: 100;
   transition: background-color 0.6s ease;
@@ -149,17 +149,17 @@
 @media only screen and (min-device-width: 411px) and (max-device-height: 823px) and (orientation: portrait) {
   /* ------TOP BAR------ */
   #navbar ul li a {
-    font-size: 14px;
+    font-size: 12px;
   }
   #navbar ul li {
-    font-size: 14px;
+    font-size: 12px;
   }
   #topbar {
     margin: auto;
     padding: 4px;
   }
   #business_logo {
-    width: 30px;
+    width: 25px;
   }
   /* LANDING HOOK */
   #landing_hook h1 {
@@ -277,17 +277,17 @@
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
   /* ------TOP BAR------ */
   #navbar ul li a {
-    font-size: 12px;
+    font-size: 10px;
   }
   #navbar ul li {
-    font-size: 12px;
+    font-size: 10px;
   }
   #topbar {
     margin: auto;
     padding: 3.5px;
   }
   #business_logo {
-    width: 30px;
+    width: 25px;
   }
   /* LANDING HOOK */
   #landing_hook h1 {
@@ -341,17 +341,17 @@
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
   /* ------TOP BAR------ */
   #navbar ul li a {
-    font-size: 13px;
+    font-size: 12px;
   }
   #navbar ul li {
-    font-size: 13px;
+    font-size: 12px;
   }
   #topbar {
     margin: auto;
     padding: 4px;
   }
   #business_logo {
-    width: 35px;
+    width: 30px;
   }
   /* LANDING HOOK */
   #landing_hook h1 {
@@ -404,17 +404,17 @@
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   /* ------TOP BAR------ */
   #navbar ul li a {
-    font-size: 12px;
+    font-size: 11px;
   }
   #navbar ul li {
-    font-size: 12px;
+    font-size: 11px;
   }
   #topbar {
     margin: auto;
     padding: 4px;
   }
   #business_logo {
-    width: 30px;
+    width: 25px;
   }
   /* LANDING HOOK */
   #landing_hook h1 {
@@ -468,17 +468,17 @@
 @media only screen and (min-device-width: 413px) and (max-device-height: 737px) and (orientation: portrait) {
   /* ------TOP BAR------ */
   #navbar ul li a {
-    font-size: 12px;
+    font-size: 11px;
   }
   #navbar ul li {
-    font-size: 12px;
+    font-size: 11px;
   }
   #topbar {
     margin: auto;
     padding: 4px;
   }
   #business_logo {
-    width: 35px;
+    width: 30px;
   }
   /* LANDING HOOK */
   #landing_hook h1 {
@@ -530,10 +530,13 @@
 
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) {
   #navbar ul li a {
-    font-size: 12px;
+    font-size: 11px;
   }
   #navbar ul li {
-    font-size: 12px;
+    font-size: 11px;
+  }
+  #business_logo {
+    width: 30px;
   }
   #topbar {
     padding: 3.5px;
@@ -560,17 +563,17 @@
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
   /* ------TOP BAR------ */
   #navbar ul li a {
-    font-size: 12px;
+    font-size: 10px;
   }
   #navbar ul li {
-    font-size: 12px;
+    font-size: 10px;
   }
   #topbar {
     margin: auto;
     padding: 3.5px;
   }
   #business_logo {
-    width: 30px;
+    width: 25px;
   }
   /* LANDING HOOK */
   #landing_hook h1 {
@@ -625,14 +628,15 @@
   #business_logo {
     width: 30px;
   }
-  #landing_hook h1 {
-    font-size: large;
-  }
-
   #topbar {
     padding: 3.5px;
   }
-
+  #navbar ul li a {
+    font-size: x-small;
+  }
+  #navbar ul li {
+    font-size: x-small;
+  }
   #navbar ul {
     padding: 0;
   }
@@ -688,10 +692,10 @@
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) {
   /* ------TOP BAR------ */
   #navbar ul li a {
-    font-size: 12px;
+    font-size: 10px;
   }
   #navbar ul li {
-    font-size: 12px;
+    font-size: 10px;
   }
   #navbar ul li:nth-child(1) {
     display: none;
@@ -701,7 +705,7 @@
     padding: 3.5px;
   }
   #business_logo {
-    width: 30px;
+    width: 25px;
     margin-right: 5px;
   }
   #navbar ul {
@@ -768,8 +772,7 @@
     padding: 3.5px;
   }
   #business_logo {
-    width: 40px;
-    margin-right: 5px;
+    width: 30px;
   }
   /* LANDING HOOK */
   #landing_hook h1 {
@@ -884,8 +887,14 @@
 
 @media only screen and (min-device-width: 1024px) and (max-device-height: 768px) and (orientation: landscape) {
   /*  TOP BAR */
+  #navbar ul li a {
+    font-size: small;
+  }
+  #navbar ul li {
+    font-size: small;
+  }
   #business_logo {
-    width: 50px;
+    width: 40px;
   }
   #topbar {
     padding: 5px 2em;
@@ -1000,17 +1009,20 @@
 @media only screen and (min-width: 1823px) and (max-width: 2300px) {
   /* TOP BAR STYLE */
   #business_logo {
-    width: 50px;
+    width: 45px;
   }
   #topbar {
     margin: auto;
     padding: 3px 15em;
   }
-  #navbar ul li a {
-    font-size: 17px;
-  }
   #navbar ul {
     margin: 0;
+  }
+  #navbar ul li a {
+    font-size: 14px;
+  }
+  #open_modal {
+    font-size: 14px;
   }
   /* LANDING HOOK */
   #landing_hook small {
@@ -1060,8 +1072,14 @@
   #navbar ul {
     margin: 0;
   }
+  #navbar ul li a {
+    font-size: 14px;
+  }
+  #open_modal {
+    font-size: 14px;
+  }
   #business_logo {
-    width: 50px;
+    width: 45px;
   }
   /* LANDING HOOK */
   #landing_hook p {
@@ -1112,6 +1130,12 @@
   #navbar ul {
     margin: 0;
   }
+  #navbar ul li a {
+    font-size: 14px;
+  }
+  #open_modal {
+    font-size: 14px;
+  }
   /* LANDING HOOK */
   #landing_hook p {
     padding: 10px 0 0 20px;
@@ -1161,12 +1185,18 @@
 @media only screen and (min-width: 650px) and (max-width: 900px) and (min-device-height: 1000px) {
   /* TOP BAR */
   #business_logo {
-    max-width: 50px;
+    max-width: 45px;
   }
 
   #topbar {
     margin: auto;
     padding: 3px 2em;
+  }
+  #navbar ul li a {
+    font-size: 14px;
+  }
+  #open_modal {
+    font-size: 14px;
   }
   /* LANDING HOOK */
   #landing_hook p {
@@ -1218,14 +1248,17 @@
   /* ------TOP BAR------ */
 
   #navbar ul li a {
-    font-size: 15px;
+    font-size: 13px;
+  }
+  #open_modal {
+    font-size: 13px;
   }
   #topbar {
     margin: auto;
-    padding: 10px;
+    padding: 5px;
   }
   #business_logo {
-    width: 50px;
+    width: 42px;
   }
   /* LANDING HOOK */
   #landing_hook p {

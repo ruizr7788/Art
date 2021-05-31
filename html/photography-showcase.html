@@ -20,51 +20,162 @@
     <link rel="stylesheet" href="/css/landingPage.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="icon" href="/landing-imgs/fixedNavLOGO.png" />
+    <link rel="stylesheet" href="/css/photography-showcase.css" />
     <title>Casa Arte - Photograhy</title>
   </head>
   <body>
-    <div id="topbar" class="fixed-navbar">
-      <div>
-        <a href="/index.html">
-          <img
-            id="business_logo"
-            src="/landing-imgs/fixedNavLOGO.png"
-            alt="Hey"
-          />
-        </a>
+    <header>
+      <div id="topbar">
+        <div>
+          <a href="/index.html">
+            <img
+              id="business_logo"
+              src="/landing-imgs/fixedNavLOGO.png"
+              alt="Hey"
+            />
+          </a>
+        </div>
+        <div id="navbar">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li id="open_modal">Contact Us</li>
+          </ul>
+        </div>
       </div>
-      <div id="navbar">
+      <div id="modal_contact" class="modal-contact hidden">
+        <span id="modal_btn"><i class="fas fa-times"></i></span>
+        <h2>Casa de Arte</h2>
         <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="#">Categories</a></li>
-          <li id="open_modal">Contact Us</li>
+          <li>
+            <a href="tel:3541168946"
+              ><class class="fas fa-phone"></class> 354 116 8946</a
+            >
+          </li>
+          <li>
+            <a href="tel: 3545454259"
+              ><i class="fab fa-whatsapp"></i> 354 545 4259</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i> isabelmoreno</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i> isabelmoreno</a>
+          </li>
+        </ul>
+        <p>Calle Ocampo #39, 60440 Periban de Ramos, MICH</p>
+        <small>Mon-Fri 8:30-10:00, closed between 2:30 & 4:00</small>
+      </div>
+      <div id="categories">
+        <ul>
+          <li><a href="#portrait">Portrait</a></li>
+          <li><a href="#fashion">Fashion</a></li>
+          <li><a href="#sports">Sports</a></li>
+          <li><a href="#family">Family</a></li>
+          <li><a href="#wedding">Weddings</a></li>
         </ul>
       </div>
-    </div>
-    <div id="modal_contact" class="modal-contact hidden">
-      <span id="modal_btn"><i class="fas fa-times"></i></span>
-      <h2>Casa de Arte</h2>
-      <ul>
-        <li>
-          <a href="tel:3541168946"
-            ><class class="fas fa-phone"></class> 354 116 8946</a
-          >
-        </li>
-        <li>
-          <a href="tel: 3545454259"
-            ><i class="fab fa-whatsapp"></i> 354 545 4259</a
-          >
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-facebook"></i> isabelmoreno</a>
-        </li>
-        <li>
-          <a href="#"><i class="fab fa-instagram"></i> isabelmoreno</a>
-        </li>
-      </ul>
-      <p>Calle Ocampo #39, 60440 Periban de Ramos, MICH</p>
-      <small>Mon-Fri 8:30-10:00, closed between 2:30 & 4:00</small>
-    </div>
+    </header>
+
+    <main>
+      <section>
+        <div id="photos_container">
+          <div id="portrait" class="photography-category">
+            <h1>Portraits</h1>
+            <div class="photos_showcase">
+              <img src="/photography-showcase/portraits/portrait1.jpg" alt="" />
+              <img src="/photography-showcase/portraits/portrait2.jpg" alt="" />
+              <img src="/photography-showcase/portraits/portrait3.jpg" alt="" />
+              <img src="/photography-showcase/portraits/portrait4.jpg" alt="" />
+              <img src="/photography-showcase/portraits/portrait5.jpg" alt="" />
+              <img src="/photography-showcase/portraits/portrait6.jpg" alt="" />
+              <img src="/photography-showcase/portraits/portrait7.jpg" alt="" />
+              <img src="/photography-showcase/portraits/portrait8.jpg" alt="" />
+            </div>
+          </div>
+          <div id="fashion" class="photography-category">
+            <h1>Fashion</h1>
+            <div class="photos_showcase">
+              <img src="/photography-showcase/fashion/fashion1.jpg" alt="" />
+              <img src="/photography-showcase/fashion/fashion2.jpg" alt="" />
+              <img src="/photography-showcase/fashion/fashion3.jpg" alt="" />
+              <img src="/photography-showcase/fashion/fashion4.jpg" alt="" />
+              <img src="/photography-showcase/fashion/fashion5.jpg" alt="" />
+              <img src="/photography-showcase/fashion/fashion6.jpg" alt="" />
+              <img src="/photography-showcase/fashion/fashion7.jpg" alt="" />
+              <img src="/photography-showcase/fashion/fashion8.jpg" alt="" />
+            </div>
+          </div>
+          <div id="sports" class="photography-category">
+            <h1>Sports</h1>
+            <div class="photos_showcase">
+              <img src="/photography-showcase/sports/sports1.jpg" alt="" />
+              <img src="/photography-showcase/sports/sports2.jpg" alt="" />
+              <img src="/photography-showcase/sports/sports3.jpg" alt="" />
+              <img src="/photography-showcase/sports/sports4.jpg" alt="" />
+              <img src="/photography-showcase/sports/sports5.jpg" alt="" />
+              <img src="/photography-showcase/sports/sports6.jpg" alt="" />
+              <img src="/photography-showcase/sports/sports7.jpg" alt="" />
+              <img src="/photography-showcase/sports/sports8.jpg" alt="" />
+            </div>
+          </div>
+          <div id="family" class="photography-category">
+            <h1>Family</h1>
+            <div class="photos_showcase">
+              <img src="/photography-showcase/family/family1.jpg" alt="" />
+              <img src="/photography-showcase/family/family2.jpg" alt="" />
+              <img src="/photography-showcase/family/family3.jpg" alt="" />
+              <img src="/photography-showcase/family/family4.jpg" alt="" />
+              <img src="/photography-showcase/family/family5.jpg" alt="" />
+              <img src="/photography-showcase/family/family6.jpg" alt="" />
+              <img src="/photography-showcase/family/family7.jpg" alt="" />
+              <img src="/photography-showcase/family/family8.jpg" alt="" />
+            </div>
+          </div>
+          <div id="wedding" class="photography-category">
+            <h1>Weddings</h1>
+            <div class="photos_showcase">
+              <img src="/photography-showcase/weddings/wedding1.jpg" alt="" />
+              <img src="/photography-showcase/weddings/wedding2.jpg" alt="" />
+              <img src="/photography-showcase/weddings/wedding3.jpg" alt="" />
+              <img src="/photography-showcase/weddings/wedding4.jpg" alt="" />
+              <img src="/photography-showcase/weddings/wedding5.jpg" alt="" />
+              <img src="/photography-showcase/weddings/wedding6.jpg" alt="" />
+              <img src="/photography-showcase/weddings/wedding7.jpg" alt="" />
+              <img src="/photography-showcase/weddings/wedding8.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer_container">
+        <img src="/landing-imgs/nowlogo.png" alt="" />
+        <div id="footer_info">
+          <div id="footer_contact">
+            <a href="tel:3541168946"
+              ><class class="fas fa-phone"></class> 354 116 8946</a
+            >
+            <a href="tel: 3545454259"
+              ><i class="fab fa-whatsapp"></i> 354 545 4259</a
+            >
+            <a href="#"><i class="fab fa-facebook"></i> isabelmoreno</a>
+
+            <a href="#"><i class="fab fa-instagram"></i> isabelmoreno</a>
+          </div>
+          <div id="footer_location">
+            <small>Calle Ocampo #39</small>
+            <small>Periban de Ramos</small>
+            <small>60440 Periban de Ramos, MICH</small>
+            <small>Mexico</small>
+            <small>Mon-Fri 10:30-8:00</small>
+            <small>Closed between 2:30 and 4:00</small>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="/javascript/modal.js"></script>
     <script src="/javascript/aboutAuthor.js"></script>
   </body>
