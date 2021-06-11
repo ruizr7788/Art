@@ -24,6 +24,7 @@
 
 :root {
   --grayed-out-color: rgb(216, 216, 216);
+  --ease-20: all 2s ease;
   --ease-15: all 1.5s ease;
   --ease-9: all 0.9s ease;
   --ease-6: all 0.6s ease;

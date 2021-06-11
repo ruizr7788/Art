@@ -4,6 +4,7 @@
   position: relative;
   overflow-x: hidden;
   border-bottom: 1px solid lightslategray;
+  border-top: 1px solid lightgray;
   margin: auto;
 }
 #services {
@@ -673,7 +674,7 @@
 /* 1400 to 1950 */
 @media only screen and (min-width: 1400px) and (max-width: 1950px) {
   #service_container {
-    padding: 8vh 1em;
+    padding: 5vh 1em;
     min-height: 45vh;
   }
   #services {
@@ -696,7 +697,7 @@
     min-height: 28em;
     padding: 2em;
     border-bottom: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     margin-right: 1em;
     background-color: rgb(253, 253, 253);
@@ -743,7 +744,7 @@
   .service-option {
     padding: 2em;
     border-bottom: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(253, 253, 253);
   }
@@ -789,7 +790,7 @@
   .service-option {
     padding: 2em;
     border-bottom: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(253, 253, 253);
   }
@@ -837,7 +838,7 @@
   .service-option {
     padding: 2em;
     border-bottom: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(253, 253, 253);
   }

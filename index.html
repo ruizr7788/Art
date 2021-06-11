@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="/css/graphicDesign.css" />
     <link rel="stylesheet" href="/css/aboutAuthor.css" />
     <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/galleryTour.css" />
     <link rel="icon" href="/landing-imgs/fixedNavLOGO.png" />
     <title>Casa Arte</title>
   </head>
@@ -45,7 +46,7 @@
           <div id="navbar">
             <ul>
               <li><a href="#service_container">Services</a></li>
-              <li><a href="#photography_container">Gallery</a></li>
+              <li><a href="#gallery_tour_container">Gallery</a></li>
               <li id="open_modal">Contact Us</li>
             </ul>
           </div>
@@ -85,6 +86,47 @@
     </header>
 
     <main>
+      <section>
+        <div id="gallery_tour_container">
+          <div id="gallery_tour">
+            <img src="/galleryTour/galleryTourCollage.jpg" alt="" />
+          </div>
+          <div id="gallery_tour_info">
+            <h1 id="info_heading">Our Workspace</h1>
+            <div id="info_container1">
+              <!-- bold and italix -->
+              <h6>Our History With Art</h6>
+              <!-- serif -->
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                ea vel sequi dolorum aperiam delectus, enim fuga, voluptate
+                asperiores earum error maxime inventore repellat dignissimos ut
+                harum numquam. Quos quibusdam earum culpa, consectetur eveniet
+                iure maiores optio doloremque quia beatae.
+              </p>
+            </div>
+            <div id="info_container2">
+              <!-- bold and italic -->
+              <h6>Our Goal</h6>
+              <!-- serif -->
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Repellendus aperiam, labore qui tempora quam molestiae.
+                Architecto nostrum corporis vitae nulla?
+              </p>
+            </div>
+            <div id="quote_container">
+              <p id="quote">
+                "It is only when we are no longer fearful that we begin to
+                create."
+                <br />
+                ― J. M. W. Turner
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section>
         <div id="service_container">
           <!-- display grid 2 columns, 6rows -->
@@ -284,7 +326,7 @@
           <div id="infosection">
             <!-- image -->
             <div id="image_container">
-              <img id="image" src="/pageBGs/authorIMG.jpg" alt="hello" />
+              <img id="image" src="" alt="hello" />
             </div>
             <!-- tabs -->
             <div id="tabs_container">
@@ -300,12 +342,6 @@
                   >Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Sequi fugiat minus excepturi magnam, aperiam dolorum delectus.
                   Autem quod beatae nesciunt.</span
-                >
-                <li class="tab">Goals</li>
-                <span class="info info-goals hidden"
-                  >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Corporis repudiandae blanditiis harum sed dolorum molestiae
-                  facilis esse autem velit soluta!</span
                 >
               </ul>
             </div>
@@ -342,6 +378,7 @@
       </div>
     </footer>
 
+    <script src="/javascript/galleryTour.js"></script>
     <script src="/javascript/photography.js"></script>
     <script src="/javascript/fixedNavbar.js"></script>
     <script src="/javascript/modal.js"></script>

@@ -605,7 +605,7 @@
 /* large screens ----------------- */
 @media only screen and (min-width: 1823px) and (max-width: 2300px) {
   #photography_top_bar ul li {
-    font-size: large;
+    font-size: small;
   }
   #photography_top_bar {
     max-width: 1500px;
@@ -628,14 +628,15 @@
   }
   #photography_footer {
     padding-top: 1em;
+    font-size: small;
   }
   /* options */
   #introductions {
-    max-width: 700px;
-    padding: 2em 0 2em 0;
+    max-width: 750px;
+    padding: 1em 0 5em 0;
   }
   #introductions h1 {
-    font-size: xx-large;
+    font-size: 35px;
   }
 }
 
@@ -643,7 +644,7 @@
 @media only screen and (min-width: 1400px) and (max-width: 1823px) {
   /* ------PHOTOGRAPHY PAGE------ */
   #photography_top_bar ul li {
-    font-size: large;
+    font-size: small;
   }
   #photography_top_bar {
     max-width: 1300px;
@@ -669,6 +670,7 @@
   }
   #photography_footer {
     padding-top: 1em;
+    font-size: small;
   }
   /* options */
   #introductions {
@@ -684,7 +686,7 @@
 @media only screen and (min-width: 900px) and (max-width: 1400px) and (min-device-height: 1000px) {
   /* ------PHOTOGRAPHY PAGE------ */
   #photography_top_bar ul li {
-    font-size: large;
+    font-size: small;
   }
   #photography_top_bar {
     max-width: 850px;
@@ -699,7 +701,7 @@
   }
   #photography_container {
     padding: 8vh 0;
-    min-height: 100vh;
+    min-height: fit-content;
   }
   #photography {
     padding: 1em;
@@ -710,10 +712,12 @@
   }
   #photography_footer {
     padding: 1em 0;
+    font-size: small;
   }
   /* options */
   #introductions {
-    padding: 0;
+    padding: 0 0 2em 0;
+    max-width: 750px;
   }
   #introductions h1 {
     font-size: xx-large;
@@ -724,7 +728,7 @@
 @media only screen and (min-width: 650px) and (max-width: 900px) and (min-device-height: 1000px) {
   /* ------PHOTOGRAPHY PAGE------ */
   #photography_top_bar ul li {
-    font-size: 17px;
+    font-size: small;
   }
   #photography_top_bar {
     max-width: 600px;
@@ -744,16 +748,17 @@
   #photography {
     padding: 1em 0;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 1em;
-    column-gap: 1em;
+    row-gap: 5px;
+    column-gap: 5px;
     max-width: fit-content;
   }
   #photography_footer {
     padding: 1em 0;
+    font-size: small;
   }
   /* options */
   #introductions {
-    padding: 0;
+    padding: 0 0 2em 0;
   }
   #introductions h1 {
     font-size: x-large;
