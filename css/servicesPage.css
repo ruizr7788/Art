@@ -108,7 +108,7 @@
     font-size: large;
   }
   .service-option h6 {
-    font-size: small;
+    font-size: x-small;
   }
   .service-img {
     width: 330px;
@@ -147,7 +147,7 @@
     font-size: large;
   }
   .service-option h6 {
-    font-size: small;
+    font-size: x-small;
   }
   .service-img {
     width: 350px;
@@ -186,7 +186,7 @@
     font-size: large;
   }
   .service-option h6 {
-    font-size: small;
+    font-size: x-small;
   }
   .service-img {
     width: 300px;
@@ -225,7 +225,7 @@
     font-size: large;
   }
   .service-option h6 {
-    font-size: small;
+    font-size: x-small;
   }
   .service-img {
     width: 330px;
@@ -264,7 +264,7 @@
     font-size: small;
   }
   .service-option h6 {
-    font-size: small;
+    font-size: x-small;
   }
   .service-img {
     width: 230px;
@@ -343,6 +343,9 @@
   }
   .service-option h3 {
     font-size: small;
+  }
+  .service-option h6 {
+    font-size: x-small;
   }
   .service-option button {
     font-size: x-small;
@@ -434,7 +437,7 @@
     font-size: small;
   }
   .service-option h6 {
-    font-size: x-small;
+    font-size: xx-small;
   }
 
   .service-img {
@@ -483,7 +486,7 @@
     font-size: small;
   }
   .service-img {
-    width: 280px;
+    max-width: 90%;
     padding: 1em 0;
   }
   #services {
@@ -509,7 +512,7 @@
     font-size: xx-large;
   }
   #service_img {
-    width: 400px;
+    max-width: 90%;
   }
   .service-option {
     padding: 2em;
@@ -520,6 +523,9 @@
   .service-option .service-icon {
     padding: 0.5em;
     font-size: large;
+  }
+  .service-option h6 {
+    font-size: x-small;
   }
   .service-option button {
     font-size: 13px;
