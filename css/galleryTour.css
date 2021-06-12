@@ -4,6 +4,38 @@
   min-height: fit-content;
   margin: auto;
 }
+#gallery_tour {
+  display: flex;
+  margin-bottom: 2em;
+}
+#gallery_tour_introduction {
+  text-align: left;
+  padding-top: 12em;
+  transform: translateY(15em);
+  transition: var(--ease-20);
+  overflow-y: hidden;
+}
+#gallery_tour_introduction h1 {
+  font-weight: normal;
+  width: fit-content;
+  font-size: 50px;
+}
+#gallery_tour_introduction p {
+  color: var(--small-text-color);
+}
+#gallery_tour2 {
+  display: flex;
+  overflow-y: hidden;
+}
+#gallery_tour_quote {
+  max-width: fit-content;
+  margin: auto;
+}
+#quote {
+  color: var(--small-text-color);
+  transition: var(--ease-6);
+}
+
 #gallery_tour img {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -11,6 +43,7 @@
 #gallery_tour_info {
   text-align: left;
   background-color: rgba(0, 0, 0, 0.019);
+  overflow-y: hidden;
 }
 
 #gallery_tour_info #info_heading {
@@ -44,11 +77,29 @@
 
 /* MEDIA QUERIES */
 
-/* imac---------------------------- */
-@media only screen and (min-width: 2300px) and (min-height: 1250px) {
+/* Pixel 2XL */
+@media only screen and (min-device-width: 411px) and (max-device-height: 823px) and (orientation: portrait) {
+  #gallery_tour_introduction {
+    padding: 1em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 20px;
+  }
+  #gallery_tour_introduction p {
+    font-size: xx-small;
+  }
+  #quote_container #quote {
+    font-size: 9px;
+  }
   #quote_container {
-    padding-top: 2em;
-    font-size: 15px;
+    padding-top: 1em;
+
     transform: translateY(15em);
   }
   #info_container2 {
@@ -56,26 +107,724 @@
   }
   #info_container1 {
     transform: translateY(15em);
-    padding-bottom: 3em;
+    padding-bottom: 1em;
   }
   #gallery_tour img {
-    width: 1100px;
+    max-width: 98%;
+    margin: auto;
   }
   #gallery_tour_info p {
-    letter-spacing: 0.5px;
-    word-spacing: 2px;
+    font-size: 9px;
+  }
+  #gallery_tour_info h6 {
+    font-size: x-small;
   }
   #gallery_tour_info {
-    width: 600px;
-    padding: 5em 2em;
+    padding: 20px 25px;
+    max-width: 99%;
   }
   #gallery_tour_container {
-    max-width: 90%;
+    max-width: 95%;
     padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
   }
   #gallery_tour_info #info_heading {
     transform: translateY(7em);
     padding: 0 0 1em 0;
+    font-size: 20px;
+  }
+}
+
+/* Pixel 2 */
+@media only screen and (min-device-width: 411px) and (max-device-height: 731px) and (orientation: portrait) {
+  #gallery_tour_introduction {
+    padding: 1em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 20px;
+  }
+  #gallery_tour_introduction p {
+    font-size: xx-small;
+  }
+  #quote_container #quote {
+    font-size: 9px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 1em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 9px;
+  }
+  #gallery_tour_info h6 {
+    font-size: x-small;
+  }
+  #gallery_tour_info {
+    padding: 20px 25px;
+    max-width: 99%;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 20px;
+  }
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
+  #gallery_tour_introduction {
+    padding: 1em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 20px;
+  }
+  #gallery_tour_introduction p {
+    font-size: xx-small;
+  }
+  #quote_container #quote {
+    font-size: 9px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 1em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 9px;
+  }
+  #gallery_tour_info h6 {
+    font-size: x-small;
+  }
+  #gallery_tour_info {
+    padding: 20px 25px;
+    max-width: 99%;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 20px;
+  }
+}
+
+/* iPhone XS Max, XR ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
+  #gallery_tour_introduction {
+    padding: 1em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 20px;
+  }
+  #gallery_tour_introduction p {
+    font-size: xx-small;
+  }
+  #quote_container #quote {
+    font-size: 9px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 1em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 9px;
+  }
+  #gallery_tour_info h6 {
+    font-size: x-small;
+  }
+  #gallery_tour_info {
+    padding: 20px 25px;
+    max-width: 99%;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 20px;
+  }
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
+  #gallery_tour_introduction {
+    padding: 1em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 20px;
+  }
+  #gallery_tour_introduction p {
+    font-size: xx-small;
+  }
+  #quote_container #quote {
+    font-size: 9px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 1em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 9px;
+  }
+  #gallery_tour_info h6 {
+    font-size: x-small;
+  }
+  #gallery_tour_info {
+    padding: 20px 25px;
+    max-width: 99%;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 20px;
+  }
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and (min-device-width: 413px) and (max-device-height: 737px) and (orientation: portrait) {
+  #gallery_tour_introduction {
+    padding: 1em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 20px;
+  }
+  #gallery_tour_introduction p {
+    font-size: xx-small;
+  }
+  #quote_container #quote {
+    font-size: 9px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 1em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 9px;
+  }
+  #gallery_tour_info h6 {
+    font-size: x-small;
+  }
+  #gallery_tour_info {
+    padding: 20px 25px;
+    max-width: 99%;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) {
+  #gallery_tour_introduction {
+    padding: 1em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 20px;
+  }
+  #gallery_tour_introduction p {
+    font-size: xx-small;
+  }
+  #quote_container #quote {
+    font-size: 9px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 1em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 9px;
+  }
+  #gallery_tour_info h6 {
+    font-size: x-small;
+  }
+  #gallery_tour_info {
+    padding: 20px 25px;
+    max-width: 99%;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 20px;
+  }
+}
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
+  #gallery_tour_introduction {
+    padding: 1em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 20px;
+  }
+  #gallery_tour_introduction p {
+    font-size: xx-small;
+  }
+  #quote_container #quote {
+    font-size: 9px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 1em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 9px;
+  }
+  #gallery_tour_info h6 {
+    font-size: x-small;
+  }
+  #gallery_tour_info {
+    padding: 20px 25px;
+    max-width: 99%;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) {
+  #gallery_tour_introduction {
+    padding: 1em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 20px;
+  }
+  #gallery_tour_introduction p {
+    font-size: xx-small;
+  }
+  #quote_container #quote {
+    font-size: 9px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 1em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 9px;
+  }
+  #gallery_tour_info h6 {
+    font-size: x-small;
+  }
+  #gallery_tour_info {
+    padding: 20px 25px;
+    max-width: 99%;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 20px;
+  }
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) {
+  #gallery_tour_introduction {
+    padding: 1em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 20px;
+  }
+  #gallery_tour_introduction p {
+    font-size: xx-small;
+  }
+  #quote_container #quote {
+    font-size: 9px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 1em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 9px;
+  }
+  #gallery_tour_info h6 {
+    font-size: x-small;
+  }
+  #gallery_tour_info {
+    padding: 20px 25px;
+    max-width: 99%;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) {
+  #gallery_tour_introduction {
+    padding: 1em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 20px;
+  }
+  #gallery_tour_introduction p {
+    font-size: xx-small;
+  }
+  #quote_container #quote {
+    font-size: 9px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 1em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 9px;
+  }
+  #gallery_tour_info h6 {
+    font-size: x-small;
+  }
+  #gallery_tour_info {
+    padding: 20px 25px;
+    max-width: 99%;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 768px) and (orientation: landscape) {
+  #gallery_tour_introduction {
+    padding: 1em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 20px;
+  }
+  #gallery_tour_introduction p {
+    font-size: xx-small;
+  }
+  #quote_container #quote {
+    font-size: 9px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 1em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 9px;
+  }
+  #gallery_tour_info h6 {
+    font-size: x-small;
+  }
+  #gallery_tour_info {
+    padding: 20px 25px;
+    max-width: 99%;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 20px;
+  }
+}
+
+/* imac---------------------------- */
+@media only screen and (min-width: 2300px) and (min-height: 1250px) {
+  #quote_container #quote {
+    font-size: 13px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 2em;
+  }
+  #gallery_tour {
+    text-align: right;
+  }
+  #gallery_tour img {
+    width: 1000px;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 15px;
+  }
+  #gallery_tour_info h6 {
+    font-size: small;
+  }
+  #gallery_tour_info {
+    padding: 3.5em 2.5em;
+    width: 900px;
+  }
+  #gallery_tour_container {
+    max-width: 65%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 30px;
   }
 }
 
@@ -114,7 +863,7 @@
     width: 900px;
   }
   #gallery_tour_container {
-    max-width: 80%;
+    max-width: 90%;
     padding: 7vh 0;
     flex-direction: column;
     text-align: center;
@@ -161,7 +910,7 @@
     width: 900px;
   }
   #gallery_tour_container {
-    max-width: 80%;
+    max-width: 90%;
     padding: 7vh 0;
     flex-direction: column;
     text-align: center;
@@ -175,6 +924,21 @@
 
 /* ------900 to 1400------ */
 @media only screen and (min-width: 900px) and (max-width: 1400px) and (min-device-height: 1000px) {
+  #gallery_tour_introduction {
+    padding: 2em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 40px;
+  }
+  #gallery_tour_introduction p {
+    font-size: small;
+  }
   #quote_container #quote {
     font-size: 13px;
   }
@@ -191,7 +955,7 @@
     padding-bottom: 2em;
   }
   #gallery_tour img {
-    width: 900px;
+    width: 890px;
     margin: auto;
   }
   #gallery_tour_info p {
@@ -202,7 +966,125 @@
   }
   #gallery_tour_info {
     padding: 3.5em 2.5em;
-    width: 900px;
+    width: 890px;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 30px;
+  }
+}
+
+/* ------600 to 900------ */
+@media only screen and (min-width: 650px) and (max-width: 900px) and (min-device-height: 1000px) {
+  #gallery_tour_introduction {
+    padding: 2em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 35px;
+  }
+  #gallery_tour_introduction p {
+    font-size: small;
+  }
+  #quote_container #quote {
+    font-size: 13px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 2em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 13px;
+  }
+  #gallery_tour_info h6 {
+    font-size: small;
+  }
+  #gallery_tour_info {
+    padding: 3.5em 2.5em;
+    width: 590px;
+  }
+  #gallery_tour_container {
+    max-width: 95%;
+    padding: 7vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #gallery_tour_info #info_heading {
+    transform: translateY(7em);
+    padding: 0 0 1em 0;
+    font-size: 30px;
+  }
+}
+
+/* ------300 to 650------ */
+@media only screen and (min-width: 300px) and (max-width: 650px) and (min-device-height: 1000px) {
+  #gallery_tour_introduction {
+    padding: 2em;
+  }
+  #gallery_tour {
+    flex-direction: column;
+  }
+  #gallery_tour2 {
+    flex-direction: column;
+  }
+  #gallery_tour_introduction h1 {
+    font-size: 35px;
+  }
+  #gallery_tour_introduction p {
+    font-size: small;
+  }
+  #quote_container #quote {
+    font-size: 13px;
+  }
+  #quote_container {
+    padding-top: 1em;
+
+    transform: translateY(15em);
+  }
+  #info_container2 {
+    transform: translateY(15em);
+  }
+  #info_container1 {
+    transform: translateY(15em);
+    padding-bottom: 2em;
+  }
+  #gallery_tour img {
+    max-width: 98%;
+    margin: auto;
+  }
+  #gallery_tour_info p {
+    font-size: 13px;
+  }
+  #gallery_tour_info h6 {
+    font-size: small;
+  }
+  #gallery_tour_info {
+    padding: 3.5em 2.5em;
+    max-width: 99%;
   }
   #gallery_tour_container {
     max-width: 95%;

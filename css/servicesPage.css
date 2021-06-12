@@ -3,7 +3,7 @@
   min-height: 60vh;
   position: relative;
   overflow-x: hidden;
-  border-bottom: 1px solid lightslategray;
+  border-bottom: 1px solid lightgray;
   border-top: 1px solid lightgray;
   margin: auto;
 }
@@ -44,7 +44,7 @@
   position: relative;
   text-align: left;
   background-color: rgb(252, 252, 252);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
   transition: var(--ease-6);
 }
 .service-option:hover {
@@ -681,7 +681,6 @@
     max-width: 1600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2em 0;
   }
   #service_container .introduction h1 {
     font-size: 35px;
@@ -728,7 +727,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
-    row-gap: 1em;
+    row-gap: 0.5em;
     padding: 1.5em;
   }
   #service_container .introduction h1 {
@@ -742,9 +741,8 @@
     padding: 1.5em 0;
   }
   .service-option {
-    padding: 2em;
+    padding: 1em;
     border-bottom: none;
-    /* border-radius: 10px; */
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(253, 253, 253);
   }
@@ -773,8 +771,8 @@
   #services {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1em;
-    row-gap: 1em;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
     padding: 1.5em;
   }
   #service_container .introduction h1 {
@@ -783,8 +781,12 @@
   #service_container .introduction p {
     font-size: 14px;
   }
+  .service_option-text-link {
+    font-size: small;
+  }
+
   .service-img {
-    width: 220px;
+    max-width: 90%;
     padding: 1.5em 0;
   }
   .service-option {
@@ -803,7 +805,7 @@
     font-size: 22px;
   }
   .service-option p {
-    font-size: 14px;
+    display: none;
   }
   .service-option button {
     font-size: small;
@@ -831,8 +833,11 @@
   #service_container .introduction p {
     font-size: 14px;
   }
+  .service_option-text-link {
+    font-size: small;
+  }
   .service-img {
-    width: 400px;
+    max-width: 90%;
     padding: 1.5em 0;
   }
   .service-option {
@@ -851,7 +856,7 @@
     font-size: 20px;
   }
   .service-option p {
-    font-size: 15px;
+    display: none;
   }
   .service-option button {
     font-size: small;
@@ -874,8 +879,7 @@
     padding: 5px;
   }
   .service-option p {
-    text-align: justify;
-    font-size: x-small;
+    display: none;
   }
   .service-option h3 {
     max-width: 90%;
