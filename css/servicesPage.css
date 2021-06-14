@@ -44,11 +44,7 @@
   position: relative;
   text-align: left;
   background-color: rgb(252, 252, 252);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-  transition: var(--ease-6);
-}
-.service-option:hover {
-  transform: scale(1.01);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
   transition: var(--ease-6);
 }
 .service-option p {
@@ -609,7 +605,7 @@
     max-width: 90%;
   }
   #service_container .introduction h1 {
-    font-size: 45px;
+    font-size: 2.5rem;
   }
   #service_container .introduction p {
     font-size: large;
@@ -650,7 +646,7 @@
     padding: 2em;
   }
   #service_container .introduction h1 {
-    font-size: 50px;
+    font-size: 2.5rem;
   }
   #service_container .introduction p {
     font-size: x-large;
@@ -689,7 +685,7 @@
     grid-template-columns: 1fr 1fr;
   }
   #service_container .introduction h1 {
-    font-size: 35px;
+    font-size: 2.5rem;
   }
   #service_container .introduction p {
     font-size: small;

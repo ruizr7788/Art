@@ -30,13 +30,13 @@
   list-style: none;
 }
 #photography_top_bar ul li {
-  text-decoration: underline;
   cursor: pointer;
   color: var(--main-color-photography-page);
   transition: var(--ease-3);
 }
 #photography_top_bar ul li:hover {
   color: var(--hover-color);
+  text-decoration: underline;
   transition: var(--ease-3);
 }
 
@@ -620,7 +620,7 @@
     min-height: 100vh;
   }
   #photography {
-    padding: 1em 0;
+    padding: 0.5em 0;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 0.5em;
     column-gap: 0.5em;

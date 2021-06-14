@@ -34,14 +34,10 @@
   text-align: left;
 }
 .item-box-2 {
-  background: url(/graphicDesigns/notebook.jpg);
-  background-size: cover;
-}
-.item-box-3 {
   background: url(/graphicDesigns/photoalbum.jpg);
   background-size: cover;
 }
-.item-box-5 {
+.item-box-3 {
   background: url(/makeupANDjewlry/jewelry.jpg);
   background-size: cover;
 }
@@ -375,7 +371,9 @@
 }
 
 /* large screens ----------------- */
-@media only screen and (min-width: 1823px) {
+
+/* imac---------------------------- */
+@media only screen and (min-width: 2300px) and (min-height: 1250px) {
   .item-box {
     width: 325px;
     height: 325px;
@@ -383,7 +381,24 @@
   }
   #graphic_design {
     padding-top: 4em;
-    max-width: 80%;
+    max-width: 55%;
+    margin: auto;
+  }
+  #graphic_design_container {
+    padding: 7vh 0;
+  }
+}
+
+/* large screens ----------------- */
+@media only screen and (min-width: 1823px) and (max-width: 2300px) {
+  .item-box {
+    width: 325px;
+    height: 325px;
+    margin-bottom: 0.5em;
+  }
+  #graphic_design {
+    padding-top: 4em;
+    max-width: 70%;
     margin: auto;
   }
   #graphic_design_container {
