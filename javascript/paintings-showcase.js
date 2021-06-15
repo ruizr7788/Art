@@ -17,7 +17,8 @@ cards.forEach((card, i) => {
   card.addEventListener("click", () => {
     if (modalIsOpen === false) {
       card_modal[i].style.display = "grid";
-      main_container.classList.add("blur");
+      // main_container.classList.add("blur");
+      overlay.classList.remove("hidden");
 
       opacity02();
       modalIsOpen = true;
@@ -29,7 +30,8 @@ cards.forEach((card, i) => {
 btn_exit_modal.forEach((btn, i) => {
   btn.addEventListener("click", () => {
     card_modal[i].style.display = "none";
-    main_container.classList.remove("blur");
+    // main_container.classList.remove("blur");
+    overlay.classList.add("hidden");
 
     opacity1();
     modalIsOpen = false;

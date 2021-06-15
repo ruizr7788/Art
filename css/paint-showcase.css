@@ -34,8 +34,8 @@
   grid-template-columns: repeat(2, 1fr);
   position: fixed;
   align-items: center;
-  z-index: 3;
-  transition: var(--ease-6);
+  z-index: 101;
+  transition: var(--ease-9);
   border: 1px solid #c7c7c7;
   background-color: #ecf0f1;
   color: var(--main-color-modal);

@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="/css/landingPage.css" />
     <link rel="stylesheet" href="/css/aboutAuthor.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/css/mediaQuerys.css" />
     <link rel="stylesheet" href="/css/paint-showcase.css" />
     <link rel="icon" href="/landing-imgs/fixedNavLOGO.png" />
     <title>Casa Arte - Paintings</title>
@@ -44,30 +43,30 @@
             <li id="open_modal">Contact Us</li>
           </ul>
         </div>
-        <div id="modal_contact" class="modal-contact hidden">
-          <span id="modal_btn"><i class="fas fa-times"></i></span>
-          <h2>Casa de Arte</h2>
-          <ul>
-            <li>
-              <a href="tel:3541168946"
-                ><class class="fas fa-phone"></class> 354 116 8946</a
-              >
-            </li>
-            <li>
-              <a href="tel: 3545454259"
-                ><i class="fab fa-whatsapp"></i> 354 545 4259</a
-              >
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-facebook"></i> isabelmoreno</a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-instagram"></i> isabelmoreno</a>
-            </li>
-          </ul>
-          <p>Calle Ocampo #39, 60440 Periban de Ramos, MICH</p>
-          <small>Mon-Fri 8:30-10:00, closed between 2:30 & 4:00</small>
-        </div>
+      </div>
+      <div id="modal_contact" class="modal-contact">
+        <span id="modal_btn"><i class="fas fa-times"></i></span>
+        <h2>Casa de Arte</h2>
+        <ul>
+          <li>
+            <a href="tel:3541168946"
+              ><class class="fas fa-phone"></class> 354 116 8946</a
+            >
+          </li>
+          <li>
+            <a href="tel: 3545454259"
+              ><i class="fab fa-whatsapp"></i> 354 545 4259</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i> isabelmoreno</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i> isabelmoreno</a>
+          </li>
+        </ul>
+        <p>Calle Ocampo #39, 60440 Periban de Ramos, MICH</p>
+        <small>Mon-Fri 8:30-10:00, closed between 2:30 & 4:00</small>
       </div>
     </header>
 
@@ -481,8 +480,11 @@
       </div>
     </footer>
 
+    <!-- overlay for modal -->
+    <div class="overlay hidden"></div>
+
     <!-- <script src="/javascript/fixedNavbar.js"></script> -->
-    <script src="/javascript/showcase.js"></script>
+    <script src="/javascript/paintings-showcase.js"></script>
     <script src="/javascript/modal.js"></script>
     <script src="/javascript/aboutAuthor.js"></script>
   </body>

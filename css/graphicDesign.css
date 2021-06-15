@@ -18,6 +18,7 @@
   display: flex;
   justify-content: space-evenly;
   text-align: left;
+  margin: auto;
 }
 #graphic_design h4 {
   text-align: left;
@@ -404,6 +405,9 @@
   #graphic_design_container {
     padding: 15vh 0;
   }
+  #graphic_design_container h1 {
+    font-size: 2rem;
+  }
 }
 
 /* -------1400px to 1823px------ */
@@ -415,28 +419,36 @@
   }
   #graphic_design {
     padding: 4em 0.5em 0 0.5em;
+    max-width: 65%;
   }
   #graphic_design_container {
     padding: 13vh 0;
+  }
+  #graphic_design_container h1 {
+    font-size: 2rem;
   }
 }
 
 /* ------1100 to 1400------ */
 @media only screen and (min-width: 1100px) and (max-width: 1400px) and (min-device-height: 1000px) {
   .item-box {
-    width: 325px;
-    height: 325px;
+    width: 300px;
+    height: 300px;
     margin-bottom: 0.5em;
   }
   #graphic_design {
     padding: 4em 2em 0 2em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 5em;
+    row-gap: 1em;
     column-gap: 1em;
+    max-width: 76%;
   }
   #graphic_design_container {
     padding: 12vh 0;
+  }
+  #graphic_design_container h1 {
+    font-size: xx-large;
   }
 }
 
@@ -445,7 +457,7 @@
   .item-box {
     width: 275px;
     height: 275px;
-    margin-bottom: 0.5em;
+    margin: 0 0 0.5em 0;
   }
   #graphic_design {
     padding: 4em 1em 0 1em;
@@ -453,6 +465,7 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 5em;
     column-gap: 1em;
+    max-width: 70%;
   }
   #graphic_design_container {
     padding: 15vh 0;
@@ -472,7 +485,7 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 5em;
     column-gap: 1em;
-    max-width: 90%;
+    max-width: 70%;
     margin: auto;
   }
   #graphic_design_container {
@@ -491,7 +504,7 @@
     padding: 4em 1em 0 1em;
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 5em;
+    row-gap: 3em;
     max-width: fit-content;
     margin: auto;
   }

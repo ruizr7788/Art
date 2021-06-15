@@ -676,16 +676,18 @@
 /* 1400 to 1950 */
 @media only screen and (min-width: 1400px) and (max-width: 1950px) {
   #service_container {
-    padding: 5vh 1em;
-    min-height: 45vh;
+    padding: 7vh 1em;
   }
   #services {
-    max-width: 1600px;
+    max-width: 1500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  #service_container .introduction {
+    padding: 0 0 2em 0;
+  }
   #service_container .introduction h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   #service_container .introduction p {
     font-size: small;
@@ -695,19 +697,22 @@
     padding: 1.5em 0;
   }
   .service-option {
-    min-height: 28em;
-    padding: 2em;
+    padding: 2em 0 1em 2em;
     border-bottom: none;
     /* border-radius: 10px; */
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-right: 1em;
     background-color: rgb(253, 253, 253);
   }
+  .service-option h6 {
+    font-size: small;
+  }
   .service-option h3 {
-    font-size: x-large;
+    font-size: large;
   }
   .service-option p {
     font-size: small;
+    max-width: 75%;
   }
   .service-option .service-icon {
     right: 2em;
@@ -733,26 +738,29 @@
     padding: 1.5em;
   }
   #service_container .introduction h1 {
-    font-size: 32px;
+    font-size: xx-large;
   }
   #service_container .introduction p {
-    font-size: 16px;
+    font-size: small;
   }
   .service-img {
     width: 390px;
     padding: 1.5em 0;
   }
   .service-option {
-    padding: 1em;
+    padding: 2em 0 1em 2em;
     border-bottom: none;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(253, 253, 253);
   }
+  .service-option h6 {
+    font-size: small;
+  }
   .service-option h3 {
-    font-size: 25px;
+    font-size: 19px;
   }
   .service-option p {
-    font-size: small;
+    font-size: x-small;
   }
   .service-option .service-icon {
     right: 2em;
