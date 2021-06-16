@@ -3,7 +3,6 @@
   min-height: 60vh;
   position: relative;
   overflow-x: hidden;
-  border-bottom: 1px solid lightgray;
   border-top: 1px solid lightgray;
   margin: auto;
 }
@@ -83,7 +82,7 @@
   max-width: fit-content;
   margin: auto;
   padding-bottom: 2em;
-  color: var(--secondary-color-service-page);
+  color: var(--small-text-color);
 }
 
 /* MEDIA QUERYS */

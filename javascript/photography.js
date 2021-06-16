@@ -44,7 +44,7 @@ const allTypesMakeup = {
     "/makeup/makeup15.jpg",
     "/makeup/makeup16.jpg",
   ],
-  art: [
+  characterCreation: [
     "/makeup/makeup5.jpg",
     "/makeup/makeup6.jpg",
     "/makeup/makeup7.jpg",
@@ -190,7 +190,7 @@ function displaySwitch(current) {
       <div id="photo-navbar">
         <ul>
           <li class="photoOption">Festive</li>
-          <li class="photoOption">Art</li>
+          <li class="photoOption">Character Creation</li>
           <li class="photoOption">Creative</li>
         </ul>
       </div>
@@ -254,7 +254,7 @@ function updatePhotos(current = "photography") {
           displayPhotos(allTypesMakeup.festive);
         } else if (i === 1) {
           clearCurrentPhotos();
-          displayPhotos(allTypesMakeup.art);
+          displayPhotos(allTypesMakeup.characterCreation);
         } else if (i === 2) {
           clearCurrentPhotos();
           displayPhotos(allTypesMakeup.creative);
@@ -296,20 +296,4 @@ function displayPhotos(photoObj) {
 
 function clearCurrentPhotos() {
   photoSectionEl.innerHTML = "";
-}
-
-// photography section fade-in -----------------------------------
-const photoContainer = document.getElementById("photography_container");
-
-window.addEventListener("scroll", checkPhotoContainer);
-checkPhotoContainer();
-
-function checkPhotoContainer() {
-  const triggerHalf = (window.innerHeight / 5) * 4;
-  const photoContainerTop = photoContainer.getBoundingClientRect().top;
-  if (photoContainerTop < triggerHalf) {
-    photoContainer.style.opacity = 100;
-  } else {
-    photoContainer.style.opacity = 0;
-  }
 }

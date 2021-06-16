@@ -32,23 +32,18 @@
   --hover-color: rgb(134, 134, 134);
   --dim-black: rgba(0, 0, 0, 0.2);
   --dimmer-black: rgba(0, 0, 0, 0.7);
-  --small-text-color: rgb(163, 156, 156);
+  /* --small-text-color: rgb(163, 156, 156); */
+  --small-text-color: #95a5a6;
   /* landing page colors */
-  --main-color-landing-page: #fff;
+  --main-color-landing-page: #ecf0f1;
   /* service page colors */
-  --main-color-service-page: rgb(43, 41, 41);
-  --secondary-color-service-page: rgb(43, 41, 41);
-  /* business hours page colors */
-  --main-color-business-hours-page: rgb(250, 250, 250);
-  --secondary-color-business-hours-page: #222f3e;
-  /* paintings page colors */
-  --main-color-paintings-page: #222f3e;
+  --main-color-service-page: #2c3e50;
+  --secondary-color-service-page: rgb(0, 0, 0);
   /* photography page colors */
-  --main-color-photography-page: rgb(43, 41, 41);
-  --secondary-color-photography-page: rgb(43, 41, 41);
+  --main-color-photography-page: rgb(0, 0, 0);
   /* graphic design colors */
-  --main-color-graphic-designs-page: rgb(43, 41, 41);
-  --secondary-color-graphic-designs-page: rgb(255, 255, 255);
+  --main-color-graphic-designs-page: rgb(0, 0, 0);
+  --secondary-color-graphic-designs-page: #2c3e50;
   /* footer colors */
   --main-color-footer: rgb(255, 255, 255);
   --secondary-color-footer: #8d8c99;
@@ -73,53 +68,9 @@ body {
 }
 
 /* ------COLLECTIVE STYLING------ */
-/* buttons */
-
-.light-btn {
-  cursor: pointer;
-  width: 120px;
-  height: 38px;
-  background: transparent;
-  outline: none;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: var(--ease-6);
-}
-.light-btn a {
-  text-decoration: none;
-  color: black;
-}
-.light-btn:hover a {
-  color: #fff;
-}
-.light-btn:hover {
-  background-color: black;
-  color: #fff;
-  transition: var(--ease-6);
-}
-
-.dark-btn {
-  cursor: pointer;
-  width: 110px;
-  height: 38px;
-  background-color: black;
-  outline: none;
-  border: 1px solid var(--main-color);
-  border-radius: 5px;
-  font-weight: bold;
-  color: #fff;
-  transition: var(--ease-6);
-}
-.dark-btn:hover {
-  background-color: #fff;
-  color: black;
-  transition: var(--ease-6);
-}
 
 .hidden {
   display: none;
-  /* opacity: 0; */
   transition: var(--ease-6);
 }
 
@@ -132,4 +83,13 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   width: 100vw;
   height: 100vh;
+}
+
+.section {
+  transition: var(--ease-6);
+}
+
+.section__hidden {
+  transform: translateY(8em);
+  opacity: 0;
 }

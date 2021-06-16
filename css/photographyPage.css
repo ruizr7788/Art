@@ -1,10 +1,9 @@
 /* ------------PHOTOGRAPHY SECTION------------ */
 #photography_container {
-  opacity: 0;
   transition: var(--ease-9);
   padding-bottom: 3em;
   text-align: center;
-  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
 }
 
 #photography {
@@ -68,7 +67,7 @@
 
 .display_option.active h1 {
   transition: var(--ease-3);
-  color: black;
+  color: var(--main-color-photography-page);
   transform: scale(1.1);
 }
 

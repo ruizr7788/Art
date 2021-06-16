@@ -4,6 +4,8 @@ const modal = document.querySelector(".modal-contact");
 const modalID = document.getElementById(".modal_contact");
 const overlay = document.querySelector(".overlay");
 
+modal.classList.add("hidden");
+
 btn_open.addEventListener("click", open);
 btn_exit.addEventListener("click", close);
 document.addEventListener("keydown", (event) => {
@@ -13,10 +15,12 @@ document.addEventListener("keydown", (event) => {
 function open() {
   modal.style.opacity = "1";
   overlay.classList.remove("hidden");
+  modal.classList.remove("hidden");
 }
 function close() {
   modal.style.opacity = "0";
   overlay.classList.add("hidden");
+  modal.classList.add("hidden");
 }
 
 // select the .price and format it according to the users location
